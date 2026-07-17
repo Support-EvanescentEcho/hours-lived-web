@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours Lived — Support, Terms & Privacy</title>
+
+    <!-- Google Fonts: Cormorant Garamond (refined serif) and Inter (highly readable body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body class="lang-active-es">
+
+    <header>
+        <div class="logo-area">
+            <img src="assets/logo.png" alt="Hours Lived Logo" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">
+                <div class="logo-title">Hours Lived</div>
+                <div class="logo-subtitle" id="logo-sub">Software Libre</div>
+            </div>
+        </div>
+        
+        <div class="selectors">
+            <!-- Dynamic Theme Selector -->
+            <div class="select-wrapper">
+                <span id="theme-lbl">Tema:</span>
+                <select id="theme-select" onchange="applyTheme(this.value)">
+                    <option value="light" id="theme-opt-light">Claro</option>
+                    <option value="dark" id="theme-opt-dark">Oscuro</option>
+                    <option value="system" id="theme-opt-system" selected>Sistema</option>
+                </select>
+            </div>
+
+            <!-- Dynamic Language Selector -->
+            <div class="select-wrapper">
+                <span id="lang-lbl">Idioma:</span>
+                <select id="lang-select" onchange="applyLanguage(this.value)">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 id="hero-title">Hours Lived</h1>
+            <p id="hero-desc">Documentación técnica, términos legales y homenajes artísticos.</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab(event, 'support')" id="tab-support">Soporte & Homenajes</button>
+            <button class="tab-btn" onclick="switchTab(event, 'features')" id="tab-features">Funciones</button>
+            <button class="tab-btn" onclick="switchTab(event, 'faq')" id="tab-faq">Ayuda & FAQ</button>
+            <button class="tab-btn" onclick="switchTab(event, 'privacy')" id="tab-privacy">Privacidad</button>
+            <button class="tab-btn" onclick="switchTab(event, 'terms')" id="tab-terms">Términos</button>
+        </div>
+
+        <!-- 1. SUPPORT PANEL -->
+        <div id="panel-support" class="tab-panel active">
+            <div class="grid-layout">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 id="card-tributes-title">Homenajes Artísticos</h2>
+                    </div>
+                    <p id="tributes-desc-1">Hours Lived es una obra de software libre creada como un tributo artístico independiente y sin fines de lucro.</p>
+                    <p id="tributes-desc-2">Los nombres de los esquemas de color y las frases inspiradoras de la bitácora diaria hacen referencia directa a magníficas producciones que exploran el paso del tiempo, los recuerdos y la fugacidad de la vida humana.</p>
+                    
+                    <!-- Decorative Quote -->
+                    <div class="quote-block">
+                        <p id="quote-text">"We spend so much time dreading the expiration date of our hearts, that we forget we are the ones who give meaning to the seconds we have left."</p>
+                        <div id="quote-author">— Plastic Memories</div>
+                    </div>
+
+                    <p id="tributes-list-title" style="margin-bottom: 0.5rem; font-weight: 500;">Nuestros temas rinden homenaje a:</p>
+                    <ul id="tributes-list" style="margin-left: 1.5rem; margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                        <li>Plastic Memories (Doga Kobo)</li>
+                        <li>Violet Evergarden (Kyoto Animation)</li>
+                        <li>Your Lie in April (A-1 Pictures)</li>
+                        <li>Frieren: Beyond Journey's End (Madhouse)</li>
+                        <li>5 Centimeters per Second (CoMix Wave Films)</li>
+                        <li>To the Moon (Freebird Games)</li>
+                        <li>GRIS (Nomada Studio)</li>
+                        <li>Spiritfarer (Thunder Lotus Games)</li>
+                    </ul>
+                    <div class="divider-line"></div>
+                    <p id="tributes-ip-notice" style="font-size: 0.85rem; color: var(--text-secondary); font-style: italic;">
+                        <strong>Nota de propiedad intelectual:</strong> Todos los derechos de propiedad intelectual, marcas, personajes, títulos y frases originales pertenecen en su totalidad a sus respectivos creadores, autores y estudios de animación o videojuegos. Esta aplicación no posee afiliación, patrocinio ni vinculación formal alguna con dichos titulares.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 id="card-support-title">Donaciones & Soporte</h2>
+                    </div>
+                    <p id="support-desc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                        Hours Lived se ofrece de forma completamente gratuita, sin anuncios molestos ni recolección de datos. Si la aplicación añade valor a tu día a día, puedes apoyarme invitándome a un café (Ko-fi) para financiar el mantenimiento del proyecto.
+                    </p>
+                    <a href="https://ko-fi.com/evanescentecho" target="_blank" class="btn-action" id="kofi-btn">
+                        Apoyar en Ko-fi
+                    </a>
+                    
+                    <div class="divider-line"></div>
+                    
+                    <div class="contact-info">
+                        <label id="contact-lbl">Contacto de Soporte</label>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="mailto:support.evanescentecho@gmail.com" id="support-email">support.evanescentecho@gmail.com</a>
+                            <button id="copy-email-btn" onclick="copySupportEmail()" style="background: transparent; border: 1px solid var(--border); color: var(--text-secondary); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: all var(--transition-speed);">[Copiar]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. FEATURES SHOWCASE PANEL -->
+        <div id="panel-features" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="features-main-title">Características del Sistema</h2>
+                </div>
+                
+                <div class="feature-item">
+                    <h3 id="feat-offline-title">Filosofía Offline-First</h3>
+                    <p id="feat-offline-desc">Todas las lecturas y escrituras de bases de datos ocurren localmente en tu dispositivo. No hay telemetría, bibliotecas de análisis de comportamiento ni sincronización de datos con la nube.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 id="feat-crypto-title">Cifrado AES-256</h3>
+                    <p id="feat-crypto-desc">Tus diarios, recuerdos e imágenes adjuntas se protegen mediante el motor de cifrado local AES-256 en la base de datos segura para mitigar cualquier acceso físico no autorizado al almacenamiento local.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 id="feat-widgets-title">Widgets en la Pantalla de Inicio</h3>
+                    <p id="feat-widgets-desc">Lleva un registro discreto del tiempo vivido o visualiza tus reflexiones diarias preferidas directamente en la interfaz principal de tu sistema móvil.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 id="feat-themes-title">Temas de Color Nostálgicos</h3>
+                    <p id="feat-themes-desc">Personaliza la app mediante combinaciones de color inspiradas en clásicos de la literatura y novelas visuales como Clannad, Violet Evergarden o To the Moon.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. FAQ PANEL -->
+        <div id="panel-faq" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="faq-main-title">Centro de Ayuda</h2>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-recovery-title">¿Qué es el Modo de Recuperación?</h3>
+                    <p id="faq-recovery-desc">Si el sistema de la base de datos experimenta un error grave al iniciarse que provoque bucles de cierre, la app se iniciará en un Modo de Recuperación seguro. Desde allí puedes generar reportes de diagnóstico cifrados (.hldiag) para compartirlos con soporte, o borrar la memoria caché temporal para restablecer la estabilidad.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-backups-title">¿Cómo funcionan los respaldos (.lifelogs)?</h3>
+                    <p id="faq-backups-desc">Las copias de seguridad de Hours Lived se exportan en un formato seguro cifrado finalizado en .lifelogs. Si intentas abrir un archivo de respaldo desde cualquier administrador de archivos del teléfono, el sistema detectará la app y abrirá directamente la pantalla de importación para restaurar tus datos.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-pdf-title">Exportación a Libros PDF (Novela Ligera)</h3>
+                    <p id="faq-pdf-desc">Puedes dar formato de libro impreso y exportar tus vivencias almacenadas en un formato PDF. El archivo PDF se almacenará de manera automatizada en la subcarpeta "Books/" dentro del directorio de copias que selecciones.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. PRIVACY PANEL -->
+        <div id="panel-privacy" class="tab-panel">
+            <div class="card document-container">
+                <div class="doc-meta" id="priv-updated">Última actualización: Julio de 2026</div>
+                <div class="card-header">
+                    <h2 id="priv-main-title">Política de Privacidad</h2>
+                </div>
+                
+                <div class="doc-section">
+                    <h3 id="priv-sec1-title">1. Recopilación y Uso de la Información</h3>
+                    <p id="priv-sec1-body">Hours Lived es una aplicación diseñada como offline-first. No recopilamos, transmitimos, enviamos, vendemos ni procesamos datos personales, archivos de registro ni bases de datos con servidores externos o terceros. Todo lo que escribes permanece exclusivamente en tu dispositivo móvil local de manera cifrada.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="priv-sec2-title">2. Redes y Permisos</h3>
+                    <p id="priv-sec2-body">La aplicación no utiliza permisos de red activa (Internet) para realizar sus funciones operativas principales. Los recuerdos no son accesibles a través de redes telemáticas.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="priv-sec3-title">3. Cambios en la Política</h3>
+                    <p id="priv-sec3-body">Esta política puede actualizarse puntualmente. Recomendamos revisar esta sección periódicamente. Cualquier actualización legal relevante de la aplicación se detallará en esta sección informativa en futuras versiones.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="priv-sec4-title">4. Soporte Técnico</h3>
+                    <p id="priv-sec4-body">Si posees dudas técnicas acerca de la privacidad y protección local de tus recuerdos, contáctanos a: support.evanescentecho@gmail.com.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. TERMS PANEL -->
+        <div id="panel-terms" class="tab-panel">
+            <div class="card document-container">
+                <div class="doc-meta" id="terms-updated">Última actualización: Julio de 2026</div>
+                <div class="card-header">
+                    <h2 id="terms-main-title">Términos de Servicio</h2>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="terms-sec1-title">1. Aceptación de las Condiciones</h3>
+                    <p id="terms-sec1-body">Al utilizar Hours Lived, aceptas los presentes Términos de Servicio. Si no estás conforme con las cláusulas detalladas, por favor abstente de usar la aplicación.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="terms-sec2-title">2. Naturaleza Artística e Intelectual</h3>
+                    <p id="terms-sec2-body">La aplicación se distribuye como software gratuito sin ánimo comercial directo. El uso de nombres temáticos y referencias representa homenajes culturales. No se pretende realizar explotación comercial ni suplantación de la propiedad intelectual de marcas asociadas.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="terms-sec3-title">3. Custodia y Responsabilidad Local</h3>
+                    <p id="terms-sec3-body">El desarrollador proporciona la infraestructura lógica pero no posee acceso ni almacenamiento de tus datos. El usuario es el único responsable de exportar sus archivos de respaldo (.lifelogs) ante fallos lógicos, desinstalaciones o pérdidas del hardware de almacenamiento del dispositivo.</p>
+                </div>
+
+                <div class="doc-section">
+                    <h3 id="terms-sec4-title">4. Exclusión de Responsabilidad</h3>
+                    <p id="terms-sec4-body">La aplicación se distribuye de manera "tal cual está", sin promesas implícitas ni garantías explícitas de funcionamiento ininterrumpido o libre de defectos imprevistos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">© 2026 Evanescent Echo. Todos los derechos reservados. Desarrollado de forma independiente.</p>
+        <p id="footer-version" style="font-size: 0.8rem; margin-top: 0.6rem; color: var(--text-primary); font-family: 'Inter', sans-serif; font-weight: 500; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase;"></p>
+    </footer>
+
+    <!-- Translations & Theme/Language Switches Logic -->
+    <script src="js/script.js"></script>
+</body>
+</html>
