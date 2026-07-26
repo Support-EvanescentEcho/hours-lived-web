@@ -1,0 +1,48 @@
+{
+  "release": [
+    {
+      "version": "v0.2.0",
+      "date": "July 5, 2026",
+      "title": "Modularization & Image Storage Pipeline",
+      "changes": [
+        "Modularized project code structures into core modules and widgets providers.",
+        "Implemented encrypted local image storage pipeline for memories.",
+        "Upgraded local Room database schema migrations to version 14."
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "June 10, 2026",
+      "title": "Aesthetic Themes & Core Bitacora",
+      "changes": [
+        "Launched core dynamic lived time tracking system (MVVM + Jetpack Compose).",
+        "Integrated 13 nostalgic color schemes (Clannad, Violet Evergarden, Spiritfarer, etc.).",
+        "Added editable custom user palettes (CUSTOM_1, CUSTOM_2, CUSTOM_3)."
+      ]
+    }
+  ],
+  "beta": [
+    {
+      "version": "v0.3.0-beta.1",
+      "date": "July 18, 2026",
+      "title": "Time Capsules & Password-Protected Backups",
+      "changes": [
+        "Introduced Time Capsules to lock diary entries until a specific future date.",
+        "Added secure password protection option for local backup exports (.lifelogs).",
+        "Upgraded database schema migrations to version 12."
+      ]
+    }
+  ],
+  "alpha": [
+    {
+      "version": "v0.3.0-alpha.1",
+      "date": "July 25, 2026",
+      "title": "Native Security Layer & Memory Zero-out",
+      "changes": [
+        "Integrated Native C/C++ security audit layers for cryptographic key hardening.",
+        "Implemented background memory zero-out routine to protect local diagnostics.",
+        "Google Play Store closed alpha testing uploaded for hardware logic verification."
+      ]
+    }
+  ]
+}

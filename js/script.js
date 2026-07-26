@@ -79,6 +79,12 @@ async function applyLanguage(lang) {
     document.getElementById('tab-privacy').innerText = dict.tabPrivacy;
     document.getElementById('tab-terms').innerText = dict.tabTerms;
     
+    // New Tabs
+    document.getElementById('tab-changelog').innerText = dict.tabChangelog || "Changelog";
+    document.getElementById('tab-roadmap').innerText = dict.tabRoadmap || "Roadmap";
+    document.getElementById('tab-transparency').innerText = dict.tabTransparency || "Transparency";
+    document.getElementById('tab-project').innerText = dict.tabProject || "The Project";
+    
     // Support Card
     document.getElementById('card-tributes-title').innerText = dict.cardTributesTitle;
     document.getElementById('tributes-desc-1').innerText = dict.tributesDesc1;
@@ -131,6 +137,64 @@ async function applyLanguage(lang) {
     document.getElementById('faq-pdf-title').innerText = dict.faqPdfTitle;
     document.getElementById('faq-pdf-desc').innerHTML = dict.faqPdfDesc;
     
+    // Changelog Card
+    document.getElementById('changelogTitle').innerText = dict.changelogTitle || "Changelog";
+    document.getElementById('changelogDesc').innerText = dict.changelogDesc || "";
+    document.getElementById('subtab-release-lbl').innerText = dict.changelogRelease || "Release";
+    document.getElementById('subtab-beta-lbl').innerText = dict.changelogBeta || "Beta Logs";
+    document.getElementById('subtab-alpha-lbl').innerText = dict.changelogAlpha || "Alpha Logs";
+    document.getElementById('changelogAlphaNotice').innerText = dict.changelogAlphaNotice || "";
+
+    // Roadmap Card
+    document.getElementById('roadmapMainTitle').innerText = dict.roadmapMainTitle || "Roadmap";
+    document.getElementById('roadmapDesc').innerText = dict.roadmapDesc || "";
+    document.getElementById('roadmapPlanned').innerText = dict.roadmapPlanned || "Planned";
+    document.getElementById('roadmapInProgress').innerText = dict.roadmapInProgress || "In Progress";
+    document.getElementById('roadmapCompleted').innerText = dict.roadmapCompleted || "Completed";
+    
+    document.getElementById('roadmapItemCloudSync').innerText = dict.roadmapItemCloudSync || "";
+    document.getElementById('roadmapItemTributeThemes').innerText = dict.roadmapItemTributeThemes || "";
+    document.getElementById('roadmapItemWidgets').innerText = dict.roadmapItemWidgets || "";
+    document.getElementById('roadmapItemMultiLang').innerText = dict.roadmapItemMultiLang || "";
+    document.getElementById('roadmapItemRecovery').innerText = dict.roadmapItemRecovery || "";
+    document.getElementById('roadmapItemLightNovel').innerText = dict.roadmapItemLightNovel || "";
+
+    // Transparency & Benefits
+    document.getElementById('transTitle').innerText = dict.transTitle || "Transparency";
+    document.getElementById('transDesc').innerText = dict.transDesc || "";
+    document.getElementById('transTierOneTimeBadge').innerText = dict.transTierOneTimeBadge || "";
+    document.getElementById('transTierMonthlyBadge').innerText = dict.transTierMonthlyBadge || "";
+    document.getElementById('transTierOneTime').innerText = dict.transTierOneTime || "One-Time Donation";
+    document.getElementById('transTierOneTimeSub').innerText = dict.transTierOneTimeSub || "";
+    document.getElementById('transTierMonthly').innerText = dict.transTierMonthly || "Monthly Patronage";
+    document.getElementById('transTierMonthlySub').innerText = dict.transTierMonthlySub || "";
+
+    document.getElementById('transBenefitCredits').innerText = dict.transBenefitCredits || "";
+    document.getElementById('transBenefitBadge').innerText = dict.transBenefitBadge || "";
+    document.getElementById('transBenefitBeta').innerText = dict.transBenefitBeta || "";
+    document.getElementById('transBenefitVoting').innerText = dict.transBenefitVoting || "";
+    document.getElementById('transBenefitChannel').innerText = dict.transBenefitChannel || "";
+
+    document.getElementById('transBenefitCredits-m').innerText = dict.transBenefitCredits || "";
+    document.getElementById('transBenefitBadge-m').innerText = dict.transBenefitBadge || "";
+    document.getElementById('transBenefitBeta-m').innerText = dict.transBenefitBeta || "";
+    document.getElementById('transBenefitVoting-m').innerText = dict.transBenefitVoting || "";
+    document.getElementById('transBenefitChannel-m').innerText = dict.transBenefitChannel || "";
+
+    document.getElementById('transUsageTitle').innerText = dict.transUsageTitle || "How funds are utilized";
+    document.getElementById('transUsageItem1').innerText = dict.transUsageItem1 || "";
+    document.getElementById('transUsageItem2').innerText = dict.transUsageItem2 || "";
+    document.getElementById('transUsageItem3').innerText = dict.transUsageItem3 || "";
+    // Project Card
+    document.getElementById('projectTitle').innerText = dict.projectTitle || "About the Project";
+    document.getElementById('projectDesc1').innerText = dict.projectDesc1 || "";
+    document.getElementById('projectInspirationTitle').innerText = dict.projectInspirationTitle || "";
+    document.getElementById('projectInspirationDesc').innerText = dict.projectInspirationDesc || "";
+    document.getElementById('projectInspirationListTitle').innerText = dict.projectInspirationListTitle || "";
+    document.getElementById('projectTechTitle').innerText = dict.projectTechTitle || "";
+    document.getElementById('projectTechDesc1').innerText = dict.projectTechDesc1 || "";
+    document.getElementById('projectTechDesc2').innerText = dict.projectTechDesc2 || "";
+
     // Privacy Card
     document.getElementById('priv-updated').innerText = dict.privUpdated;
     document.getElementById('priv-main-title').innerText = dict.privMainTitle;
@@ -164,6 +228,10 @@ async function applyLanguage(lang) {
     if (copyBtn && dict.copyBtnText) {
         copyBtn.innerText = dict.copyBtnText;
     }
+
+    // Load and Render Changelogs
+    await loadChangelogData(lang);
+    renderChangelog();
 }
 
 // Clipboard Copy Utility
@@ -217,3 +285,104 @@ window.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initLanguage();
 });
+
+// Dynamic Changelog State and Logic
+let currentChangelogChannel = 'release';
+let changelogData = null;
+
+async function loadChangelogData(lang) {
+    try {
+        const response = await fetch(`locales/changelog_${lang}.json`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch locales/changelog_${lang}.json`);
+        }
+        changelogData = await response.json();
+    } catch (error) {
+        console.error('Error loading changelog:', error);
+        // Fallback to English if fetch fails
+        if (lang !== 'en') {
+            await loadChangelogData('en');
+        }
+    }
+}
+
+function renderChangelog() {
+    const container = document.getElementById('changelog-timeline');
+    if (!container) return;
+    container.innerHTML = '';
+    
+    if (!changelogData) {
+        const loadingMsg = document.createElement('p');
+        loadingMsg.innerText = "...";
+        container.appendChild(loadingMsg);
+        return;
+    }
+    
+    const logs = changelogData[currentChangelogChannel] || [];
+    
+    if (logs.length === 0) {
+        const emptyMsg = document.createElement('p');
+        const lang = localStorage.getItem('lang') || 'en';
+        emptyMsg.innerText = lang === 'es' ? 'No hay registros en este historial.' : 'No entries available in this log history.';
+        container.appendChild(emptyMsg);
+        return;
+    }
+    
+    logs.forEach(log => {
+        const item = document.createElement('div');
+        item.className = 'timeline-item';
+        
+        const header = document.createElement('div');
+        header.className = 'timeline-header';
+        
+        const version = document.createElement('span');
+        version.className = 'timeline-version';
+        version.innerText = log.version;
+        
+        const date = document.createElement('span');
+        date.className = 'timeline-date';
+        date.innerText = log.date;
+        
+        header.appendChild(version);
+        header.appendChild(date);
+        
+        const title = document.createElement('h3');
+        title.className = 'timeline-title';
+        title.innerText = log.title;
+        
+        const changesList = document.createElement('ul');
+        changesList.className = 'timeline-changes';
+        
+        log.changes.forEach(change => {
+            const li = document.createElement('li');
+            li.innerText = change;
+            changesList.appendChild(li);
+        });
+        
+        item.appendChild(header);
+        item.appendChild(title);
+        item.appendChild(changesList);
+        
+        container.appendChild(item);
+    });
+}
+
+function switchChangelogChannel(channel) {
+    currentChangelogChannel = channel;
+    
+    // Toggle active classes on subtab buttons
+    const buttons = document.querySelectorAll('.subtab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    if (channel === 'release') document.getElementById('subtab-release-lbl').classList.add('active');
+    if (channel === 'beta') document.getElementById('subtab-beta-lbl').classList.add('active');
+    if (channel === 'alpha') document.getElementById('subtab-alpha-lbl').classList.add('active');
+    
+    // Show/hide alpha warning notice
+    const noticeBox = document.getElementById('changelog-alpha-notice-box');
+    if (noticeBox) {
+        noticeBox.style.display = channel === 'alpha' ? 'block' : 'none';
+    }
+    
+    renderChangelog();
+}

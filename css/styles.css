@@ -526,6 +526,366 @@ code {
     background: rgba(199, 154, 120, 0.12);
 }
 
+/* ==========================================
+   Changelog Section Styles
+   ========================================== */
+.changelog-subtabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+}
+
+.subtab-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+}
+
+.subtab-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--primary);
+}
+
+.subtab-btn.active {
+    background: var(--primary);
+    color: var(--background);
+    border-color: var(--primary);
+}
+
+.alpha-notice-box {
+    background: rgba(217, 144, 159, 0.08);
+    border-left: 3px solid var(--tertiary);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Timeline Layout */
+.changelog-timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.changelog-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -29px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--primary);
+    transition: all var(--transition-speed);
+}
+
+.timeline-item:hover::before {
+    background: var(--primary);
+    transform: scale(1.2);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-version {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: var(--primary);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.timeline-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.timeline-changes {
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.timeline-changes li {
+    margin-bottom: 0.4rem;
+}
+
+/* ==========================================
+   Roadmap Section Styles
+   ========================================== */
+.roadmap-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .roadmap-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.roadmap-column {
+    background: rgba(181, 132, 97, 0.02);
+    border: 1px dashed var(--border);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.roadmap-column-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.roadmap-column-header h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.dot.planned { background-color: var(--tertiary); }
+.dot.in-progress { background-color: var(--primary); }
+.dot.completed { background-color: var(--secondary); }
+
+.roadmap-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.roadmap-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.01);
+    transition: all var(--transition-speed);
+}
+
+.roadmap-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.roadmap-item.completed {
+    border-color: rgba(129, 162, 91, 0.3);
+    background: rgba(129, 162, 91, 0.02);
+}
+
+.roadmap-item p {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+/* ==========================================
+   Transparency & Benefits Styles
+   ========================================== */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefit-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 6px;
+    position: relative;
+    transition: all var(--transition-speed);
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.benefit-card.premium {
+    border-color: var(--primary);
+    box-shadow: 0 4px 15px rgba(181, 132, 97, 0.06);
+}
+
+.benefit-card.premium::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.benefit-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.benefit-badge.monthly {
+    background: rgba(181, 132, 97, 0.08);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.benefit-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    padding-right: 5.5rem;
+}
+
+.benefit-sub {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding-right: 5.5rem;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.benefit-list li {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: var(--text-primary);
+}
+
+.bullet-check {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.bullet-cross {
+    color: var(--tertiary);
+    font-weight: bold;
+}
+
+/* Usage Breakdown */
+.transparency-usage h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+}
+
+.usage-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.usage-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.number-indicator {
+    background: rgba(181, 132, 97, 0.08);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.usage-list p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }

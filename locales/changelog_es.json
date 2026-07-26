@@ -1,0 +1,48 @@
+{
+  "release": [
+    {
+      "version": "v0.2.0",
+      "date": "5 de julio de 2026",
+      "title": "Modularización & Canal de Almacenamiento de Imágenes",
+      "changes": [
+        "Modularizada la estructura del proyecto en módulos core y proveedores de widgets.",
+        "Implementado canal de almacenamiento de imágenes locales cifradas para recuerdos.",
+        "Actualizadas las migraciones del esquema de base de datos local Room a la versión 14."
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "10 de junio de 2026",
+      "title": "Temas Estéticos & Bitácora Base",
+      "changes": [
+        "Lanzado el sistema dinámico principal de cálculo de tiempo vivido (MVVM + Jetpack Compose).",
+        "Integrados 13 esquemas de color nostálgicos (Clannad, Violet Evergarden, Spiritfarer, etc.).",
+        "Añadidas paletas de usuario personalizadas editables (CUSTOM_1, CUSTOM_2, CUSTOM_3)."
+      ]
+    }
+  ],
+  "beta": [
+    {
+      "version": "v0.3.0-beta.1",
+      "date": "18 de julio de 2026",
+      "title": "Cápsulas del Tiempo & Copias Protegidas",
+      "changes": [
+        "Presentación de Cápsulas del Tiempo para bloquear entradas del diario hasta fechas futuras específicas.",
+        "Añadida opción de protección segura con contraseña para copias de seguridad (.lifelogs).",
+        "Actualizadas las migraciones del esquema de base de datos a la versión 12."
+      ]
+    }
+  ],
+  "alpha": [
+    {
+      "version": "v0.3.0-alpha.1",
+      "date": "25 de julio de 2026",
+      "title": "Capa de Seguridad Nativa & Vaciado de Memoria",
+      "changes": [
+        "Integrada capa nativa en C/C++ para auditoría de seguridad y endurecimiento de claves.",
+        "Implementado vaciado automatizado de memoria en segundo plano para proteger diagnósticos.",
+        "Subida la alfa de pruebas cerradas en Google Play Store para verificar la lógica física del hardware."
+      ]
+    }
+  ]
+}
