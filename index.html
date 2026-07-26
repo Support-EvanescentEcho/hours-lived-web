@@ -64,11 +64,59 @@
         </div>
 
         <div class="tabs">
+            <button class="tab-btn" onclick="switchTab(event, 'project')" id="tab-project">El Proyecto</button>
             <button class="tab-btn active" onclick="switchTab(event, 'support')" id="tab-support">Soporte & Homenajes</button>
             <button class="tab-btn" onclick="switchTab(event, 'features')" id="tab-features">Funciones</button>
+            <button class="tab-btn" onclick="switchTab(event, 'changelog')" id="tab-changelog">Historial</button>
+            <button class="tab-btn" onclick="switchTab(event, 'roadmap')" id="tab-roadmap">Ruta</button>
+            <button class="tab-btn" onclick="switchTab(event, 'transparency')" id="tab-transparency">Transparencia</button>
             <button class="tab-btn" onclick="switchTab(event, 'faq')" id="tab-faq">Ayuda & FAQ</button>
             <button class="tab-btn" onclick="switchTab(event, 'privacy')" id="tab-privacy">Privacidad</button>
             <button class="tab-btn" onclick="switchTab(event, 'terms')" id="tab-terms">Términos</button>
+        </div>
+
+        <!-- EL PROYECTO PANEL -->
+        <div id="panel-project" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="projectTitle">Acerca del Proyecto</h2>
+                </div>
+                <p id="projectDesc1" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    Hours Lived es un proyecto de software libre 100% offline-first diseñado para llevar un registro reflexivo del tiempo vivido y atesorar memorias cotidianas de forma totalmente segura.
+                </p>
+                <div class="divider-line"></div>
+                
+                <h3 id="projectInspirationTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Inspiración Creativa</h3>
+                <p id="projectInspirationDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    El concepto general, la estética y la filosofía de Hours Lived nacen principalmente inspirados por <strong>"Plastic Memories"</strong>. La premisa de registrar los recuerdos valiosos y ser plenamente conscientes de que nuestro tiempo es finito es la columna vertebral del proyecto.
+                </p>
+                <p id="projectInspirationListTitle" style="margin-bottom: 0.75rem; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Además de "Plastic Memories" (la inspiración principal de todo el concepto y el proyecto en general), las siguientes magníficas obras sobre el tiempo, la nostalgia y la existencia humana han inspirado profundamente la creación de este concepto:</p>
+                <ul id="projectInspirationList" style="margin-left: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem 1.5rem; list-style-type: circle;">
+                    <li><strong>Plastic Memories</strong> <em>(Principal inspiración)</em></li>
+                    <li>Shigatsu wa Kimi no Uso</li>
+                    <li>Sousou no Frieren</li>
+                    <li>Violet Evergarden</li>
+                    <li>Koe no Katachi</li>
+                    <li>Kimi no Suizou wo Tabetai</li>
+                    <li>Darling in the FranXX</li>
+                    <li>Ano Hi Mita Hana</li>
+                    <li>Clannad · Clannad After Story</li>
+                    <li>Byousoku 5 Centimeter</li>
+                    <li>To the Moon</li>
+                    <li>GRIS</li>
+                    <li>Spiritfarer</li>
+                </ul>
+
+                <div class="divider-line"></div>
+
+                <h3 id="projectTechTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Filosofía de Código y Assets</h3>
+                <p id="projectTechDesc1" style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    El desarrollo de la aplicación Android en Kotlin y Jetpack Compose sigue un diseño modular y limpio (MVVM). Para garantizar la privacidad absoluta, el almacenamiento local se gestiona a través de Room Database con cifrado fuerte de hardware local mediante claves AES-256 integradas.
+                </p>
+                <p id="projectTechDesc2" style="font-size: 0.95rem; color: var(--text-secondary);">
+                    Las frases diarias y mensajes de cápsulas que se despliegan en la pantalla de inicio y en la bitácora provienen de archivos JSON estructurados (como phrases.json y capsule_messages.json) incrustados localmente en los assets del módulo core de la aplicación, garantizando que el funcionamiento sea totalmente autónomo y libre de conexión a red.
+                </p>
+            </div>
         </div>
 
         <!-- 1. SUPPORT PANEL -->
@@ -177,6 +225,147 @@
                 <div class="faq-item">
                     <h3 id="faq-pdf-title">Exportación a Libros PDF (Novela Ligera)</h3>
                     <p id="faq-pdf-desc">Puedes dar formato de libro impreso y exportar tus vivencias almacenadas en un formato PDF. El archivo PDF se almacenará de manera automatizada en la subcarpeta "Books/" dentro del directorio de copias que selecciones.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHANGELOG PANEL -->
+        <div id="panel-changelog" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="changelogTitle">Historial de Versiones</h2>
+                </div>
+                <p id="changelogDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">Novedades y mejoras del sistema.</p>
+                
+                <div class="changelog-subtabs">
+                    <button class="subtab-btn active" onclick="switchChangelogChannel('release')" id="subtab-release-lbl">Release</button>
+                    <button class="subtab-btn" onclick="switchChangelogChannel('beta')" id="subtab-beta-lbl">Beta Logs</button>
+                    <button class="subtab-btn" onclick="switchChangelogChannel('alpha')" id="subtab-alpha-lbl">Alpha Logs</button>
+                </div>
+                
+                <div id="changelog-alpha-notice-box" class="alpha-notice-box" style="display: none;">
+                    <p id="changelogAlphaNotice"></p>
+                </div>
+
+                <div id="changelog-timeline" class="changelog-timeline">
+                    <!-- Dynamic content will be injected by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ROADMAP PANEL -->
+        <div id="panel-roadmap" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="roadmapMainTitle">Hoja de Ruta de Desarrollo</h2>
+                </div>
+                <p id="roadmapDesc" style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary);">Sigue el estado de las próximas características de la aplicación.</p>
+                
+                <div class="roadmap-columns">
+                    <div class="roadmap-column">
+                        <div class="roadmap-column-header">
+                            <span class="dot planned"></span>
+                            <h3 id="roadmapPlanned">Planificado</h3>
+                        </div>
+                        <div class="roadmap-list">
+                            <div class="roadmap-item">
+                                <p id="roadmapItemCloudSync">Sincronización cifrada en la nube</p>
+                            </div>
+                            <div class="roadmap-item">
+                                <p id="roadmapItemTributeThemes">Temas de color adicionales</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-column">
+                        <div class="roadmap-column-header">
+                            <span class="dot in-progress"></span>
+                            <h3 id="roadmapInProgress">En Desarrollo</h3>
+                        </div>
+                        <div class="roadmap-list">
+                            <div class="roadmap-item">
+                                <p id="roadmapItemWidgets">Widgets dinámicos</p>
+                            </div>
+                            <div class="roadmap-item">
+                                <p id="roadmapItemMultiLang">Traducciones a 10 idiomas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-column">
+                        <div class="roadmap-column-header">
+                            <span class="dot completed"></span>
+                            <h3 id="roadmapCompleted">Completado</h3>
+                        </div>
+                        <div class="roadmap-list">
+                            <div class="roadmap-item completed">
+                                <p id="roadmapItemRecovery">Modo de Recuperación y diagnóstico</p>
+                            </div>
+                            <div class="roadmap-item completed">
+                                <p id="roadmapItemLightNovel">Exportación PDF con diseño de Novela Ligera</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRANSPARENCY & BENEFITS PANEL -->
+        <div id="panel-transparency" class="tab-panel">
+            <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="transTitle">Transparencia y Beneficios</h2>
+                </div>
+                <p id="transDesc" style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary);">Conoce cómo se emplean las donaciones y los beneficios por apoyar el proyecto.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-badge" id="transTierOneTimeBadge">Única</div>
+                        <h3 id="transTierOneTime">Donación Única</h3>
+                        <p class="benefit-sub" id="transTierOneTimeSub">Café de agradecimiento</p>
+                        <div class="divider-line" style="margin: 1rem 0;"></div>
+                        <ul class="benefit-list">
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitCredits">Nombre en créditos</span></li>
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitBadge">Insignia digital</span></li>
+                            <li><span class="bullet-cross">✗</span> <span id="transBenefitBeta" style="opacity: 0.5;">Acceso prioritario a betas</span></li>
+                            <li><span class="bullet-cross">✗</span> <span id="transBenefitVoting" style="opacity: 0.5;">Votación de temas estéticos</span></li>
+                            <li><span class="bullet-cross">✗</span> <span id="transBenefitChannel" style="opacity: 0.5;">Canal prioritario directo</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefit-card premium">
+                        <div class="benefit-badge monthly" id="transTierMonthlyBadge">Mensual</div>
+                        <h3 id="transTierMonthly">Mecenazgo Mensual</h3>
+                        <p class="benefit-sub" id="transTierMonthlySub">Sostén continuo del proyecto</p>
+                        <div class="divider-line" style="margin: 1rem 0;"></div>
+                        <ul class="benefit-list">
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitCredits-m">Nombre en créditos</span></li>
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitBadge-m">Insignia digital</span></li>
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitBeta-m">Acceso prioritario a betas</span></li>
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitVoting-m">Votación de temas estéticos</span></li>
+                            <li><span class="bullet-check">✓</span> <span id="transBenefitChannel-m">Canal prioritario directo</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <div class="transparency-usage">
+                    <h3 id="transUsageTitle">Uso de Fondos</h3>
+                    <ul class="usage-list">
+                        <li>
+                            <strong class="number-indicator">1</strong>
+                            <p id="transUsageItem1">Suscripción anual a Google Play Developer console.</p>
+                        </li>
+                        <li>
+                            <strong class="number-indicator">2</strong>
+                            <p id="transUsageItem2">Dominio web oficial y renovación de certificados SSL.</p>
+                        </li>
+                        <li>
+                            <strong class="number-indicator">3</strong>
+                            <p id="transUsageItem3">Dispositivos físicos de prueba para depurar el cifrado local.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
