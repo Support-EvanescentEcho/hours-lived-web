@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hours Lived — Support, Terms & Privacy</title>
+    <title>Hours Lived — Support, Terms &amp; Privacy</title>
 
     <!-- Google Fonts: Cormorant Garamond (refined serif) and Inter (highly readable body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
             <img src="assets/logo.png" alt="Hours Lived Logo" class="logo-img" onerror="this.style.display='none'">
             <div class="logo-text">
                 <div class="logo-title">Hours Lived</div>
-                <div class="logo-subtitle" id="logo-sub">Software Libre</div>
+                <div class="logo-subtitle" id="logo-sub">Soporte Oficial</div>
             </div>
         </div>
         
@@ -60,176 +60,205 @@
     <main>
         <div class="hero">
             <h1 id="hero-title">Hours Lived</h1>
-            <p id="hero-desc">Documentación técnica, términos legales y homenajes artísticos.</p>
+            <div class="hero-download-buttons" style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://play.google.com/store/apps/details?id=dev.evanescentecho.hourslived" target="_blank" class="btn-action" id="downloadPlayStore" style="width: auto; min-width: 180px;">Descargar en Play Store</a>
+                <a href="https://github.com/Support-EvanescentEcho/hours-lived-web/releases/latest/download/HoursLived-Setup.msi" class="btn-action" id="downloadWindows" style="width: auto; min-width: 180px;">Descargar Windows (.msi)</a>
+                <a href="https://github.com/Support-EvanescentEcho/hours-lived-web/releases/latest/download/HoursLived.deb" class="btn-action" id="downloadLinux" style="width: auto; min-width: 180px;">Descargar Linux (.deb)</a>
+            </div>
         </div>
 
         <div class="tabs">
-            <button class="tab-btn" onclick="switchTab(event, 'project')" id="tab-project">El Proyecto</button>
-            <button class="tab-btn active" onclick="switchTab(event, 'support')" id="tab-support">Soporte & Homenajes</button>
-            <button class="tab-btn" onclick="switchTab(event, 'features')" id="tab-features">Funciones</button>
+            <button class="tab-btn active" onclick="switchTab(event, 'home')" id="tab-home">Inicio</button>
             <button class="tab-btn" onclick="switchTab(event, 'changelog')" id="tab-changelog">Historial</button>
             <button class="tab-btn" onclick="switchTab(event, 'roadmap')" id="tab-roadmap">Ruta</button>
-            <button class="tab-btn" onclick="switchTab(event, 'transparency')" id="tab-transparency">Transparencia</button>
-            <button class="tab-btn" onclick="switchTab(event, 'faq')" id="tab-faq">Ayuda & FAQ</button>
-            <button class="tab-btn" onclick="switchTab(event, 'privacy')" id="tab-privacy">Privacidad</button>
-            <button class="tab-btn" onclick="switchTab(event, 'terms')" id="tab-terms">Términos</button>
+            <button class="tab-btn" onclick="switchTab(event, 'project')" id="tab-project">El Proyecto</button>
+            <button class="tab-btn" onclick="switchTab(event, 'legal')" id="tab-legal">Legal &amp; FAQ</button>
         </div>
 
-        <!-- EL PROYECTO PANEL -->
-        <div id="panel-project" class="tab-panel">
-            <div class="card document-container">
+        <!-- 1. HOME PANEL -->
+        <div id="panel-home" class="tab-panel active">
+            <!-- Features & Privacy -->
+            <div class="card">
                 <div class="card-header">
-                    <h2 id="projectTitle">Acerca del Proyecto</h2>
+                    <h2 id="featuresTitle">Funciones &amp; Privacidad</h2>
                 </div>
-                <p id="projectDesc1" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                    Hours Lived es un proyecto de software libre 100% offline-first diseñado para llevar un registro reflexivo del tiempo vivido y atesorar memorias cotidianas de forma totalmente segura.
+                <div class="features-minimal-grid">
+                    <div class="feature-minimal-card">
+                        <h3 id="featCryptoTitle">Cifrado local de base de datos AES-256 (SQLCipher)</h3>
+                        <p id="featCryptoDesc">Tus recuerdos nunca salen de tu dispositivo. Todo el almacenamiento se realiza localmente mediante base de datos Room cifrada bajo el algoritmo AES-256 (SQLCipher).</p>
+                    </div>
+                    <div class="feature-minimal-card">
+                        <h3 id="featPrivacyTitle">Filosofía 100% Offline-First</h3>
+                        <p id="featPrivacyDesc">Hours Lived no utiliza SDKs de rastreo de terceros, ni Google Analytics, ni redes publicitarias. Tus pensamientos, registros y archivos permanecen completamente privados y anónimos.</p>
+                    </div>
+                    <div class="feature-minimal-card">
+                        <h3 id="featAudioTitle">Notas de Voz y Micrófono</h3>
+                        <p id="featAudioDesc">Graba reflexiones de audio de forma voluntaria. El micrófono sólo se activa cuando tú lo decides y los audios se almacenan únicamente en tu dispositivo con cifrado local.</p>
+                    </div>
+                    <div class="feature-minimal-card">
+                        <h3 id="featInterfaceTitle">Interfaz Limpia &amp; Markdown</h3>
+                        <p id="featInterfaceDesc">Concentrate en lo que importa con un editor minimalista y libre de distracciones con soporte para Markdown y escritura diaria segura.</p>
+                    </div>
+                    <div class="feature-minimal-card">
+                        <h3 id="featThemesTitle">Temas Personalizados Nostálgicos</h3>
+                        <p id="featThemesDesc">Personaliza tu experiencia con esquemas de color inspirados en novelas visuales clásicas y animes, o crea tus propios temas personalizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Política de Privacidad & Declaración de Permisos (Micrófono) -->
+            <div class="card" style="margin-top: 2.5rem;" id="privacy-policy">
+                <div class="card-header">
+                    <h2 id="privacyTitle">Política de Privacidad y Uso del Micrófono</h2>
+                </div>
+                <div class="privacy-content" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                    <h3 id="privMicTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">1. Permiso de Micrófono (RECORD_AUDIO)</h3>
+                    <p id="privMicDesc" style="margin-bottom: 1.25rem;">Hours Lived solicita acceso al micrófono únicamente cuando el usuario decide voluntariamente grabar una nota de voz para adjuntarla a sus recuerdos o reflexiones personales. El micrófono nunca se activa en segundo plano ni sin la acción explícita del usuario.</p>
+                    
+                    <h3 id="privStorageTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">2. Almacenamiento Local y Cero Transmisión</h3>
+                    <p id="privStorageDesc" style="margin-bottom: 1.25rem;">Todas las grabaciones de voz se procesan y almacenan de forma estrictamente local en el almacenamiento seguro de tu dispositivo (y dentro de tus copias de seguridad cifradas). Ningún archivo de audio se sube a servidores externos, ni se comparte con terceros, ni se procesa para análisis biométrico o comercial.</p>
+                    
+                    <h3 id="privControlTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">3. Control y Eliminación de Datos</h3>
+                    <p id="privControlDesc">Tienes el control total de tus datos: puedes revocar el permiso de micrófono en cualquier momento desde los ajustes de tu sistema operativo y eliminar permanentemente cualquier archivo de audio borrando el recuerdo asociado dentro de la aplicación.</p>
+                </div>
+            </div>
+
+            <!-- Beneficios de Colaboradores -->
+            <div class="card" style="margin-top: 2.5rem;">
+                <div class="card-header">
+                    <h2 id="tiersTitle">Beneficios por Apoyar</h2>
+                </div>
+                <div class="benefits-grid" style="margin-top: 1rem;">
+                    <div class="benefit-card">
+                        <div class="benefit-badge" id="tierOneTimeBadge">Única</div>
+                        <h3 id="tierOneTimeTitle">Donación Única</h3>
+                        <p id="tierOneTimeDesc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;"></p>
+                    </div>
+                    <div class="benefit-card premium">
+                        <div class="benefit-badge monthly" id="tierMonthlyBadge">Mensual</div>
+                        <h3 id="tierMonthlyTitle">Mecenazgo Mensual</h3>
+                        <p id="tierMonthlyDesc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aviso Legal & Transparencia -->
+            <div class="card" style="margin-top: 2.5rem;">
+                <div class="card-header">
+                    <h2 id="disclaimer_title">Aviso Legal de Propiedad Intelectual</h2>
+                </div>
+                <p id="disclaimer_desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                    Los nombres de los temas, las frases diarias y las referencias a bandas sonoras son tributos artísticos inspirados en sus respectivas obras originales. Todos los derechos de propiedad intelectual pertenecen a sus correspondientes creadores, compositores y estudios. Hours Lived es un proyecto independiente y de uso gratuito.
                 </p>
+            </div>
+
+            <!-- Soporte & Desarrollo Independiente -->
+            <div class="card" style="margin-top: 2.5rem;">
+                <div class="card-header">
+                    <h2 id="support_title">Apoya el Desarrollo Independiente</h2>
+                </div>
+                <p id="support_desc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    Si te gusta Hours Lived y deseas contribuir a su mantenimiento continuo, puedes invitarme a un café en Ko-fi.
+                </p>
+                <a href="https://ko-fi.com/evanescentecho" target="_blank" class="btn-action" id="kofi-btn" style="width: auto; min-width: 240px; display: inline-flex;">
+                    Apoyar en Ko-fi
+                </a>
                 <div class="divider-line"></div>
-                
-                <h3 id="projectInspirationTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Inspiración Creativa</h3>
-                <p id="projectInspirationDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                    El concepto general, la estética y la filosofía de Hours Lived nacen principalmente inspirados por <strong>"Plastic Memories"</strong>. La premisa de registrar los recuerdos valiosos y ser plenamente conscientes de que nuestro tiempo es finito es la columna vertebral del proyecto.
+                <div class="contact-info">
+                    <label id="contact-lbl">Contacto de Soporte</label>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="mailto:support.evanescentecho@gmail.com" id="support-email">support.evanescentecho@gmail.com</a>
+                        <button id="copy-email-btn" onclick="copySupportEmail()" style="background: transparent; border: 1px solid var(--border); color: var(--text-secondary); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: all var(--transition-speed);">[Copiar]</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deja tu Huella — Pautas para Donantes -->
+            <div class="card" style="margin-top: 2.5rem;">
+                <div class="card-header">
+                    <h2 id="footprintTitle">Deja tu Huella en Hours Lived</h2>
+                </div>
+                <p id="footprintDesc" style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                    Al apoyar el desarrollo de Hours Lived, no solo ayudas a mantener el proyecto vivo, libre de publicidad y completamente privado; también puedes aportar tus propias palabras para que formen parte de la experiencia de otros usuarios en sus momentos de introspección.
                 </p>
-                <p id="projectInspirationListTitle" style="margin-bottom: 0.75rem; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Además de "Plastic Memories" (la inspiración principal de todo el concepto y el proyecto en general), las siguientes magníficas obras sobre el tiempo, la nostalgia y la existencia humana han inspirado profundamente la creación de este concepto:</p>
-                <ul id="projectInspirationList" style="margin-left: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem 1.5rem; list-style-type: circle;">
-                    <li><strong>Plastic Memories</strong> <em>(Principal inspiración)</em></li>
-                    <li>Shigatsu wa Kimi no Uso</li>
-                    <li>Sousou no Frieren</li>
-                    <li>Violet Evergarden</li>
-                    <li>Koe no Katachi</li>
-                    <li>Kimi no Suizou wo Tabetai</li>
-                    <li>Darling in the FranXX</li>
-                    <li>Ano Hi Mita Hana</li>
-                    <li>Clannad · Clannad After Story</li>
-                    <li>Byousoku 5 Centimeter</li>
-                    <li>To the Moon</li>
-                    <li>GRIS</li>
-                    <li>Spiritfarer</li>
+
+                <!-- Categorías -->
+                <h3 id="footprintCategoriesTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Categorías disponibles para tu mensaje</h3>
+                <p id="footprintCategoriesIntro" style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">Al realizar tu donación, puedes elegir a qué parte del proyecto quieres destinar tu frase:</p>
+                <div class="footprint-categories">
+                    <div class="footprint-cat-card">
+                        <div class="footprint-cat-icon">✦</div>
+                        <h4 id="footprintCat1Title">Reflexiones Diarias</h4>
+                        <p id="footprintCat1Desc">Frases que rotan en la aplicación principal y en los widgets de la pantalla de inicio.</p>
+                        <code class="footprint-file-tag">phrases.json</code>
+                    </div>
+                    <div class="footprint-cat-card">
+                        <div class="footprint-cat-icon">⏳</div>
+                        <h4 id="footprintCat2Title">Cápsulas del Tiempo</h4>
+                        <p id="footprintCat2Desc">Palabras de paciencia y misterio que aparecen cuando alguien intenta abrir una cápsula antes de su fecha.</p>
+                        <code class="footprint-file-tag">capsule_messages.json</code>
+                    </div>
+                    <div class="footprint-cat-card">
+                        <div class="footprint-cat-icon">✎</div>
+                        <h4 id="footprintCat3Title">Guardianes de Edición</h4>
+                        <p id="footprintCat3Desc">Mensajes que invitan a reflexionar antes de modificar un recuerdo preciado.</p>
+                        <code class="footprint-file-tag">edit_messages.json</code>
+                    </div>
+                    <div class="footprint-cat-card footprint-cat-sensitive">
+                        <div class="footprint-cat-icon">🕯</div>
+                        <h4 id="footprintCat4Title">Guardianes de Borrado</h4>
+                        <p id="footprintCat4Desc">Mensajes de reflexión antes de eliminar un recuerdo. Pasan por un filtro editorial especialmente estricto para evitar generar culpa o dolor innecesario.</p>
+                        <code class="footprint-file-tag">delete_messages.json</code>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- Tipos de frase -->
+                <h3 id="footprintTypesTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Tipos de frase y atribución</h3>
+                <p id="footprintTypesIntro" style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">Para mantener la transparencia y dar crédito a las obras que inspiran este refugio, toda sugerencia debe encajar en una de estas modalidades:</p>
+                <div class="footprint-types">
+                    <div class="footprint-type-row">
+                        <span class="footprint-type-badge" id="footprintTypeBadge1">Cita Directa</span>
+                        <p id="footprintTypeDesc1">Una línea textual de un libro, película, videojuego o anime. Debes indicar con precisión qué personaje o autor la dijo y el título de la obra. Si la obra aún no figura en la pantalla de información, se agregará a la sección de reconocimientos.</p>
+                    </div>
+                    <div class="footprint-type-row">
+                        <span class="footprint-type-badge secondary" id="footprintTypeBadge2">Frase Inspirada</span>
+                        <p id="footprintTypeDesc2">Un pensamiento escrito con tus propias palabras, pero nacido de los sentimientos de una obra en particular. Tu nombre o apodo figurará como autor y se acreditará la obra de referencia.</p>
+                    </div>
+                    <div class="footprint-type-row">
+                        <span class="footprint-type-badge tertiary" id="footprintTypeBadge3">Pensamiento Propio</span>
+                        <p id="footprintTypeDesc3">Una reflexión 100% original nacida de tus vivencias, atribuida a tu apodo de Ko-fi o bajo anonimato si lo prefieres.</p>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- Plantilla -->
+                <h3 id="footprintTemplateTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Plantilla para tu mensaje en Ko-fi</h3>
+                <p id="footprintTemplateIntro" style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.7;">Al enviar tu donación, copia y completa esta pequeña ficha en el mensaje:</p>
+                <div class="footprint-template">
+                    <div class="footprint-template-row"><span class="footprint-template-key" id="footprintTplKeyDest">Destino</span><span class="footprint-template-val" id="footprintTplValDest">Reflexión diaria · Cápsula · Edición · Borrado</span></div>
+                    <div class="footprint-template-row"><span class="footprint-template-key" id="footprintTplKeyType">Tipo</span><span class="footprint-template-val" id="footprintTplValType">Cita Directa · Inspiración · Original</span></div>
+                    <div class="footprint-template-row footprint-template-quote"><span class="footprint-template-key" id="footprintTplKeyPhrase">Frase</span><span class="footprint-template-val footprint-template-italic" id="footprintTplValPhrase">"Escribe aquí la frase"</span></div>
+                    <div class="footprint-template-row"><span class="footprint-template-key" id="footprintTplKeyAuthor">Autor / Personaje</span><span class="footprint-template-val" id="footprintTplValAuthor">Quién la dijo, o cómo quieres firmarla</span></div>
+                    <div class="footprint-template-row"><span class="footprint-template-key" id="footprintTplKeyWork">Obra de origen</span><span class="footprint-template-val" id="footprintTplValWork">Título del anime, libro o juego (si aplica)</span></div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- Criterios de moderación -->
+                <h3 id="footprintModerationTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Criterios de moderación</h3>
+                <ul class="footprint-moderation-list">
+                    <li><strong id="footprintModToneLabel">Tono:</strong> <span id="footprintModToneDesc">Calma, aceptación, introspección o consuelo.</span></li>
+                    <li><strong id="footprintModPrivLabel">Sin promociones ni datos personales:</strong> <span id="footprintModPrivDesc">No se permiten enlaces, nombres de usuario de redes sociales, menciones publicitarias ni números de contacto.</span></li>
+                    <li><strong id="footprintModRespLabel">Respeto absoluto:</strong> <span id="footprintModRespDesc">Queda descartado cualquier contenido ofensivo, discriminatorio, violento o despectivo.</span></li>
+                    <li><strong id="footprintModL10nLabel">Ajustes de localización:</strong> <span id="footprintModL10nDesc">Los textos pueden recibir correcciones menores o ajustes sutiles para facilitar su traducción. Si una propuesta no se ajusta a la identidad de la obra, me pondré en contacto para acordar una alternativa.</span></li>
                 </ul>
-
-                <div class="divider-line"></div>
-
-                <h3 id="projectTechTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Filosofía de Código y Assets</h3>
-                <p id="projectTechDesc1" style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
-                    El desarrollo de la aplicación Android en Kotlin y Jetpack Compose sigue un diseño modular y limpio (MVVM). Para garantizar la privacidad absoluta, el almacenamiento local se gestiona a través de Room Database con cifrado fuerte de hardware local mediante claves AES-256 integradas.
-                </p>
-                <p id="projectTechDesc2" style="font-size: 0.95rem; color: var(--text-secondary);">
-                    Las frases diarias y mensajes de cápsulas que se despliegan en la pantalla de inicio y en la bitácora provienen de archivos JSON estructurados (como phrases.json y capsule_messages.json) incrustados localmente en los assets del módulo core de la aplicación, garantizando que el funcionamiento sea totalmente autónomo y libre de conexión a red.
-                </p>
             </div>
         </div>
 
-        <!-- 1. SUPPORT PANEL -->
-        <div id="panel-support" class="tab-panel active">
-            <div class="grid-layout">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 id="card-tributes-title">Homenajes Artísticos</h2>
-                    </div>
-                    <p id="tributes-desc-1">Hours Lived es una obra de software libre creada como un tributo artístico independiente y sin fines de lucro.</p>
-                    <p id="tributes-desc-2">Los nombres de los esquemas de color y las frases inspiradoras de la bitácora diaria hacen referencia directa a magníficas producciones que exploran el paso del tiempo, los recuerdos y la fugacidad de la vida humana.</p>
-                    
-                    <!-- Decorative Quote -->
-                    <div class="quote-block">
-                        <p id="quote-text">"We spend so much time dreading the expiration date of our hearts, that we forget we are the ones who give meaning to the seconds we have left."</p>
-                        <div id="quote-author">— Plastic Memories</div>
-                    </div>
-
-                    <p id="tributes-list-title" style="margin-bottom: 0.5rem; font-weight: 500;">Nuestros temas rinden homenaje a:</p>
-                    <ul id="tributes-list" style="margin-left: 1.5rem; margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                        <li>Plastic Memories (Doga Kobo)</li>
-                        <li>Violet Evergarden (Kyoto Animation)</li>
-                        <li>Your Lie in April (A-1 Pictures)</li>
-                        <li>Frieren: Beyond Journey's End (Madhouse)</li>
-                        <li>5 Centimeters per Second (CoMix Wave Films)</li>
-                        <li>To the Moon (Freebird Games)</li>
-                        <li>GRIS (Nomada Studio)</li>
-                        <li>Spiritfarer (Thunder Lotus Games)</li>
-                    </ul>
-                    <div class="divider-line"></div>
-                    <p id="tributes-ip-notice" style="font-size: 0.85rem; color: var(--text-secondary); font-style: italic;">
-                        <strong>Nota de propiedad intelectual:</strong> Todos los derechos de propiedad intelectual, marcas, personajes, títulos y frases originales pertenecen en su totalidad a sus respectivos creadores, autores y estudios de animación o videojuegos. Esta aplicación no posee afiliación, patrocinio ni vinculación formal alguna con dichos titulares.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <h2 id="card-support-title">Donaciones & Soporte</h2>
-                    </div>
-                    <p id="support-desc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
-                        Hours Lived se ofrece de forma completamente gratuita, sin anuncios molestos ni recolección de datos. Si la aplicación añade valor a tu día a día, puedes apoyarme invitándome a un café (Ko-fi) para financiar el mantenimiento del proyecto.
-                    </p>
-                    <a href="https://ko-fi.com/evanescentecho" target="_blank" class="btn-action" id="kofi-btn">
-                        Apoyar en Ko-fi
-                    </a>
-                    
-                    <div class="divider-line"></div>
-                    
-                    <div class="contact-info">
-                        <label id="contact-lbl">Contacto de Soporte</label>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                            <a href="mailto:support.evanescentecho@gmail.com" id="support-email">support.evanescentecho@gmail.com</a>
-                            <button id="copy-email-btn" onclick="copySupportEmail()" style="background: transparent; border: 1px solid var(--border); color: var(--text-secondary); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: all var(--transition-speed);">[Copiar]</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 2. FEATURES SHOWCASE PANEL -->
-        <div id="panel-features" class="tab-panel">
-            <div class="card document-container">
-                <div class="card-header">
-                    <h2 id="features-main-title">Características del Sistema</h2>
-                </div>
-                
-                <div class="feature-item">
-                    <h3 id="feat-offline-title">Filosofía Offline-First</h3>
-                    <p id="feat-offline-desc">Todas las lecturas y escrituras de bases de datos ocurren localmente en tu dispositivo. No hay telemetría, bibliotecas de análisis de comportamiento ni sincronización de datos con la nube.</p>
-                </div>
-
-                <div class="feature-item">
-                    <h3 id="feat-crypto-title">Cifrado AES-256</h3>
-                    <p id="feat-crypto-desc">Tus diarios, recuerdos e imágenes adjuntas se protegen mediante el motor de cifrado local AES-256 en la base de datos segura para mitigar cualquier acceso físico no autorizado al almacenamiento local.</p>
-                </div>
-
-                <div class="feature-item">
-                    <h3 id="feat-widgets-title">Widgets en la Pantalla de Inicio</h3>
-                    <p id="feat-widgets-desc">Lleva un registro discreto del tiempo vivido o visualiza tus reflexiones diarias preferidas directamente en la interfaz principal de tu sistema móvil.</p>
-                </div>
-
-                <div class="feature-item">
-                    <h3 id="feat-themes-title">Temas de Color Nostálgicos</h3>
-                    <p id="feat-themes-desc">Personaliza la app mediante combinaciones de color inspiradas en clásicos de la literatura y novelas visuales como Clannad, Violet Evergarden o To the Moon.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. FAQ PANEL -->
-        <div id="panel-faq" class="tab-panel">
-            <div class="card document-container">
-                <div class="card-header">
-                    <h2 id="faq-main-title">Centro de Ayuda</h2>
-                </div>
-
-                <div class="faq-item">
-                    <h3 id="faq-recovery-title">¿Qué es el Modo de Recuperación?</h3>
-                    <p id="faq-recovery-desc">Si el sistema de la base de datos experimenta un error grave al iniciarse que provoque bucles de cierre, la app se iniciará en un Modo de Recuperación seguro. Desde allí puedes generar reportes de diagnóstico cifrados (.hldiag) para compartirlos con soporte, o borrar la memoria caché temporal para restablecer la estabilidad.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 id="faq-backups-title">¿Cómo funcionan los respaldos (.lifelogs)?</h3>
-                    <p id="faq-backups-desc">Las copias de seguridad de Hours Lived se exportan en un formato seguro cifrado finalizado en .lifelogs. Si intentas abrir un archivo de respaldo desde cualquier administrador de archivos del teléfono, el sistema detectará la app y abrirá directamente la pantalla de importación para restaurar tus datos.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3 id="faq-pdf-title">Exportación a Libros PDF (Novela Ligera)</h3>
-                    <p id="faq-pdf-desc">Puedes dar formato de libro impreso y exportar tus vivencias almacenadas en un formato PDF. El archivo PDF se almacenará de manera automatizada en la subcarpeta "Books/" dentro del directorio de copias que selecciones.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- CHANGELOG PANEL -->
+        <!-- 2. CHANGELOG PANEL -->
         <div id="panel-changelog" class="tab-panel">
             <div class="card document-container">
                 <div class="card-header">
@@ -253,7 +282,7 @@
             </div>
         </div>
 
-        <!-- ROADMAP PANEL -->
+        <!-- 3. ROADMAP PANEL -->
         <div id="panel-roadmap" class="tab-panel">
             <div class="card document-container">
                 <div class="card-header">
@@ -310,69 +339,87 @@
             </div>
         </div>
 
-        <!-- TRANSPARENCY & BENEFITS PANEL -->
-        <div id="panel-transparency" class="tab-panel">
+        <!-- 4. EL PROYECTO PANEL -->
+        <div id="panel-project" class="tab-panel">
             <div class="card document-container">
                 <div class="card-header">
-                    <h2 id="transTitle">Transparencia y Beneficios</h2>
+                    <h2 id="projectTitle">Acerca del Proyecto</h2>
                 </div>
-                <p id="transDesc" style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary);">Conoce cómo se emplean las donaciones y los beneficios por apoyar el proyecto.</p>
+                <p id="projectDesc1" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    Hours Lived es un proyecto de software libre 100% offline-first diseñado para llevar un registro reflexivo del tiempo vivido y atesorar memorias cotidianas de forma totalmente segura.
+                </p>
+                <div class="divider-line"></div>
                 
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-badge" id="transTierOneTimeBadge">Única</div>
-                        <h3 id="transTierOneTime">Donación Única</h3>
-                        <p class="benefit-sub" id="transTierOneTimeSub">Café de agradecimiento</p>
-                        <div class="divider-line" style="margin: 1rem 0;"></div>
-                        <ul class="benefit-list">
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitCredits">Nombre en créditos</span></li>
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitBadge">Insignia digital</span></li>
-                            <li><span class="bullet-cross">✗</span> <span id="transBenefitBeta" style="opacity: 0.5;">Acceso prioritario a betas</span></li>
-                            <li><span class="bullet-cross">✗</span> <span id="transBenefitVoting" style="opacity: 0.5;">Votación de temas estéticos</span></li>
-                            <li><span class="bullet-cross">✗</span> <span id="transBenefitChannel" style="opacity: 0.5;">Canal prioritario directo</span></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="benefit-card premium">
-                        <div class="benefit-badge monthly" id="transTierMonthlyBadge">Mensual</div>
-                        <h3 id="transTierMonthly">Mecenazgo Mensual</h3>
-                        <p class="benefit-sub" id="transTierMonthlySub">Sostén continuo del proyecto</p>
-                        <div class="divider-line" style="margin: 1rem 0;"></div>
-                        <ul class="benefit-list">
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitCredits-m">Nombre en créditos</span></li>
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitBadge-m">Insignia digital</span></li>
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitBeta-m">Acceso prioritario a betas</span></li>
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitVoting-m">Votación de temas estéticos</span></li>
-                            <li><span class="bullet-check">✓</span> <span id="transBenefitChannel-m">Canal prioritario directo</span></li>
-                        </ul>
-                    </div>
+                <h3 id="projectInspirationTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Inspiración Creativa</h3>
+                <p id="projectInspirationDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    El concepto general, la estética y la filosofía de Hours Lived nacen principalmente inspirados por <strong>"Plastic Memories"</strong>. La premisa de registrar los recuerdos valiosos y ser plenamente conscientes de que nuestro tiempo es finito es la columna vertebral del proyecto.
+                </p>
+
+                <!-- Decorative Quote -->
+                <div class="quote-block">
+                    <p id="quote-text">"We spend so much time dreading the expiration date of our hearts, that we forget we are the ones who give meaning to the seconds we have left."</p>
+                    <div id="quote-author">— Plastic Memories</div>
                 </div>
+
+                <p id="projectSoundtrackDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    Las bandas sonoras y piezas musicales de estas obras fueron la atmósfera sonora que acompañó cada línea de código, diseño y reflexión. Puedes escuchar la recopilación oficial en nuestra lista seleccionada: 
+                    <a href="https://www.youtube.com/playlist?list=PLSMOooksGAReM" target="_blank" style="color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;">▶ Playlist en YouTube</a>.
+                </p>
+                <p id="projectInspirationListTitle" style="margin-bottom: 0.75rem; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">Además de "Plastic Memories" (la inspiración principal de todo el concepto y el proyecto en general), las siguientes magníficas obras sobre el tiempo, la nostalgia y la existencia humana han inspirado profundamente la creación de este concepto:</p>
+                <ul id="projectInspirationList" style="margin-left: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.6rem 1.5rem; list-style-type: circle;">
+                    <li><strong>Plastic Memories</strong> — <em>Música: Takeshi Masuda</em></li>
+                    <li><strong>Shigatsu wa Kimi no Uso</strong> — <em>Música: Masaru Yokoyama</em></li>
+                    <li><strong>Sousou no Frieren</strong> — <em>Música: Evan Call</em></li>
+                    <li><strong>Violet Evergarden</strong> — <em>Música: Evan Call</em></li>
+                    <li><strong>Koe no Katachi</strong> — <em>Música: Kensuke Ushio</em></li>
+                    <li><strong>Kimi no Suizou wo Tabetai</strong> — <em>Música: Hiroko Sebu</em></li>
+                    <li><strong>Darling in the FranXX</strong> — <em>Música: Asami Tachibana</em></li>
+                    <li><strong>Ano Hi Mita Hana</strong> — <em>Música: REMEDIOS</em></li>
+                    <li><strong>Clannad</strong> — <em>Música: Jun Maeda, Shinji Orito</em></li>
+                    <li><strong>Byousoku 5 Centimeter</strong> — <em>Música: Tenmon</em></li>
+                    <li><strong>To the Moon</strong> — <em>Música: Kan Gao, Laura Shigihara</em></li>
+                    <li><strong>GRIS</strong> — <em>Música: Berlinist</em></li>
+                    <li><strong>Spiritfarer</strong> — <em>Música: Max LL</em></li>
+                </ul>
 
                 <div class="divider-line"></div>
 
-                <div class="transparency-usage">
-                    <h3 id="transUsageTitle">Uso de Fondos</h3>
-                    <ul class="usage-list">
-                        <li>
-                            <strong class="number-indicator">1</strong>
-                            <p id="transUsageItem1">Suscripción anual a Google Play Developer console.</p>
-                        </li>
-                        <li>
-                            <strong class="number-indicator">2</strong>
-                            <p id="transUsageItem2">Dominio web oficial y renovación de certificados SSL.</p>
-                        </li>
-                        <li>
-                            <strong class="number-indicator">3</strong>
-                            <p id="transUsageItem3">Dispositivos físicos de prueba para depurar el cifrado local.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <h3 id="projectTechTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Filosofía de Código y Assets</h3>
+                <p id="projectTechDesc1" style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                    El desarrollo de la aplicación en Kotlin Multiplatform y Compose Multiplatform para Android, Windows y Linux sigue un diseño modular y limpio (MVVM). Para garantizar la privacidad absoluta, el almacenamiento local se gestiona a través de Room Database con cifrado fuerte de hardware local mediante claves AES-256 integradas.
+                </p>
+                <p id="projectTechDesc2" style="font-size: 0.95rem; color: var(--text-secondary);">
+                    Las frases diarias y mensajes de cápsulas que se despliegan en la pantalla de inicio y en la bitácora provienen de archivos JSON estructurados incrustados localmente en los assets de la aplicación, garantizando que el funcionamiento sea totalmente autónomo y libre de conexión a red.
+                </p>
+            </div>    
         </div>
 
-        <!-- 4. PRIVACY PANEL -->
-        <div id="panel-privacy" class="tab-panel">
+        <!-- 5. LEGAL & FAQ PANEL -->
+        <div id="panel-legal" class="tab-panel">
+            <!-- FAQ -->
             <div class="card document-container">
+                <div class="card-header">
+                    <h2 id="faq-main-title">Centro de Ayuda &amp; FAQ</h2>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-recovery-title">¿Qué es el Modo de Recuperación?</h3>
+                    <p id="faq-recovery-desc">Si el sistema de la base de datos experimenta un error grave al iniciarse que provoque bucles de cierre, la app se iniciará en un Modo de Recuperación seguro. Desde allí puedes generar reportes de diagnóstico cifrados (.hldiag) para compartirlos con soporte, o borrar la memoria caché temporal para restablecer la estabilidad.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-backups-title">¿Cómo funcionan los respaldos (.lifelogs)?</h3>
+                    <p id="faq-backups-desc">Las copias de seguridad de Hours Lived se exportan en un formato seguro cifrado finalizado en .lifelogs. Si intentas abrir un archivo de respaldo desde cualquier administrador de archivos del teléfono, el sistema detectará la app y abrirá directamente la pantalla de importación para restaurar tus datos.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 id="faq-pdf-title">Exportación a Libros PDF (Novela Ligera)</h3>
+                    <p id="faq-pdf-desc">Puedes dar formato de libro impreso y exportar tus vivencias almacenadas en un formato PDF. El archivo PDF se almacenará de manera automatizada en la subcarpeta "Books/" dentro del directorio de copias que selecciones.</p>
+                </div>
+            </div>
+
+            <!-- Privacy Policy (general) -->
+            <div class="card document-container" style="margin-top: 2.5rem;">
                 <div class="doc-meta" id="priv-updated">Última actualización: Julio de 2026</div>
                 <div class="card-header">
                     <h2 id="priv-main-title">Política de Privacidad</h2>
@@ -398,11 +445,9 @@
                     <p id="priv-sec4-body">Si posees dudas técnicas acerca de la privacidad y protección local de tus recuerdos, contáctanos a: support.evanescentecho@gmail.com.</p>
                 </div>
             </div>
-        </div>
 
-        <!-- 5. TERMS PANEL -->
-        <div id="panel-terms" class="tab-panel">
-            <div class="card document-container">
+            <!-- Terms of Service -->
+            <div class="card document-container" style="margin-top: 2.5rem;">
                 <div class="doc-meta" id="terms-updated">Última actualización: Julio de 2026</div>
                 <div class="card-header">
                     <h2 id="terms-main-title">Términos de Servicio</h2>
@@ -429,10 +474,12 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>
         <p id="footer-text">© 2026 Evanescent Echo. Todos los derechos reservados. Desarrollado de forma independiente.</p>
+        <p style="font-size: 0.85rem; margin-top: 0.4rem;"><a href="#privacy-policy" id="footerPrivacyLink" style="color: var(--primary); text-decoration: underline;">Política de Privacidad</a></p>
         <p id="footer-version" style="font-size: 0.8rem; margin-top: 0.6rem; color: var(--text-primary); font-family: 'Inter', sans-serif; font-weight: 500; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase;"></p>
     </footer>
 
