@@ -1,47 +1,68 @@
-{
+﻿{
   "release": [
     {
-      "version": "v0.2.0",
-      "date": "July 5, 2026",
-      "title": "Modularization & Image Storage Pipeline",
+      "version": "v0.4.3",
+      "date": "24 de septiembre de 2026",
+      "title": "Soporte Multiplataforma de Escritorio & Paridad Total",
       "changes": [
-        "Modularized project code structures into core modules and widgets providers.",
-        "Implemented encrypted local image storage pipeline for memories.",
-        "Upgraded local Room database schema migrations to version 14."
+        "Lanzamiento de soporte nativo para Windows y Linux mediante Kotlin Multiplatform y Compose Multiplatform.",
+        "Paridad total de 18 pantallas compartidas y módulo de bienestar 'El Refugio' (Escritura Catártica, Lienzo Zen y Respiración).",
+        "Migración completa a SQLCipher con cifrado fuerte de base de datos Room (AES-256) y Modo de Recuperación ante fallos de inicio.",
+        "Internacionalización dinámica en 10 idiomas con selección del sistema y respaldos locales protegidos (.lifelogs)."
       ]
     },
     {
-      "version": "v0.1.0",
-      "date": "June 10, 2026",
-      "title": "Aesthetic Themes & Core Bitacora",
+      "version": "v0.1.6",
+      "date": "28 de junio de 2026",
+      "title": "Modularización & Canal de Almacenamiento de Imágenes",
       "changes": [
-        "Launched core dynamic lived time tracking system (MVVM + Jetpack Compose).",
-        "Integrated 13 nostalgic color schemes (Clannad, Violet Evergarden, Spiritfarer, etc.).",
-        "Added editable custom user palettes (CUSTOM_1, CUSTOM_2, CUSTOM_3)."
+        "Modularizada la estructura del proyecto en módulos core y proveedores de widgets.",
+        "Implementado canal de almacenamiento de imágenes locales cifradas para recuerdos.",
+        "Actualizadas las migraciones del esquema de base de datos local Room a la versión 14 y refactorización de background workers."
+      ]
+    },
+    {
+      "version": "v3.5.0",
+      "date": "7 de noviembre de 2024",
+      "title": "Capa de Seguridad Nativa & Auditoría de Integridad",
+      "changes": [
+        "Integrada capa de seguridad nativa para auditoría de integridad y protección de claves con HMAC.",
+        "Vaciado automatizado de memoria en segundo plano al pausar la aplicación para máxima privacidad.",
+        "Añadidos esquemas de color personalizables e i18n extendido."
+      ]
+    },
+    {
+      "version": "v2.2.0",
+      "date": "12 de septiembre de 2024",
+      "title": "Primera Versión Estable & Bitácora Base",
+      "changes": [
+        "Lanzado el sistema principal de cálculo de tiempo vivido y bitácora de introspección.",
+        "Integrados 13 esquemas de color nostálgicos inspirados en novelas visuales y animes tributo.",
+        "Cálculo automático de 'Vida Operativa' y registro seguro de recuerdos cotidianos."
       ]
     }
   ],
   "beta": [
     {
-      "version": "v0.3.0-beta.1",
-      "date": "July 18, 2026",
-      "title": "Time Capsules & Password-Protected Backups",
+      "version": "v3.5.6-beta.01",
+      "date": "15 de mayo de 2025",
+      "title": "Cápsulas del Tiempo & Hilos de Memoria",
       "changes": [
-        "Introduced Time Capsules to lock diary entries until a specific future date.",
-        "Added secure password protection option for local backup exports (.lifelogs).",
-        "Upgraded database schema migrations to version 12."
+        "Presentación de Cápsulas del Tiempo para bloquear entradas del diario hasta fechas futuras específicas.",
+        "Añadido sistema de Hilos de Memoria, filtros avanzados por emociones y notificaciones de cápsulas.",
+        "Opción de protección con contraseña para exportación e importación de respaldos (.lifelogs)."
       ]
     }
   ],
   "alpha": [
     {
-      "version": "v0.3.0-alpha.1",
-      "date": "July 25, 2026",
-      "title": "Native Security Layer & Memory Zero-out",
+      "version": "v0.4.3-alpha",
+      "date": "20 de agosto de 2026",
+      "title": "Compilación Alfa Multidispositivo & Endurecimiento SQLCipher",
       "changes": [
-        "Integrated Native C/C++ security audit layers for cryptographic key hardening.",
-        "Implemented background memory zero-out routine to protect local diagnostics.",
-        "Google Play Store closed alpha testing uploaded for hardware logic verification."
+        "Verificación de paridad lógica entre Android, Windows (.msi) y Linux (.deb).",
+        "Pruebas de migración de base de datos a esquema v14 y reemplazo de fuentes tipográficas.",
+        "Pruebas cerradas de rendimiento de cifrado local en dispositivos de prueba en Google Play."
       ]
     }
   ]

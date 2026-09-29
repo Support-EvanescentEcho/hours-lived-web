@@ -70,72 +70,68 @@ async function applyLanguage(lang) {
     
     // Hero
     document.getElementById('hero-title').innerText = dict.heroTitle;
-    document.getElementById('hero-desc').innerText = dict.heroDesc;
+    document.getElementById('hero-desc') && (document.getElementById('hero-desc').innerText = dict.heroDesc || '');
+    document.getElementById('downloadPlayStore').innerText = dict.downloadPlayStore || "Play Store";
+    const winBtn = document.getElementById('downloadWindows');
+    if (winBtn) winBtn.innerText = dict.downloadWindows || "Descargar Windows (.msi)";
+    const linuxBtn = document.getElementById('downloadLinux');
+    if (linuxBtn) linuxBtn.innerText = dict.downloadLinux || "Descargar Linux (.deb)";
+    const apkBtn = document.getElementById('downloadApk');
+    if (apkBtn) apkBtn.innerText = dict.downloadApk || "Descargar APK";
     
     // Tabs
-    document.getElementById('tab-support').innerText = dict.tabSupport;
-    document.getElementById('tab-features').innerText = dict.tabFeatures;
-    document.getElementById('tab-faq').innerText = dict.tabFaq;
-    document.getElementById('tab-privacy').innerText = dict.tabPrivacy;
-    document.getElementById('tab-terms').innerText = dict.tabTerms;
-    
-    // New Tabs
+    document.getElementById('tab-home').innerText = dict.tabHome || "Home";
     document.getElementById('tab-changelog').innerText = dict.tabChangelog || "Changelog";
     document.getElementById('tab-roadmap').innerText = dict.tabRoadmap || "Roadmap";
-    document.getElementById('tab-transparency').innerText = dict.tabTransparency || "Transparency";
     document.getElementById('tab-project').innerText = dict.tabProject || "The Project";
-    
-    // Support Card
-    document.getElementById('card-tributes-title').innerText = dict.cardTributesTitle;
-    document.getElementById('tributes-desc-1').innerText = dict.tributesDesc1;
-    document.getElementById('tributes-desc-2').innerText = dict.tributesDesc2;
-    document.getElementById('tributes-list-title').innerText = dict.tributesListTitle;
-    document.getElementById('tributes-ip-notice').innerHTML = dict.tributesIpNotice;
-    
-    // Localized Quote
-    if (dict.quoteText) {
-        document.getElementById('quote-text').innerText = `"${dict.quoteText}"`;
+    if (document.getElementById('tab-legal')) {
+        document.getElementById('tab-legal').innerText = dict.tabLegal || "Legal & FAQ";
     }
-    if (dict.quoteAuthor) {
-        document.getElementById('quote-author').innerText = `— ${dict.quoteAuthor}`;
-    }
+    
+    // Features & Privacy
+    document.getElementById('featuresTitle').innerText = dict.featuresTitle || "Features";
+    document.getElementById('featCryptoTitle').innerText = dict.featCryptoTitle || "";
+    document.getElementById('featCryptoDesc').innerText = dict.featCryptoDesc || "";
+    document.getElementById('featPrivacyTitle').innerText = dict.featPrivacyTitle || "";
+    document.getElementById('featPrivacyDesc').innerText = dict.featPrivacyDesc || "";
+    document.getElementById('featAudioTitle').innerText = dict.featAudioTitle || "";
+    document.getElementById('featAudioDesc').innerText = dict.featAudioDesc || "";
+    document.getElementById('featInterfaceTitle').innerText = dict.featInterfaceTitle || "";
+    document.getElementById('featInterfaceDesc').innerText = dict.featInterfaceDesc || "";
+    document.getElementById('featThemesTitle').innerText = dict.featThemesTitle || "";
+    document.getElementById('featThemesDesc').innerText = dict.featThemesDesc || "";
 
-    // Localized Tributes List
-    const tributesListEl = document.getElementById('tributes-list');
-    if (tributesListEl && dict.tributesList) {
-        tributesListEl.innerHTML = '';
-        dict.tributesList.forEach(tribute => {
-            const li = document.createElement('li');
-            li.innerText = tribute;
-            tributesListEl.appendChild(li);
-        });
+    // Privacy Policy Section (microphone)
+    if (document.getElementById('privacyTitle')) {
+        document.getElementById('privacyTitle').innerText = dict.privacyTitle || "Privacy Policy";
+        document.getElementById('privMicTitle').innerText = dict.privMicTitle || "";
+        document.getElementById('privMicDesc').innerText = dict.privMicDesc || "";
+        document.getElementById('privStorageTitle').innerText = dict.privStorageTitle || "";
+        document.getElementById('privStorageDesc').innerText = dict.privStorageDesc || "";
+        document.getElementById('privControlTitle').innerText = dict.privControlTitle || "";
+        document.getElementById('privControlDesc').innerText = dict.privControlDesc || "";
     }
+    if (document.getElementById('footerPrivacyLink')) {
+        document.getElementById('footerPrivacyLink').innerText = dict.footerPrivacyLink || "Privacy Policy";
+    }
+    // Supporter Tiers
+    document.getElementById('tiersTitle').innerText = dict.tiersTitle || "Supporter Benefits";
+    document.getElementById('tierOneTimeBadge').innerText = dict.tierOneTimeBadge || "One-Time";
+    document.getElementById('tierOneTimeTitle').innerText = dict.tierOneTimeTitle || "One-Time Support";
+    document.getElementById('tierOneTimeDesc').innerText = dict.tierOneTimeDesc || "";
+    document.getElementById('tierMonthlyBadge').innerText = dict.tierMonthlyBadge || "Monthly";
+    document.getElementById('tierMonthlyTitle').innerText = dict.tierMonthlyTitle || "Monthly Support";
+    document.getElementById('tierMonthlyDesc').innerText = dict.tierMonthlyDesc || "";
+
+    // Legal & Disclaimer
+    document.getElementById('disclaimer_title').innerText = dict.disclaimer_title || "";
+    document.getElementById('disclaimer_desc').innerText = dict.disclaimer_desc || "";
     
-    // Support Actions Card
-    document.getElementById('card-support-title').innerText = dict.cardSupportTitle;
-    document.getElementById('support-desc').innerText = dict.supportDesc;
-    document.getElementById('kofi-btn').innerText = dict.kofiBtn;
-    document.getElementById('contact-lbl').innerText = dict.contactLbl;
-    
-    // Features Card
-    document.getElementById('features-main-title').innerText = dict.featuresMainTitle;
-    document.getElementById('feat-offline-title').innerText = dict.featOfflineTitle;
-    document.getElementById('feat-offline-desc').innerHTML = dict.featOfflineDesc;
-    document.getElementById('feat-crypto-title').innerText = dict.featCryptoTitle;
-    document.getElementById('feat-crypto-desc').innerHTML = dict.featCryptoDesc;
-    document.getElementById('feat-widgets-title').innerText = dict.featWidgetsTitle;
-    document.getElementById('feat-widgets-desc').innerHTML = dict.featWidgetsDesc;
-    document.getElementById('feat-themes-title').innerText = dict.featThemesTitle;
-    document.getElementById('feat-themes-desc').innerHTML = dict.featThemesDesc;
-    
-    // FAQ Card
-    document.getElementById('faq-main-title').innerText = dict.faqMainTitle;
-    document.getElementById('faq-recovery-title').innerText = dict.faqRecoveryTitle;
-    document.getElementById('faq-recovery-desc').innerHTML = dict.faqRecoveryDesc;
-    document.getElementById('faq-backups-title').innerText = dict.faqBackupsTitle;
-    document.getElementById('faq-backups-desc').innerHTML = dict.faqBackupsDesc;
-    document.getElementById('faq-pdf-title').innerText = dict.faqPdfTitle;
-    document.getElementById('faq-pdf-desc').innerHTML = dict.faqPdfDesc;
+    // Support & Independent Dev
+    document.getElementById('support_title').innerText = dict.support_title || "";
+    document.getElementById('support_desc').innerText = dict.support_desc || "";
+    document.getElementById('kofi-btn').innerText = dict.kofiBtn || "Ko-fi";
+    document.getElementById('contact-lbl').innerText = dict.contactLbl || "Support Contact";
     
     // Changelog Card
     document.getElementById('changelogTitle').innerText = dict.changelogTitle || "Changelog";
@@ -159,65 +155,63 @@ async function applyLanguage(lang) {
     document.getElementById('roadmapItemRecovery').innerText = dict.roadmapItemRecovery || "";
     document.getElementById('roadmapItemLightNovel').innerText = dict.roadmapItemLightNovel || "";
 
-    // Transparency & Benefits
-    document.getElementById('transTitle').innerText = dict.transTitle || "Transparency";
-    document.getElementById('transDesc').innerText = dict.transDesc || "";
-    document.getElementById('transTierOneTimeBadge').innerText = dict.transTierOneTimeBadge || "";
-    document.getElementById('transTierMonthlyBadge').innerText = dict.transTierMonthlyBadge || "";
-    document.getElementById('transTierOneTime').innerText = dict.transTierOneTime || "One-Time Donation";
-    document.getElementById('transTierOneTimeSub').innerText = dict.transTierOneTimeSub || "";
-    document.getElementById('transTierMonthly').innerText = dict.transTierMonthly || "Monthly Patronage";
-    document.getElementById('transTierMonthlySub').innerText = dict.transTierMonthlySub || "";
-
-    document.getElementById('transBenefitCredits').innerText = dict.transBenefitCredits || "";
-    document.getElementById('transBenefitBadge').innerText = dict.transBenefitBadge || "";
-    document.getElementById('transBenefitBeta').innerText = dict.transBenefitBeta || "";
-    document.getElementById('transBenefitVoting').innerText = dict.transBenefitVoting || "";
-    document.getElementById('transBenefitChannel').innerText = dict.transBenefitChannel || "";
-
-    document.getElementById('transBenefitCredits-m').innerText = dict.transBenefitCredits || "";
-    document.getElementById('transBenefitBadge-m').innerText = dict.transBenefitBadge || "";
-    document.getElementById('transBenefitBeta-m').innerText = dict.transBenefitBeta || "";
-    document.getElementById('transBenefitVoting-m').innerText = dict.transBenefitVoting || "";
-    document.getElementById('transBenefitChannel-m').innerText = dict.transBenefitChannel || "";
-
-    document.getElementById('transUsageTitle').innerText = dict.transUsageTitle || "How funds are utilized";
-    document.getElementById('transUsageItem1').innerText = dict.transUsageItem1 || "";
-    document.getElementById('transUsageItem2').innerText = dict.transUsageItem2 || "";
-    document.getElementById('transUsageItem3').innerText = dict.transUsageItem3 || "";
     // Project Card
     document.getElementById('projectTitle').innerText = dict.projectTitle || "About the Project";
     document.getElementById('projectDesc1').innerText = dict.projectDesc1 || "";
     document.getElementById('projectInspirationTitle').innerText = dict.projectInspirationTitle || "";
     document.getElementById('projectInspirationDesc').innerText = dict.projectInspirationDesc || "";
     document.getElementById('projectInspirationListTitle').innerText = dict.projectInspirationListTitle || "";
+    if (document.getElementById('projectSoundtrackDesc') && dict.projectSoundtrackDesc) {
+        document.getElementById('projectSoundtrackDesc').innerHTML = dict.projectSoundtrackDesc;
+    }
     document.getElementById('projectTechTitle').innerText = dict.projectTechTitle || "";
     document.getElementById('projectTechDesc1').innerText = dict.projectTechDesc1 || "";
     document.getElementById('projectTechDesc2').innerText = dict.projectTechDesc2 || "";
 
-    // Privacy Card
-    document.getElementById('priv-updated').innerText = dict.privUpdated;
-    document.getElementById('priv-main-title').innerText = dict.privMainTitle;
-    document.getElementById('priv-sec1-title').innerText = dict.privSec1Title;
-    document.getElementById('priv-sec1-body').innerHTML = dict.privSec1Body;
-    document.getElementById('priv-sec2-title').innerText = dict.privSec2Title;
-    document.getElementById('priv-sec2-body').innerHTML = dict.privSec2Body;
-    document.getElementById('priv-sec3-title').innerText = dict.privSec3Title;
-    document.getElementById('priv-sec3-body').innerHTML = dict.privSec3Body;
-    document.getElementById('priv-sec4-title').innerText = dict.privSec4Title;
-    document.getElementById('priv-sec4-body').innerHTML = dict.privSec4Body;
-    
-    // Terms Card
-    document.getElementById('terms-updated').innerText = dict.termsUpdated;
-    document.getElementById('terms-main-title').innerText = dict.termsMainTitle;
-    document.getElementById('terms-sec1-title').innerText = dict.termsSec1Title;
-    document.getElementById('terms-sec1-body').innerHTML = dict.termsSec1Body;
-    document.getElementById('terms-sec2-title').innerText = dict.termsSec2Title;
-    document.getElementById('terms-sec2-body').innerHTML = dict.termsSec2Body;
-    document.getElementById('terms-sec3-title').innerText = dict.termsSec3Title;
-    document.getElementById('terms-sec3-body').innerHTML = dict.termsSec3Body;
-    document.getElementById('terms-sec4-title').innerText = dict.termsSec4Title;
-    document.getElementById('terms-sec4-body').innerHTML = dict.termsSec4Body;
+    // Localized Quote (decorative block in El Proyecto)
+    if (dict.quoteText && document.getElementById('quote-text')) {
+        document.getElementById('quote-text').innerText = `"${dict.quoteText}"`;
+    }
+    if (dict.quoteAuthor && document.getElementById('quote-author')) {
+        document.getElementById('quote-author').innerText = `— ${dict.quoteAuthor}`;
+    }
+
+    // FAQ section
+    if (document.getElementById('faq-main-title')) {
+        document.getElementById('faq-main-title').innerText = dict.faqMainTitle || "Help & FAQ";
+        document.getElementById('faq-recovery-title').innerText = dict.faqRecoveryTitle || "";
+        document.getElementById('faq-recovery-desc').innerHTML = dict.faqRecoveryDesc || "";
+        document.getElementById('faq-backups-title').innerText = dict.faqBackupsTitle || "";
+        document.getElementById('faq-backups-desc').innerHTML = dict.faqBackupsDesc || "";
+        document.getElementById('faq-pdf-title').innerText = dict.faqPdfTitle || "";
+        document.getElementById('faq-pdf-desc').innerHTML = dict.faqPdfDesc || "";
+    }
+    // Privacy Policy (general — Legal tab)
+    if (document.getElementById('priv-updated')) {
+        document.getElementById('priv-updated').innerText = dict.privUpdated || "";
+        document.getElementById('priv-main-title').innerText = dict.privMainTitle || "Privacy Policy";
+        document.getElementById('priv-sec1-title').innerText = dict.privSec1Title || "";
+        document.getElementById('priv-sec1-body').innerHTML = dict.privSec1Body || "";
+        document.getElementById('priv-sec2-title').innerText = dict.privSec2Title || "";
+        document.getElementById('priv-sec2-body').innerHTML = dict.privSec2Body || "";
+        document.getElementById('priv-sec3-title').innerText = dict.privSec3Title || "";
+        document.getElementById('priv-sec3-body').innerHTML = dict.privSec3Body || "";
+        document.getElementById('priv-sec4-title').innerText = dict.privSec4Title || "";
+        document.getElementById('priv-sec4-body').innerHTML = dict.privSec4Body || "";
+    }
+    // Terms of Service
+    if (document.getElementById('terms-updated')) {
+        document.getElementById('terms-updated').innerText = dict.termsUpdated || "";
+        document.getElementById('terms-main-title').innerText = dict.termsMainTitle || "Terms of Service";
+        document.getElementById('terms-sec1-title').innerText = dict.termsSec1Title || "";
+        document.getElementById('terms-sec1-body').innerHTML = dict.termsSec1Body || "";
+        document.getElementById('terms-sec2-title').innerText = dict.termsSec2Title || "";
+        document.getElementById('terms-sec2-body').innerHTML = dict.termsSec2Body || "";
+        document.getElementById('terms-sec3-title').innerText = dict.termsSec3Title || "";
+        document.getElementById('terms-sec3-body').innerHTML = dict.termsSec3Body || "";
+        document.getElementById('terms-sec4-title').innerText = dict.termsSec4Title || "";
+        document.getElementById('terms-sec4-body').innerHTML = dict.termsSec4Body || "";
+    }
     
     // Footer
     document.getElementById('footer-text').innerText = dict.footerText;
@@ -228,6 +222,54 @@ async function applyLanguage(lang) {
     if (copyBtn && dict.copyBtnText) {
         copyBtn.innerText = dict.copyBtnText;
     }
+
+    // Footprint / Donor Guidelines section
+    const fp = (id, key, fallback) => {
+        const el = document.getElementById(id);
+        if (el && dict[key]) el.innerText = dict[key];
+        else if (el && fallback) el.innerText = fallback;
+    };
+    fp('footprintTitle',            'footprintTitle',            'Deja tu Huella en Hours Lived');
+    fp('footprintDesc',             'footprintDesc',             '');
+    fp('footprintCategoriesTitle',  'footprintCategoriesTitle',  '');
+    fp('footprintCategoriesIntro',  'footprintCategoriesIntro',  '');
+    fp('footprintCat1Title',        'footprintCat1Title',        '');
+    fp('footprintCat1Desc',         'footprintCat1Desc',         '');
+    fp('footprintCat2Title',        'footprintCat2Title',        '');
+    fp('footprintCat2Desc',         'footprintCat2Desc',         '');
+    fp('footprintCat3Title',        'footprintCat3Title',        '');
+    fp('footprintCat3Desc',         'footprintCat3Desc',         '');
+    fp('footprintCat4Title',        'footprintCat4Title',        '');
+    fp('footprintCat4Desc',         'footprintCat4Desc',         '');
+    fp('footprintTypesTitle',       'footprintTypesTitle',       '');
+    fp('footprintTypesIntro',       'footprintTypesIntro',       '');
+    fp('footprintTypeBadge1',       'footprintTypeBadge1',       '');
+    fp('footprintTypeDesc1',        'footprintTypeDesc1',        '');
+    fp('footprintTypeBadge2',       'footprintTypeBadge2',       '');
+    fp('footprintTypeDesc2',        'footprintTypeDesc2',        '');
+    fp('footprintTypeBadge3',       'footprintTypeBadge3',       '');
+    fp('footprintTypeDesc3',        'footprintTypeDesc3',        '');
+    fp('footprintTemplateTitle',    'footprintTemplateTitle',    '');
+    fp('footprintTemplateIntro',    'footprintTemplateIntro',    '');
+    fp('footprintTplKeyDest',       'footprintTplKeyDest',       '');
+    fp('footprintTplValDest',       'footprintTplValDest',       '');
+    fp('footprintTplKeyType',       'footprintTplKeyType',       '');
+    fp('footprintTplValType',       'footprintTplValType',       '');
+    fp('footprintTplKeyPhrase',     'footprintTplKeyPhrase',     '');
+    fp('footprintTplValPhrase',     'footprintTplValPhrase',     '');
+    fp('footprintTplKeyAuthor',     'footprintTplKeyAuthor',     '');
+    fp('footprintTplValAuthor',     'footprintTplValAuthor',     '');
+    fp('footprintTplKeyWork',       'footprintTplKeyWork',       '');
+    fp('footprintTplValWork',       'footprintTplValWork',       '');
+    fp('footprintModerationTitle',  'footprintModerationTitle',  '');
+    fp('footprintModToneLabel',     'footprintModToneLabel',     '');
+    fp('footprintModToneDesc',      'footprintModToneDesc',      '');
+    fp('footprintModPrivLabel',     'footprintModPrivLabel',     '');
+    fp('footprintModPrivDesc',      'footprintModPrivDesc',      '');
+    fp('footprintModRespLabel',     'footprintModRespLabel',     '');
+    fp('footprintModRespDesc',      'footprintModRespDesc',      '');
+    fp('footprintModL10nLabel',     'footprintModL10nLabel',     '');
+    fp('footprintModL10nDesc',      'footprintModL10nDesc',      '');
 
     // Load and Render Changelogs
     await loadChangelogData(lang);

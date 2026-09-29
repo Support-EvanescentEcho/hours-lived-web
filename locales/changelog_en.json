@@ -1,47 +1,68 @@
 {
   "release": [
     {
-      "version": "v0.2.0",
-      "date": "July 5, 2026",
-      "title": "Modularization & Image Storage Pipeline",
+      "version": "v0.4.3",
+      "date": "September 24, 2026",
+      "title": "Cross-Platform Desktop Support & Full Parity",
       "changes": [
-        "Modularized project code structures into core modules and widgets providers.",
-        "Implemented encrypted local image storage pipeline for memories.",
-        "Upgraded local Room database schema migrations to version 14."
+        "Native support release for Windows and Linux via Kotlin Multiplatform & Compose Multiplatform.",
+        "Full parity across 18 shared screens and 'The Sanctuary' wellness module (Cathartic Writing, Zen Canvas, and Breathing exercises).",
+        "Complete SQLCipher migration with strong Room DB hardware encryption (AES-256) and startup crash Recovery Mode.",
+        "Dynamic 10-language internationalization with system preference sync and protected local backups (.lifelogs)."
       ]
     },
     {
-      "version": "v0.1.0",
-      "date": "June 10, 2026",
-      "title": "Aesthetic Themes & Core Bitacora",
+      "version": "v0.1.6",
+      "date": "June 28, 2026",
+      "title": "Modularization & Image Storage Pipeline",
       "changes": [
-        "Launched core dynamic lived time tracking system (MVVM + Jetpack Compose).",
-        "Integrated 13 nostalgic color schemes (Clannad, Violet Evergarden, Spiritfarer, etc.).",
-        "Added editable custom user palettes (CUSTOM_1, CUSTOM_2, CUSTOM_3)."
+        "Modularized project structure into core and widget provider modules.",
+        "Implemented local encrypted image storage pipeline for memories.",
+        "Updated Room database schema to v14 and refactored background workers."
+      ]
+    },
+    {
+      "version": "v3.5.0",
+      "date": "November 7, 2024",
+      "title": "Native Security Layer & Integrity Audit",
+      "changes": [
+        "Integrated native security layer for HMAC integrity checks and key hardening.",
+        "Automated background memory zeroing upon app pause for maximum privacy.",
+        "Added customizable color schemes and expanded i18n support."
+      ]
+    },
+    {
+      "version": "v2.2.0",
+      "date": "September 12, 2024",
+      "title": "First Stable Release & Core Journal",
+      "changes": [
+        "Launched primary lived-time calculation engine and introspective journal.",
+        "Integrated 13 nostalgic color schemes inspired by tribute anime and visual novels.",
+        "Automatic 'Operational Life' calculations and secure daily memory logging."
       ]
     }
   ],
   "beta": [
     {
-      "version": "v0.3.0-beta.1",
-      "date": "July 18, 2026",
-      "title": "Time Capsules & Password-Protected Backups",
+      "version": "v3.5.6-beta.01",
+      "date": "May 15, 2025",
+      "title": "Time Capsules & Memory Threads",
       "changes": [
-        "Introduced Time Capsules to lock diary entries until a specific future date.",
-        "Added secure password protection option for local backup exports (.lifelogs).",
-        "Upgraded database schema migrations to version 12."
+        "Introduced Time Capsules to lock journal entries until specific future dates.",
+        "Added Memory Threads system, emotion filtering, and capsule arrival notifications.",
+        "Password-protected backup export and import flow (.lifelogs)."
       ]
     }
   ],
   "alpha": [
     {
-      "version": "v0.3.0-alpha.1",
-      "date": "July 25, 2026",
-      "title": "Native Security Layer & Memory Zero-out",
+      "version": "v0.4.3-alpha",
+      "date": "August 20, 2026",
+      "title": "Multi-Device Alpha Build & SQLCipher Hardening",
       "changes": [
-        "Integrated Native C/C++ security audit layers for cryptographic key hardening.",
-        "Implemented background memory zero-out routine to protect local diagnostics.",
-        "Google Play Store closed alpha testing uploaded for hardware logic verification."
+        "Verified logic parity across Android, Windows (.msi), and Linux (.deb).",
+        "Database schema v14 migration testing and font asset replacement.",
+        "Closed alpha testing of local encryption performance on target test devices."
       ]
     }
   ]
