@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "官方支持",
   "themeLbl": "主题:",
   "langLbl": "语言:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "在绝对安全的本地环境中，回顾与记录您的生命旅程。",
   "downloadPlayStore": "在 Play 商店下载",
-  "downloadWindows": "下载 Windows 版本 (.msi)",
-  "downloadLinux": "下载 Linux 版本 (.deb)",
+  "downloadWindows": "下载 Windows 版 (Alpha · .msi)",
+  "downloadLinux": "下载 Linux 版 (Alpha · .deb)",
   "downloadApk": "下载 APK",
   "tabHome": "首页",
   "tabChangelog": "更新日志",
@@ -68,7 +68,7 @@
   "roadmapItemRecovery": "时间胶囊与密码保护备份",
   "roadmapItemLightNovel": "项目拆分为核心与小部件模块",
   "projectTitle": "About the Project",
-  "projectDesc1": "Hours Lived is a 100% offline-first free software project designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
+  "projectDesc1": "Hours Lived is a 100% offline-first personal sanctuary designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
   "projectInspirationTitle": "Creative Inspiration",
   "projectInspirationDesc": "The overall concept, aesthetics, and philosophy of Hours Lived are primarily inspired by \"Plastic Memories\". The premise of recording precious memories and being fully aware of the passage of our finite time is the backbone of the project.",
   "projectInspirationListTitle": "In addition to \"Plastic Memories\" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:",
@@ -120,9 +120,8 @@
   "termsSec4Title": "4. 免责声明",
   "termsSec4Body": "本应用按「现状」(as is) 提供，不附带任何明示或暗示的无故障运行保证。",
   "footerText": "© 2026 Evanescent Echo. 保留所有权利. 独立开发项目.",
-  "footerVersion": "v0.3.0 · 官方支持",
-
-"footprintTitle": "在 Hours Lived 中留下你的印记",
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
+  "footprintTitle": "在 Hours Lived 中留下你的印记",
   "footprintDesc": "通过支持 Hours Lived，你不仅帮助项目保持活力、无广告且完全私密——你还可以贡献自己的话语，让它们成为其他用户在内省时刻体验的一部分。",
   "footprintCategoriesTitle": "可用的消息类别",
   "footprintCategoriesIntro": "捐款时，请选择你希望你的短语出现在应用的哪个部分：",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "任何冒犯性、歧视性、暴力或蔑视性内容都将被拒绝。",
   "footprintModL10nLabel": "本地化调整：",
   "footprintModL10nDesc": "文本可能会接受细微的拼写更正或微调，以便于翻译。如果某个建议不符合作品的精神，我将与你联系以商定替代方案。",
-
-"projectSoundtrackDesc": "这些作品的原声带和音乐曲目构成了伴随每一行代码、设计与感悟的音效氛围。您可以在我们精选的播放列表中聆听官方合集： <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube 播放列表</a>。",
-  "youtubePlaylistBtn": "▶ YouTube 播放列表"
+  "projectSoundtrackDesc": "这些作品的原声带和音乐曲目构成了伴随每一行代码、设计与感悟的音效氛围。您可以在我们精选的播放列表中聆听官方合集： <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube 播放列表</a>。",
+  "youtubePlaylistBtn": "▶ YouTube 播放列表",
+  "musicLabel": "音乐",
+  "featDesktopTitle": "跨平台桌面版 (Alpha)",
+  "featDesktopDesc": "将记忆避风港扩展至电脑端（Windows 与 Linux）。享受同样的离线隐私保护、沉浸式设计以及完全兼容的 .lifelogs 备份。",
+  "faqDesktopTitle": "桌面版（Windows 与 Linux）如何运作？",
+  "faqDesktopDesc": "Hours Lived 桌面版目前处于 <code>Alpha</code> 阶段。它与移动端具备完全一致的特性：100% 离线架构、本地 AES-256 加密数据库、电脑与手机之间无缝互通的备份（<code>.lifelogs</code>）以及轻小说风格的 PDF 导出。"
 }

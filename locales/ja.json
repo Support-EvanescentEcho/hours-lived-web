@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "公式サポート",
   "themeLbl": "テーマ:",
   "langLbl": "言語:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "完全なセキュリティの中で、あなたの人生の旅路を振り返りましょう。",
   "downloadPlayStore": "Play ストアでダウンロード",
-  "downloadWindows": "Windows版をダウンロード (.msi)",
-  "downloadLinux": "Linux版をダウンロード (.deb)",
+  "downloadWindows": "Windows版をダウンロード (Alpha · .msi)",
+  "downloadLinux": "Linux版をダウンロード (Alpha · .deb)",
   "downloadApk": "APKをダウンロード",
   "tabHome": "ホーム",
   "tabChangelog": "変更履歴",
@@ -68,7 +68,7 @@
   "roadmapItemRecovery": "タイムカプセルとパスワード保護バックアップ",
   "roadmapItemLightNovel": "コアモジュールとウィジェットモジュールへのモジュール化",
   "projectTitle": "About the Project",
-  "projectDesc1": "Hours Lived is a 100% offline-first free software project designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
+  "projectDesc1": "Hours Lived is a 100% offline-first personal sanctuary designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
   "projectInspirationTitle": "Creative Inspiration",
   "projectInspirationDesc": "The overall concept, aesthetics, and philosophy of Hours Lived are primarily inspired by \"Plastic Memories\". The premise of recording precious memories and being fully aware of the passage of our finite time is the backbone of the project.",
   "projectInspirationListTitle": "In addition to \"Plastic Memories\" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:",
@@ -120,9 +120,8 @@
   "termsSec4Title": "4. 免責事項",
   "termsSec4Body": "本アプリは「現状有姿」で提供され、不具合のないことなどを保証するものではありません。",
   "footerText": "© 2026 Evanescent Echo. All rights reserved. 独立開発プロジェクト。",
-  "footerVersion": "v0.3.0 · 公式サポート",
-
-"footprintTitle": "Hours Lived にあなたの足跡を",
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
+  "footprintTitle": "Hours Lived にあなたの足跡を",
   "footprintDesc": "Hours Lived を支援することで、プロジェクトを広告なし・完全プライベートな状態で維持するだけでなく、あなた自身の言葉を他のユーザーの内省の瞬間に届けることもできます。",
   "footprintCategoriesTitle": "メッセージの送り先カテゴリ",
   "footprintCategoriesIntro": "寄付の際に、あなたのフレーズをアプリのどの部分に使用したいかをお選びください：",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "不快、差別的、暴力的、または軽蔑的なコンテンツは却下されます。",
   "footprintModL10nLabel": "ローカライズ調整：",
   "footprintModL10nDesc": "テキストは軽微なスペルの修正や翻訳を容易にするための微妙な調整を受ける場合があります。提案が作品のアイデンティティに合わない場合は、代替案を協議するためにご連絡します。",
-
-"projectSoundtrackDesc": "これらの作品のサウンドトラックや楽曲は、コードの1行、デザイン、省察のすべてに寄り添う音の響きとなりました。公式コンピレーションは厳選されたプレイリストでお聴きいただけます： <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube プレイリスト</a>。",
-  "youtubePlaylistBtn": "▶ YouTube プレイリスト"
+  "projectSoundtrackDesc": "これらの作品のサウンドトラックや楽曲は、コードの1行、デザイン、省察のすべてに寄り添う音の響きとなりました。公式コンピレーションは厳選されたプレイリストでお聴きいただけます： <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube プレイリスト</a>。",
+  "youtubePlaylistBtn": "▶ YouTube プレイリスト",
+  "musicLabel": "音楽",
+  "featDesktopTitle": "マルチプラットフォームデスクトップ (Alpha)",
+  "featDesktopDesc": "思い出のサンクチュアリをPC（Windows＆Linux）でも。同一のオフラインプライバシー、没入感のあるデザイン、.lifelogsバックアップの完全な互換性を提供します。",
+  "faqDesktopTitle": "デスクトップ版（Windows & Linux）の機能について",
+  "faqDesktopDesc": "Hours Lived Desktopは現在<code>Alpha</code>段階です。モバイル版と同等の機能を提供します：100%オフライン設計、ローカルAES-256暗号化データベース、PCとスマートフォン間で互換性のあるバックアップ（<code>.lifelogs</code>）、ライトノベル風PDFエクスポート。"
 }

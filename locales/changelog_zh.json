@@ -1,4 +1,4 @@
-﻿{
+{
   "release": [
     {
       "version": "v0.4.3",
@@ -55,6 +55,16 @@
     }
   ],
   "alpha": [
+    {
+      "version": "App v0.4.6-alpha · Desktop v0.0.1",
+      "date": "2026年10月",
+      "title": "KMP 架构重构与桌面版 v0.0.1 预览",
+      "changes": [
+        "全面重构架构，采用 Kotlin & Compose Multiplatform 共享核心。",
+        "桌面端独立二进制文件首次预览（Windows MSI 安装包与 Linux DEB 软件包）。",
+        "SQLCipher 数据库迁移、恢复模式强化与依赖项升级。"
+      ]
+    },
     {
       "version": "v0.4.3-alpha",
       "date": "20 de agosto de 2026",

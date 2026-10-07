@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "Официальная поддержка",
   "themeLbl": "Тема:",
   "langLbl": "Язык:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "Размышляйте о пройденном жизненном пути в абсолютной безопасности.",
   "downloadPlayStore": "Скачать в Play Store",
-  "downloadWindows": "Скачать для Windows (.msi)",
-  "downloadLinux": "Скачать для Linux (.deb)",
+  "downloadWindows": "Скачать для Windows (Alpha · .msi)",
+  "downloadLinux": "Скачать для Linux (Alpha · .deb)",
   "downloadApk": "Скачать APK",
   "tabHome": "Главная",
   "tabChangelog": "История",
@@ -68,7 +68,7 @@
   "roadmapItemRecovery": "Капсулы времени и защищенные паролем бэкапы",
   "roadmapItemLightNovel": "Модуляризация проекта на модули core и widgets",
   "projectTitle": "About the Project",
-  "projectDesc1": "Hours Lived is a 100% offline-first free software project designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
+  "projectDesc1": "Hours Lived is a 100% offline-first personal sanctuary designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
   "projectInspirationTitle": "Creative Inspiration",
   "projectInspirationDesc": "The overall concept, aesthetics, and philosophy of Hours Lived are primarily inspired by \"Plastic Memories\". The premise of recording precious memories and being fully aware of the passage of our finite time is the backbone of the project.",
   "projectInspirationListTitle": "In addition to \"Plastic Memories\" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:",
@@ -120,9 +120,8 @@
   "termsSec4Title": "4. Отсутствие гарантий",
   "termsSec4Body": "Программа предоставляется на условиях \"как есть\" (as is).",
   "footerText": "© 2026 Evanescent Echo. Все права защищены. Независимая разработка.",
-  "footerVersion": "v0.3.0 · Официальная поддержка",
-
-"footprintTitle": "Оставь свой след в Hours Lived",
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
+  "footprintTitle": "Оставь свой след в Hours Lived",
   "footprintDesc": "Поддерживая Hours Lived, ты не только помогаешь поддерживать проект живым, без рекламы и полностью приватным — ты также можешь внести свои собственные слова, чтобы они стали частью опыта других пользователей в их моменты самопознания.",
   "footprintCategoriesTitle": "Доступные категории для твоего сообщения",
   "footprintCategoriesIntro": "При совершении пожертвования выбери, в какой части приложения должна появиться твоя фраза:",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "Любой оскорбительный, дискриминационный, жестокий или пренебрежительный контент будет отклонён.",
   "footprintModL10nLabel": "Локализационные поправки:",
   "footprintModL10nDesc": "Тексты могут получить незначительные орфографические исправления или тонкие корректировки для облегчения перевода. Если предложение не соответствует идентичности произведения, я свяжусь с тобой, чтобы договориться об альтернативе.",
-
-"projectSoundtrackDesc": "Саундтреки и музыкальные произведения этих работ создали звуковую атмосферу, сопровождавшую каждую строчку кода, дизайн и размышление. Вы можете послушать официальную подборку в нашем избранном плейлисте: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Плейлист на YouTube</a>.",
-  "youtubePlaylistBtn": "▶ Плейлист на YouTube"
+  "projectSoundtrackDesc": "Саундтреки и музыкальные произведения этих работ создали звуковую атмосферу, сопровождавшую каждую строчку кода, дизайн и размышление. Вы можете послушать официальную подборку в нашем избранном плейлисте: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Плейлист на YouTube</a>.",
+  "youtubePlaylistBtn": "▶ Плейлист на YouTube",
+  "musicLabel": "Музыка",
+  "featDesktopTitle": "Кроссплатформенный Desktop (Alpha)",
+  "featDesktopDesc": "Перенесите ваше святилище воспоминаний на ПК (Windows и Linux). Полная приватность офлайн, иммерсивный дизайн и совместимость с бэкапами .lifelogs.",
+  "faqDesktopTitle": "Как работает версия для ПК (Windows и Linux)?",
+  "faqDesktopDesc": "Hours Lived Desktop находится в стадии <code>Alpha</code>. Она обеспечивает полную функциональную совместимость с мобильной версией: 100% офлайн-архитектура, локальное шифрование AES-256, резервные копии (<code>.lifelogs</code>), совместимые между ПК и телефоном, и экспорт в PDF в стиле лайт-новеллы."
 }

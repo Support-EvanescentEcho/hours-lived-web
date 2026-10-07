@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "Offizieller Support",
   "themeLbl": "Design:",
   "langLbl": "Sprache:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "Reflektieren Sie über Ihre Lebensreise in absoluter Sicherheit.",
   "downloadPlayStore": "Im Play Store herunterladen",
-  "downloadWindows": "Windows herunterladen (.msi)",
-  "downloadLinux": "Linux herunterladen (.deb)",
+  "downloadWindows": "Windows herunterladen (Alpha · .msi)",
+  "downloadLinux": "Linux herunterladen (Alpha · .deb)",
   "downloadApk": "APK herunterladen",
   "tabHome": "Startseite",
   "tabChangelog": "Changelog",
@@ -68,7 +68,7 @@
   "roadmapItemRecovery": "Zeitkapseln und passwortgeschützte Backups",
   "roadmapItemLightNovel": "Modularisierung des Projekts in Core- und Widgets-Module",
   "projectTitle": "About the Project",
-  "projectDesc1": "Hours Lived is a 100% offline-first free software project designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
+  "projectDesc1": "Hours Lived is a 100% offline-first personal sanctuary designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
   "projectInspirationTitle": "Creative Inspiration",
   "projectInspirationDesc": "The overall concept, aesthetics, and philosophy of Hours Lived are primarily inspired by \"Plastic Memories\". The premise of recording precious memories and being fully aware of the passage of our finite time is the backbone of the project.",
   "projectInspirationListTitle": "In addition to \"Plastic Memories\" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:",
@@ -120,9 +120,8 @@
   "termsSec4Title": "4. Gewährleistungsausschluss",
   "termsSec4Body": "Die App wird \"wie besehen\" (as is) zur Verfügung gestellt.",
   "footerText": "© 2026 Evanescent Echo. Alle Rechte vorbehalten. Unabhängig entwickelt.",
-  "footerVersion": "v0.3.0 · Offizieller Support",
-
-"footprintTitle": "Hinterlasse deine Spur in Hours Lived",
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
+  "footprintTitle": "Hinterlasse deine Spur in Hours Lived",
   "footprintDesc": "Wenn du Hours Lived unterstützt, hilfst du nicht nur dabei, das Projekt am Leben zu erhalten, werbefrei und vollständig privat — du kannst auch deine eigenen Worte einbringen, die Teil der Erfahrung anderer Nutzer in ihren Momenten der Selbstreflexion werden.",
   "footprintCategoriesTitle": "Verfügbare Kategorien für deine Nachricht",
   "footprintCategoriesIntro": "Wähle bei deiner Spende, in welchem Teil der App dein Satz erscheinen soll:",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "Jeglicher anstößige, diskriminierende, gewalttätige oder abwertende Inhalt wird abgelehnt.",
   "footprintModL10nLabel": "Lokalisierungsanpassungen:",
   "footprintModL10nDesc": "Texte können kleinere Rechtschreibkorrekturen oder subtile Anpassungen erhalten, um die Übersetzung zu erleichtern. Wenn ein Vorschlag nicht zum Geist des Werkes passt, melde ich mich, um eine Alternative zu vereinbaren.",
-
-"projectSoundtrackDesc": "Die Soundtracks und Musikstücke dieser Werke bildeten die Klangkulisse, die jede Zeile Code, jedes Design und jede Reflexion begleitete. Du kannst die offizielle Zusammenstellung in unserer ausgewählten Playlist anhören: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Playlist auf YouTube</a>.",
-  "youtubePlaylistBtn": "▶ Playlist auf YouTube"
+  "projectSoundtrackDesc": "Die Soundtracks und Musikstücke dieser Werke bildeten die Klangkulisse, die jede Zeile Code, jedes Design und jede Reflexion begleitete. Du kannst die offizielle Zusammenstellung in unserer ausgewählten Playlist anhören: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Playlist auf YouTube</a>.",
+  "youtubePlaylistBtn": "▶ Playlist auf YouTube",
+  "musicLabel": "Musik",
+  "featDesktopTitle": "Plattformübergreifender Desktop (Alpha)",
+  "featDesktopDesc": "Bringen Sie Ihr Erinnerungsarchiv auf Ihren PC (Windows & Linux). Genießen Sie dieselbe Offline-Privatsphäre, immersives Design und volle .lifelogs-Kompatibilität.",
+  "faqDesktopTitle": "Wie funktioniert die Desktop-Version (Windows & Linux)?",
+  "faqDesktopDesc": "Hours Lived Desktop befindet sich derzeit in der <code>Alpha</code>-Phase. Sie bietet volle Funktionsparität mit der mobilen Version: 100% Offline-Architektur, lokale AES-256-Verschlüsselung, kompatible <code>.lifelogs</code>-Sicherungen zwischen PC und Smartphone sowie Light-Novel-PDF-Export."
 }

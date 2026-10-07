@@ -40,9 +40,9 @@ async function loadTranslations(lang) {
         return await response.json();
     } catch (error) {
         console.error('Error loading translation file:', error);
-        // Fallback to Spanish if fetch fails
-        if (lang !== 'es') {
-            return await loadTranslations('es');
+        // Fallback to English if fetch fails
+        if (lang !== 'en') {
+            return await loadTranslations('en');
         }
         return null;
     }
@@ -100,6 +100,12 @@ async function applyLanguage(lang) {
     document.getElementById('featInterfaceDesc').innerText = dict.featInterfaceDesc || "";
     document.getElementById('featThemesTitle').innerText = dict.featThemesTitle || "";
     document.getElementById('featThemesDesc').innerText = dict.featThemesDesc || "";
+    if (document.getElementById('featDesktopTitle')) {
+        document.getElementById('featDesktopTitle').innerText = dict.featDesktopTitle || "";
+    }
+    if (document.getElementById('featDesktopDesc')) {
+        document.getElementById('featDesktopDesc').innerText = dict.featDesktopDesc || "";
+    }
 
     // Privacy Policy Section (microphone)
     if (document.getElementById('privacyTitle')) {
@@ -164,6 +170,7 @@ async function applyLanguage(lang) {
     if (document.getElementById('projectSoundtrackDesc') && dict.projectSoundtrackDesc) {
         document.getElementById('projectSoundtrackDesc').innerHTML = dict.projectSoundtrackDesc;
     }
+    renderInspirations(dict.musicLabel);
     document.getElementById('projectTechTitle').innerText = dict.projectTechTitle || "";
     document.getElementById('projectTechDesc1').innerText = dict.projectTechDesc1 || "";
     document.getElementById('projectTechDesc2').innerText = dict.projectTechDesc2 || "";
@@ -185,6 +192,10 @@ async function applyLanguage(lang) {
         document.getElementById('faq-backups-desc').innerHTML = dict.faqBackupsDesc || "";
         document.getElementById('faq-pdf-title').innerText = dict.faqPdfTitle || "";
         document.getElementById('faq-pdf-desc').innerHTML = dict.faqPdfDesc || "";
+        if (document.getElementById('faq-desktop-title')) {
+            document.getElementById('faq-desktop-title').innerText = dict.faqDesktopTitle || "";
+            document.getElementById('faq-desktop-desc').innerHTML = dict.faqDesktopDesc || "";
+        }
     }
     // Privacy Policy (general — Legal tab)
     if (document.getElementById('priv-updated')) {
@@ -427,4 +438,30 @@ function switchChangelogChannel(channel) {
     }
     
     renderChangelog();
+}
+
+// Inspirations list data & dynamic renderer
+const inspirationsData = [
+    { title: "Plastic Memories", composer: "Takeshi Masuda" },
+    { title: "Shigatsu wa Kimi no Uso", composer: "Masaru Yokoyama" },
+    { title: "Sousou no Frieren", composer: "Evan Call" },
+    { title: "Violet Evergarden", composer: "Evan Call" },
+    { title: "Koe no Katachi", composer: "Kensuke Ushio" },
+    { title: "Kimi no Suizou wo Tabetai", composer: "Hiroko Sebu" },
+    { title: "Darling in the FranXX", composer: "Asami Tachibana" },
+    { title: "Ano Hi Mita Hana", composer: "REMEDIOS" },
+    { title: "Clannad", composer: "Jun Maeda, Shinji Orito" },
+    { title: "Byousoku 5 Centimeter", composer: "Tenmon" },
+    { title: "To the Moon", composer: "Kan Gao, Laura Shigihara" },
+    { title: "GRIS", composer: "Berlinist" },
+    { title: "Spiritfarer", composer: "Max LL" }
+];
+
+function renderInspirations(musicLabel) {
+    const list = document.getElementById('projectInspirationList');
+    if (!list) return;
+    const label = musicLabel || 'Music';
+    list.innerHTML = inspirationsData.map(item =>
+        `<li><strong>${item.title}</strong> — <em>${label}: ${item.composer}</em></li>`
+    ).join('');
 }

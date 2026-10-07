@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "Official Support",
   "themeLbl": "Theme:",
   "langLbl": "Language:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "Reflect on your life journey in absolute security.",
   "downloadPlayStore": "Download on Play Store",
-  "downloadWindows": "Download Windows (.msi)",
-  "downloadLinux": "Download Linux (.deb)",
+  "downloadWindows": "Download Windows (Alpha · .msi)",
+  "downloadLinux": "Download Linux (Alpha · .deb)",
   "downloadApk": "Download APK",
   "tabHome": "Home",
   "tabChangelog": "Changelog",
@@ -120,8 +120,7 @@
   "termsSec4Title": "4. Disclaimer of Warranties",
   "termsSec4Body": "The application is provided \"as is\", without warranties or guarantees of any kind, express or implied, including the absence of minor bugs.",
   "footerText": "© 2026 Evanescent Echo. All rights reserved. Independently developed.",
-  "footerVersion": "v0.3.0 · Official Support",
-
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
   "footprintTitle": "Leave Your Mark in Hours Lived",
   "footprintDesc": "By supporting Hours Lived, you do more than keep the project alive, ad-free, and completely private — you can also contribute your own words to become part of the experience for other users during their moments of introspection.",
   "footprintCategoriesTitle": "Available categories for your message",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "Any offensive, discriminatory, violent, or disparaging content will be rejected.",
   "footprintModL10nLabel": "Localization adjustments:",
   "footprintModL10nDesc": "Texts may receive minor spelling corrections or subtle adjustments to facilitate translation. If a submission doesn't fit the spirit of the work, I'll reach out to agree on an alternative.",
-
-"projectSoundtrackDesc": "The soundtracks and musical pieces from these works provided the soundscape that accompanied every line of code, design, and reflection. You can listen to the official compilation on our curated playlist: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube Playlist</a>.",
-  "youtubePlaylistBtn": "▶ YouTube Playlist"
+  "projectSoundtrackDesc": "The soundtracks and musical pieces from these works provided the soundscape that accompanied every line of code, design, and reflection. You can listen to the official compilation on our curated playlist: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube Playlist</a>.",
+  "youtubePlaylistBtn": "▶ YouTube Playlist",
+  "musicLabel": "Music",
+  "featDesktopTitle": "Cross-Platform Desktop (Alpha)",
+  "featDesktopDesc": "Bring your memory sanctuary to your desktop (Windows & Linux). Experience the same offline privacy, immersive design, and full .lifelogs backup compatibility.",
+  "faqDesktopTitle": "How does the desktop version work (Windows & Linux)?",
+  "faqDesktopDesc": "Hours Lived Desktop is currently in <code>Alpha</code>. It provides full parity with the mobile version: 100% offline architecture, local AES-256 (SQLCipher) database encryption, cross-compatible backups (<code>.lifelogs</code>) between PC and phone, and Light Novel styled PDF export."
 }

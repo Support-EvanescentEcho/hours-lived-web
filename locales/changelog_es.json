@@ -56,6 +56,16 @@
   ],
   "alpha": [
     {
+      "version": "App v0.4.6-alpha · Desktop v0.0.1",
+      "date": "Octubre de 2026",
+      "title": "Reestructuración KMP & Preview Desktop v0.0.1",
+      "changes": [
+        "Reestructuración arquitectónica hacia núcleo compartido en Kotlin Multiplatform y Compose Multiplatform.",
+        "Lanzamiento de binarios preliminares de escritorio (instalador MSI para Windows y paquete DEB para Linux).",
+        "Migración y robustecimiento de base de datos SQLCipher, modo de recuperación y actualización de dependencias."
+      ]
+    },
+    {
       "version": "v0.4.3-alpha",
       "date": "20 de agosto de 2026",
       "title": "Compilación Alfa Multidispositivo & Endurecimiento SQLCipher",
