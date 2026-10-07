@@ -1,4 +1,4 @@
-﻿{
+{
   "release": [
     {
       "version": "v0.4.3",
@@ -55,6 +55,16 @@
     }
   ],
   "alpha": [
+    {
+      "version": "App v0.4.6-alpha · Desktop v0.0.1",
+      "date": "2026년 10월",
+      "title": "KMP 아키텍처 개편 & Desktop v0.0.1 프리뷰",
+      "changes": [
+        "Kotlin & Compose Multiplatform 공통 코어로 아키텍처 전면 개편.",
+        "데스크톱 전용 바이너리(Windows MSI 인스톨러 및 Linux DEB 패키지) 최초 프리뷰.",
+        "SQLCipher 데이터베이스 마이그레이션, 복구 모드 강화 및 종속성 업그레이드."
+      ]
+    },
     {
       "version": "v0.4.3-alpha",
       "date": "20 de agosto de 2026",

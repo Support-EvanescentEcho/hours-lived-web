@@ -56,6 +56,16 @@
   ],
   "alpha": [
     {
+      "version": "App v0.4.6-alpha · Desktop v0.0.1",
+      "date": "October 2026",
+      "title": "KMP Architecture Overhaul & Desktop v0.0.1 Preview",
+      "changes": [
+        "Restructured architecture into Kotlin Multiplatform & Compose Multiplatform shared core.",
+        "Initial preview of Desktop standalone binaries (Windows MSI installer and Linux DEB package).",
+        "SQLCipher database migration, recovery mode hardening, and AGP/dependency upgrades."
+      ]
+    },
+    {
       "version": "v0.4.3-alpha",
       "date": "August 20, 2026",
       "title": "Multi-Device Alpha Build & SQLCipher Hardening",

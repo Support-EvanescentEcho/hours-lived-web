@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "공식 지원",
   "themeLbl": "테마:",
   "langLbl": "언어:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "완벽한 보안 속에서 지나온 삶의 여정을 되돌아보세요.",
   "downloadPlayStore": "Play 스토어에서 다운로드",
-  "downloadWindows": "Windows 다운로드 (.msi)",
-  "downloadLinux": "Linux 다운로드 (.deb)",
+  "downloadWindows": "Windows 다운로드 (Alpha · .msi)",
+  "downloadLinux": "Linux 다운로드 (Alpha · .deb)",
   "downloadApk": "APK 다운로드",
   "tabHome": "홈",
   "tabChangelog": "변경 이력",
@@ -68,7 +68,7 @@
   "roadmapItemRecovery": "타임캡슐 및 비밀번호 보호 백업",
   "roadmapItemLightNovel": "코어 및 위젯 모듈로 프로젝트 모듈화",
   "projectTitle": "About the Project",
-  "projectDesc1": "Hours Lived is a 100% offline-first free software project designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
+  "projectDesc1": "Hours Lived is a 100% offline-first personal sanctuary designed to keep a thoughtful record of lived time and treasure daily memories in absolute security.",
   "projectInspirationTitle": "Creative Inspiration",
   "projectInspirationDesc": "The overall concept, aesthetics, and philosophy of Hours Lived are primarily inspired by \"Plastic Memories\". The premise of recording precious memories and being fully aware of the passage of our finite time is the backbone of the project.",
   "projectInspirationListTitle": "In addition to \"Plastic Memories\" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:",
@@ -120,9 +120,8 @@
   "termsSec4Title": "4. 보증 및 면책",
   "termsSec4Body": "본 애플리케이션은 임의의 결함 유무를 보증하지 않고 현재 있는 그대로(As-Is) 제공됩니다.",
   "footerText": "© 2026 Evanescent Echo. All rights reserved. 독립 개발.",
-  "footerVersion": "v0.3.0 · 공식 지원",
-
-"footprintTitle": "Hours Lived에 당신의 흔적을 남기세요",
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
+  "footprintTitle": "Hours Lived에 당신의 흔적을 남기세요",
   "footprintDesc": "Hours Lived를 지원함으로써 프로젝트를 광고 없이, 완전히 프라이빗하게 유지하는 것뿐만 아니라, 다른 사용자들의 내성의 순간에 당신의 말이 함께할 수 있도록 기여할 수도 있습니다.",
   "footprintCategoriesTitle": "메시지 대상 카테고리",
   "footprintCategoriesIntro": "기부 시, 당신의 문구를 앱의 어느 부분에 사용하고 싶은지 선택해 주세요:",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "공격적이거나, 차별적이거나, 폭력적이거나 경멸적인 내용은 거부됩니다.",
   "footprintModL10nLabel": "현지화 조정:",
   "footprintModL10nDesc": "텍스트는 번역을 쉽게 하기 위해 사소한 맞춤법 교정이나 미묘한 조정을 받을 수 있습니다. 제안이 작품의 정체성에 맞지 않으면, 대안을 협의하기 위해 연락드리겠습니다.",
-
-"projectSoundtrackDesc": "이 작품들의 사운드트랙과 음악은 모든 코드 한 줄, 디자인, 그리고 성찰의 순간에 함께한 음향적 배경이 되었습니다. 엄선된 큐레이션 플레이리스트에서 공식 컴필레이션을 감상하실 수 있습니다: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube 플레이리스트</a>.",
-  "youtubePlaylistBtn": "▶ YouTube 플레이리스트"
+  "projectSoundtrackDesc": "이 작품들의 사운드트랙과 음악은 모든 코드 한 줄, 디자인, 그리고 성찰의 순간에 함께한 음향적 배경이 되었습니다. 엄선된 큐레이션 플레이리스트에서 공식 컴필레이션을 감상하실 수 있습니다: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ YouTube 플레이리스트</a>.",
+  "youtubePlaylistBtn": "▶ YouTube 플레이리스트",
+  "musicLabel": "음악",
+  "featDesktopTitle": "크로스 플랫폼 데스크톱 (Alpha)",
+  "featDesktopDesc": "기억의 안식처를 PC(Windows & Linux)로 확장하세요. 동일한 오프라인 프라이버시, 몰입형 디자인 및 완전한 .lifelogs 호환성을 제공합니다.",
+  "faqDesktopTitle": "데스크톱 버전(Windows & Linux)은 어떻게 작동하나요?",
+  "faqDesktopDesc": "Hours Lived Desktop은 현재 <code>Alpha</code> 단계입니다. 100% 오프라인 아키텍처, 로컬 AES-256 암호화 데이터베이스, PC와 스마트폰 간 호환 가능한 백업(<code>.lifelogs</code>), 라이트 노벨 스타일 PDF 내보내기 등 모바일 버전과 완전한 기능 일치를 제공합니다."
 }

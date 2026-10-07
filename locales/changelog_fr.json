@@ -1,4 +1,4 @@
-﻿{
+{
   "release": [
     {
       "version": "v0.4.3",
@@ -55,6 +55,16 @@
     }
   ],
   "alpha": [
+    {
+      "version": "App v0.4.6-alpha · Desktop v0.0.1",
+      "date": "Octobre 2026",
+      "title": "Refonte de l'architecture KMP & Aperçu Desktop v0.0.1",
+      "changes": [
+        "Restructuration architecturale avec cœur partagé en Kotlin & Compose Multiplatform.",
+        "Aperçu initial des binaires bureau (programme d'installation MSI Windows et paquet DEB Linux).",
+        "Migration de la base de données SQLCipher, renforcement du mode récupération et mise à niveau des dépendances."
+      ]
+    },
     {
       "version": "v0.4.3-alpha",
       "date": "20 de agosto de 2026",

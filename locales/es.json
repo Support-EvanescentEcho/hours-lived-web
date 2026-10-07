@@ -1,4 +1,4 @@
-﻿{
+{
   "logoSub": "Soporte Oficial",
   "themeLbl": "Tema:",
   "langLbl": "Idioma:",
@@ -8,8 +8,8 @@
   "heroTitle": "Hours Lived",
   "heroDesc": "Reflexiona sobre el camino de tu vida con seguridad absoluta.",
   "downloadPlayStore": "Descargar en Play Store",
-  "downloadWindows": "Descargar Windows (.msi)",
-  "downloadLinux": "Descargar Linux (.deb)",
+  "downloadWindows": "Descargar Windows (Alpha · .msi)",
+  "downloadLinux": "Descargar Linux (Alpha · .deb)",
   "downloadApk": "Descargar APK",
   "tabHome": "Inicio",
   "tabChangelog": "Historial",
@@ -120,8 +120,7 @@
   "termsSec4Title": "4. Exclusión de Responsabilidad",
   "termsSec4Body": "La aplicación se distribuye de manera \"tal cual está\", sin promesas implícitas ni garantías explícitas de funcionamiento ininterrumpido o libre de defectos imprevistos.",
   "footerText": "© 2026 Evanescent Echo. Todos los derechos reservados. Desarrollado de forma independiente.",
-  "footerVersion": "v0.3.0 · Soporte Oficial",
-
+  "footerVersion": "App v0.4.6-alpha · Desktop v0.0.1-alpha",
   "footprintTitle": "Deja tu Huella en Hours Lived",
   "footprintDesc": "Al apoyar el desarrollo de Hours Lived, no solo ayudas a mantener el proyecto vivo, libre de publicidad y completamente privado; también puedes aportar tus propias palabras para que formen parte de la experiencia de otros usuarios en sus momentos de introspección.",
   "footprintCategoriesTitle": "Categorías disponibles para tu mensaje",
@@ -163,7 +162,11 @@
   "footprintModRespDesc": "Queda descartado cualquier contenido ofensivo, discriminatorio, violento o despectivo.",
   "footprintModL10nLabel": "Ajustes de localización:",
   "footprintModL10nDesc": "Los textos pueden recibir correcciones menores o ajustes sutiles para facilitar su traducción. Si una propuesta no se ajusta a la identidad de la obra, me pondré en contacto para acordar una alternativa.",
-
-"projectSoundtrackDesc": "Las bandas sonoras y piezas musicales de estas obras fueron la atmósfera sonora que acompañó cada línea de código, diseño y reflexión. Puedes escuchar la recopilación oficial en nuestra lista seleccionada: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Playlist en YouTube</a>.",
-  "youtubePlaylistBtn": "▶ Playlist en YouTube"
+  "projectSoundtrackDesc": "Las bandas sonoras y piezas musicales de estas obras fueron la atmósfera sonora que acompañó cada línea de código, diseño y reflexión. Puedes escuchar la recopilación oficial en nuestra lista seleccionada: <a href=\"https://www.youtube.com/playlist?list=PLSMOooksGAReM\" target=\"_blank\" style=\"color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;\">▶ Playlist en YouTube</a>.",
+  "youtubePlaylistBtn": "▶ Playlist en YouTube",
+  "musicLabel": "Música",
+  "featDesktopTitle": "Soporte Multiplataforma (Desktop Alpha)",
+  "featDesktopDesc": "Lleva tu santuario de memorias a tu computadora (Windows & Linux). Disfruta de la misma privacidad offline, diseño inmersivo y compatibilidad total con tus copias .lifelogs.",
+  "faqDesktopTitle": "¿Cómo funciona la versión de escritorio (Windows & Linux)?",
+  "faqDesktopDesc": "Hours Lived Desktop se encuentra actualmente en fase <code>Alpha</code>. Ofrece total paridad con la versión móvil: arquitectura 100% offline, base de datos local con cifrado AES-256 (SQLCipher), exportación e importación de respaldos (<code>.lifelogs</code>) compatibles entre PC y teléfono, y exportación a PDF estilo Novela Ligera."
 }
