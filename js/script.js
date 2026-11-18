@@ -272,6 +272,8 @@ async function applyLanguage(lang) {
     fp('footprintTplValAuthor',     'footprintTplValAuthor',     '');
     fp('footprintTplKeyWork',       'footprintTplKeyWork',       '');
     fp('footprintTplValWork',       'footprintTplValWork',       '');
+    fp('footprintTplKeyTool',       'footprintTplKeyTool',       '');
+    fp('footprintTplValTool',       'footprintTplValTool',       '');
     fp('footprintModerationTitle',  'footprintModerationTitle',  '');
     fp('footprintModToneLabel',     'footprintModToneLabel',     '');
     fp('footprintModToneDesc',      'footprintModToneDesc',      '');
