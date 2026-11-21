@@ -1,78 +1,17 @@
 {
-  "release": [
-    {
-      "version": "v0.4.3",
-      "date": "24 de septiembre de 2026",
-      "title": "Soporte Multiplataforma de Escritorio & Paridad Total",
-      "changes": [
-        "Lanzamiento de soporte nativo para Windows y Linux mediante Kotlin Multiplatform y Compose Multiplatform.",
-        "Paridad total de 18 pantallas compartidas y módulo de bienestar 'El Refugio' (Escritura Catártica, Lienzo Zen y Respiración).",
-        "Migración completa a SQLCipher con cifrado fuerte de base de datos Room (AES-256) y Modo de Recuperación ante fallos de inicio.",
-        "Internacionalización dinámica en 10 idiomas con selección del sistema y respaldos locales protegidos (.lifelogs)."
-      ]
-    },
-    {
-      "version": "v0.1.6",
-      "date": "28 de junio de 2026",
-      "title": "Modularización & Canal de Almacenamiento de Imágenes",
-      "changes": [
-        "Modularizada la estructura del proyecto en módulos core y proveedores de widgets.",
-        "Implementado canal de almacenamiento de imágenes locales cifradas para recuerdos.",
-        "Actualizadas las migraciones del esquema de base de datos local Room a la versión 14 y refactorización de background workers."
-      ]
-    },
-    {
-      "version": "v3.5.0",
-      "date": "7 de noviembre de 2024",
-      "title": "Capa de Seguridad Nativa & Auditoría de Integridad",
-      "changes": [
-        "Integrada capa de seguridad nativa para auditoría de integridad y protección de claves con HMAC.",
-        "Vaciado automatizado de memoria en segundo plano al pausar la aplicación para máxima privacidad.",
-        "Añadidos esquemas de color personalizables e i18n extendido."
-      ]
-    },
-    {
-      "version": "v2.2.0",
-      "date": "12 de septiembre de 2024",
-      "title": "Primera Versión Estable & Bitácora Base",
-      "changes": [
-        "Lanzado el sistema principal de cálculo de tiempo vivido y bitácora de introspección.",
-        "Integrados 13 esquemas de color nostálgicos inspirados en novelas visuales y animes tributo.",
-        "Cálculo automático de 'Vida Operativa' y registro seguro de recuerdos cotidianos."
-      ]
-    }
-  ],
-  "beta": [
-    {
-      "version": "v3.5.6-beta.01",
-      "date": "15 de mayo de 2025",
-      "title": "Cápsulas del Tiempo & Hilos de Memoria",
-      "changes": [
-        "Presentación de Cápsulas del Tiempo para bloquear entradas del diario hasta fechas futuras específicas.",
-        "Añadido sistema de Hilos de Memoria, filtros avanzados por emociones y notificaciones de cápsulas.",
-        "Opción de protección con contraseña para exportación e importación de respaldos (.lifelogs)."
-      ]
-    }
-  ],
+  "release": [],
+  "beta": [],
   "alpha": [
     {
-      "version": "App v0.4.6-alpha · Desktop v0.0.1",
-      "date": "Outubro de 2026",
-      "title": "Reestruturação KMP & Prévia Desktop v0.0.1",
+      "version": "v0.1.6 (37)",
+      "date": "28 de junho de 2026",
+      "title": "Primeira alfa no Google Play",
       "changes": [
-        "Reestruturação arquitetural para núcleo compartilhado em Kotlin e Compose Multiplatform.",
-        "Prévia inicial dos binários de desktop (instalador MSI para Windows e pacote DEB para Linux).",
-        "Migração de banco de dados SQLCipher, aprimoramento do modo de recuperação e atualização de dependências."
-      ]
-    },
-    {
-      "version": "v0.4.3-alpha",
-      "date": "20 de agosto de 2026",
-      "title": "Compilación Alfa Multidispositivo & Endurecimiento SQLCipher",
-      "changes": [
-        "Verificación de paridad lógica entre Android, Windows (.msi) y Linux (.deb).",
-        "Pruebas de migración de base de datos a esquema v14 y reemplazo de fuentes tipográficas.",
-        "Pruebas cerradas de rendimiento de cifrado local en dispositivos de prueba en Google Play."
+        "Primeira versão publicada no Google Play, como alfa fechada.",
+        "As memórias podem ter uma foto, comprimida e guardada apenas no teu dispositivo.",
+        "Novos campos para registar o humor, as emoções e as âncoras de cada memória.",
+        "As cópias de segurança incluem agora as fotos e os novos dados de cada memória.",
+        "Uma manutenção em segundo plano mantém compacta a base de dados local."
       ]
     }
   ]

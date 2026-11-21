@@ -179,12 +179,12 @@
                 <p id="changelogDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">Read about features, fixes, and improvements across releases, public beta builds, and alpha milestones.</p>
                 
                 <div class="changelog-subtabs">
-                    <button class="subtab-btn active" onclick="switchChangelogChannel('release')" id="subtab-release-lbl">Release</button>
+                    <button class="subtab-btn" onclick="switchChangelogChannel('release')" id="subtab-release-lbl">Release</button>
                     <button class="subtab-btn" onclick="switchChangelogChannel('beta')" id="subtab-beta-lbl">Beta Logs</button>
-                    <button class="subtab-btn" onclick="switchChangelogChannel('alpha')" id="subtab-alpha-lbl">Alpha Logs</button>
+                    <button class="subtab-btn active" onclick="switchChangelogChannel('alpha')" id="subtab-alpha-lbl">Alpha Logs</button>
                 </div>
                 
-                <div id="changelog-alpha-notice-box" class="alpha-notice-box" style="display: none;">
+                <div id="changelog-alpha-notice-box" class="alpha-notice-box" style="display: block;">
                     <p id="changelogAlphaNotice">Alpha builds are closed pre-release iterations uploaded to the Play Store for target-device security and logic verification before release cycles.</p>
                 </div>
 
@@ -397,7 +397,7 @@
     <footer>
         <p id="footer-text">© 2026 Evanescent Echo. All rights reserved. Independently developed.</p>
         <p style="font-size: 0.85rem; margin-top: 0.4rem;"><a href="#privacy-policy" id="footerPrivacyLink" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a></p>
-        <p id="footer-version" style="font-size: 0.8rem; margin-top: 0.6rem; color: var(--text-primary); font-family: 'Inter', sans-serif; font-weight: 500; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase;">App v0.4.6-alpha · Desktop v0.0.1-alpha</p>
+        <p id="footer-version" style="font-size: 0.8rem; margin-top: 0.6rem; color: var(--text-primary); font-family: 'Inter', sans-serif; font-weight: 500; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase;">App v0.1.6-alpha</p>
     </footer>
 
     <!-- Translations & Theme/Language Switches Logic -->

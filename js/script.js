@@ -264,6 +264,7 @@ async function applyLanguage(lang) {
     fp('footprintModL10nDesc',      'footprintModL10nDesc',      '');
 
     // Load and Render Changelogs
+    if (dict.changelogEmpty) changelogEmptyText = dict.changelogEmpty;
     await loadChangelogData(lang);
     renderChangelog();
 }
@@ -321,8 +322,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Dynamic Changelog State and Logic
-let currentChangelogChannel = 'release';
+let currentChangelogChannel = 'alpha';
 let changelogData = null;
+let changelogEmptyText = 'No versions published in this channel yet.';
 
 async function loadChangelogData(lang) {
     try {
@@ -356,8 +358,7 @@ function renderChangelog() {
     
     if (logs.length === 0) {
         const emptyMsg = document.createElement('p');
-        const lang = localStorage.getItem('lang') || 'en';
-        emptyMsg.innerText = lang === 'es' ? 'No hay registros en este historial.' : 'No entries available in this log history.';
+        emptyMsg.innerText = changelogEmptyText;
         container.appendChild(emptyMsg);
         return;
     }
