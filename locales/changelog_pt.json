@@ -3,6 +3,50 @@
   "beta": [],
   "alpha": [
     {
+      "version": "v0.4.6 (260811230)",
+      "date": "7 de outubro de 2026",
+      "title": "Editor, estatísticas e Refúgio afinados",
+      "changes": [
+        "Editor de texto formatado, pré-visualização Markdown e gravação de notas de voz mais fluidos.",
+        "Estatísticas com gráfico do espectro emocional e novos cartões.",
+        "Rituais do Refúgio afinados: Cartas Eco, Kintsugi e respiração.",
+        "Encriptação das cópias de segurança mais estável.",
+        "Traduções atualizadas nos 10 idiomas."
+      ]
+    },
+    {
+      "version": "v0.4.5 (260811229)",
+      "date": "1 de outubro de 2026",
+      "title": "Novos alicerces",
+      "changes": [
+        "O interior da app foi reconstruído para partilhar lógica com a futura versão para computador.",
+        "Base de dados atualizada para a versão 18, com suporte para faróis e ritos.",
+        "Notificações, leitor de áudio e cópias de segurança reorganizados."
+      ]
+    },
+    {
+      "version": "v0.4.4 (260811228)",
+      "date": "26 de setembro de 2026",
+      "title": "Base de dados encriptada mais segura",
+      "changes": [
+        "É guardada uma cópia de segurança antes de abrir a base de dados, com recuperação automática se o ficheiro faltar ou ficar vazio.",
+        "A app já não apaga a base de dados após um erro ao abri-la ou com a chave.",
+        "As chaves de encriptação antigas são detetadas e migradas automaticamente."
+      ]
+    },
+    {
+      "version": "v0.4.3 (260811227)",
+      "date": "24 de setembro de 2026",
+      "title": "Dez idiomas, widgets e o Refúgio",
+      "changes": [
+        "A app está disponível em 10 idiomas, widgets incluídos.",
+        "Widgets do ecrã inicial renovados para o humor e a frase do dia.",
+        "O Refúgio: escrita catártica, tela zen e exercícios de respiração.",
+        "As cópias de segurança incluem imagens, comprimidas.",
+        "Sincronização local por Wi-Fi entre dispositivos, base para a versão para computador."
+      ]
+    },
+    {
       "version": "v0.1.6 (37)",
       "date": "28 de junho de 2026",
       "title": "Primeira alfa no Google Play",

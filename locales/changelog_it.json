@@ -3,6 +3,50 @@
   "beta": [],
   "alpha": [
     {
+      "version": "v0.4.6 (260811230)",
+      "date": "7 ottobre 2026",
+      "title": "Editor, statistiche e Rifugio rifiniti",
+      "changes": [
+        "Editor di testo formattato, anteprima Markdown e registrazione delle note vocali più fluidi.",
+        "Statistiche con grafico dello spettro emotivo e nuove schede.",
+        "Rituali del Rifugio rifiniti: Lettere Eco, Kintsugi e respirazione.",
+        "Crittografia dei backup più stabile.",
+        "Traduzioni aggiornate in tutte le 10 lingue."
+      ]
+    },
+    {
+      "version": "v0.4.5 (260811229)",
+      "date": "1 ottobre 2026",
+      "title": "Nuove fondamenta",
+      "changes": [
+        "L'interno dell'app è stato ricostruito per condividere la logica con la futura versione desktop.",
+        "Database aggiornato alla versione 18, con supporto per segnali e riti.",
+        "Notifiche, lettore audio e backup riorganizzati."
+      ]
+    },
+    {
+      "version": "v0.4.4 (260811228)",
+      "date": "26 settembre 2026",
+      "title": "Database cifrato più sicuro",
+      "changes": [
+        "Prima di aprire il database viene salvata una copia di sicurezza, con ripristino automatico se il file manca o è vuoto.",
+        "L'app non elimina più il database dopo un errore di apertura o di chiave.",
+        "Le chiavi di crittografia più vecchie vengono rilevate e migrate automaticamente."
+      ]
+    },
+    {
+      "version": "v0.4.3 (260811227)",
+      "date": "24 settembre 2026",
+      "title": "Dieci lingue, widget e il Rifugio",
+      "changes": [
+        "L'app è disponibile in 10 lingue, widget inclusi.",
+        "Widget della schermata home rinnovati per l'umore e la frase del giorno.",
+        "Il Rifugio: scrittura catartica, tela zen ed esercizi di respirazione.",
+        "I backup includono le immagini, compresse.",
+        "Sincronizzazione locale via Wi-Fi tra dispositivi, base per la versione desktop."
+      ]
+    },
+    {
       "version": "v0.1.6 (37)",
       "date": "28 giugno 2026",
       "title": "Prima alpha su Google Play",

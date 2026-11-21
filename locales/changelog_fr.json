@@ -3,6 +3,50 @@
   "beta": [],
   "alpha": [
     {
+      "version": "v0.4.6 (260811230)",
+      "date": "7 octobre 2026",
+      "title": "Éditeur, statistiques et Refuge peaufinés",
+      "changes": [
+        "Éditeur de texte enrichi, aperçu Markdown et enregistrement des notes vocales plus fluides.",
+        "Statistiques avec un graphique du spectre émotionnel et de nouvelles cartes.",
+        "Rituels du Refuge affinés : Lettres d'écho, Kintsugi et respiration.",
+        "Chiffrement des sauvegardes plus stable.",
+        "Traductions mises à jour dans les 10 langues."
+      ]
+    },
+    {
+      "version": "v0.4.5 (260811229)",
+      "date": "1er octobre 2026",
+      "title": "Nouvelles fondations",
+      "changes": [
+        "L'intérieur de l'application a été reconstruit pour partager sa logique avec la future version de bureau.",
+        "Base de données mise à jour en version 18, avec prise en charge des balises et des rites.",
+        "Notifications, lecteur audio et sauvegardes réorganisés."
+      ]
+    },
+    {
+      "version": "v0.4.4 (260811228)",
+      "date": "26 septembre 2026",
+      "title": "Base de données chiffrée plus sûre",
+      "changes": [
+        "Une copie de sécurité est faite avant d'ouvrir la base de données, avec récupération automatique si le fichier manque ou est vide.",
+        "L'application ne supprime plus la base de données après une erreur d'ouverture ou de clé.",
+        "Les anciennes clés de chiffrement sont détectées et migrées automatiquement."
+      ]
+    },
+    {
+      "version": "v0.4.3 (260811227)",
+      "date": "24 septembre 2026",
+      "title": "Dix langues, widgets et le Refuge",
+      "changes": [
+        "L'application est disponible en 10 langues, widgets compris.",
+        "Widgets d'accueil renouvelés pour l'humeur et la phrase du jour.",
+        "Le Refuge : écriture cathartique, toile zen et exercices de respiration.",
+        "Les sauvegardes incluent les images, compressées.",
+        "Synchronisation locale par Wi-Fi entre appareils, base de la version de bureau."
+      ]
+    },
+    {
       "version": "v0.1.6 (37)",
       "date": "28 juin 2026",
       "title": "Première alpha sur Google Play",

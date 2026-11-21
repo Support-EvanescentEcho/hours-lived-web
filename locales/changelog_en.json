@@ -3,6 +3,50 @@
   "beta": [],
   "alpha": [
     {
+      "version": "v0.4.6 (260811230)",
+      "date": "October 7, 2026",
+      "title": "Editor, statistics and Refuge polish",
+      "changes": [
+        "Smoother rich text editor, Markdown preview and voice note recording.",
+        "Statistics with an emotional spectrum chart and new cards.",
+        "Refined Refuge rituals: Echo Letters, Kintsugi and breathing.",
+        "More stable backup encryption.",
+        "Translations updated in all 10 languages."
+      ]
+    },
+    {
+      "version": "v0.4.5 (260811229)",
+      "date": "October 1, 2026",
+      "title": "New foundations",
+      "changes": [
+        "The app's internals were rebuilt to share logic with the upcoming desktop version.",
+        "Database updated to version 18, with support for beacons and rites.",
+        "Notifications, audio player and backups reorganized."
+      ]
+    },
+    {
+      "version": "v0.4.4 (260811228)",
+      "date": "September 26, 2026",
+      "title": "Safer encrypted database",
+      "changes": [
+        "A safety snapshot is taken before opening the database, with automatic recovery if the file goes missing or empty.",
+        "The app no longer deletes the database after an opening or key error.",
+        "Older encryption keys are detected and migrated automatically."
+      ]
+    },
+    {
+      "version": "v0.4.3 (260811227)",
+      "date": "September 24, 2026",
+      "title": "Ten languages, widgets and the Refuge",
+      "changes": [
+        "The app is available in 10 languages, widgets included.",
+        "Refreshed home screen widgets for mood and daily phrase.",
+        "The Refuge: cathartic writing, Zen canvas and breathing exercises.",
+        "Backups include images, with compression.",
+        "Local Wi-Fi sync between devices, groundwork for the desktop version."
+      ]
+    },
+    {
       "version": "v0.1.6 (37)",
       "date": "June 28, 2026",
       "title": "First alpha on Google Play",

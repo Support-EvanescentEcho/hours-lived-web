@@ -3,6 +3,50 @@
   "beta": [],
   "alpha": [
     {
+      "version": "v0.4.6 (260811230)",
+      "date": "7. Oktober 2026",
+      "title": "Editor, Statistiken und Zuflucht verfeinert",
+      "changes": [
+        "Flüssigerer Rich-Text-Editor, Markdown-Vorschau und Sprachnotiz-Aufnahme.",
+        "Statistiken mit einem Diagramm des Gefühlsspektrums und neuen Karten.",
+        "Verfeinerte Rituale der Zuflucht: Echo-Briefe, Kintsugi und Atmung.",
+        "Stabilere Verschlüsselung der Sicherungen.",
+        "Übersetzungen in allen 10 Sprachen aktualisiert."
+      ]
+    },
+    {
+      "version": "v0.4.5 (260811229)",
+      "date": "1. Oktober 2026",
+      "title": "Neues Fundament",
+      "changes": [
+        "Das Innere der App wurde neu aufgebaut, um Logik mit der kommenden Desktop-Version zu teilen.",
+        "Datenbank auf Version 18 aktualisiert, mit Unterstützung für Leuchtfeuer und Riten.",
+        "Benachrichtigungen, Audioplayer und Sicherungen neu geordnet."
+      ]
+    },
+    {
+      "version": "v0.4.4 (260811228)",
+      "date": "26. September 2026",
+      "title": "Sicherere verschlüsselte Datenbank",
+      "changes": [
+        "Vor dem Öffnen der Datenbank wird eine Sicherheitskopie erstellt, mit automatischer Wiederherstellung, falls die Datei fehlt oder leer ist.",
+        "Die App löscht die Datenbank nach einem Öffnungs- oder Schlüsselfehler nicht mehr.",
+        "Ältere Schlüssel werden erkannt und automatisch migriert."
+      ]
+    },
+    {
+      "version": "v0.4.3 (260811227)",
+      "date": "24. September 2026",
+      "title": "Zehn Sprachen, Widgets und die Zuflucht",
+      "changes": [
+        "Die App ist in 10 Sprachen verfügbar, einschließlich der Widgets.",
+        "Erneuerte Startbildschirm-Widgets für Stimmung und Tagesspruch.",
+        "Die Zuflucht: kathartisches Schreiben, Zen-Leinwand und Atemübungen.",
+        "Sicherungen enthalten Bilder, komprimiert.",
+        "Lokale WLAN-Synchronisierung zwischen Geräten, Grundlage für die Desktop-Version."
+      ]
+    },
+    {
       "version": "v0.1.6 (37)",
       "date": "28. Juni 2026",
       "title": "Erste Alpha bei Google Play",
