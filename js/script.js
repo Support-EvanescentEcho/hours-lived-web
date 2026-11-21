@@ -120,14 +120,6 @@ async function applyLanguage(lang) {
     if (document.getElementById('footerPrivacyLink')) {
         document.getElementById('footerPrivacyLink').innerText = dict.footerPrivacyLink || "Privacy Policy";
     }
-    // Supporter Tiers
-    document.getElementById('tiersTitle').innerText = dict.tiersTitle || "Supporter Benefits";
-    document.getElementById('tierOneTimeBadge').innerText = dict.tierOneTimeBadge || "One-Time";
-    document.getElementById('tierOneTimeTitle').innerText = dict.tierOneTimeTitle || "One-Time Support";
-    document.getElementById('tierOneTimeDesc').innerText = dict.tierOneTimeDesc || "";
-    document.getElementById('tierMonthlyBadge').innerText = dict.tierMonthlyBadge || "Monthly";
-    document.getElementById('tierMonthlyTitle').innerText = dict.tierMonthlyTitle || "Monthly Support";
-    document.getElementById('tierMonthlyDesc').innerText = dict.tierMonthlyDesc || "";
 
     // Legal & Disclaimer
     document.getElementById('disclaimer_title').innerText = dict.disclaimer_title || "";
@@ -241,7 +233,8 @@ async function applyLanguage(lang) {
         else if (el && fallback) el.innerText = fallback;
     };
     fp('footprintTitle',            'footprintTitle',            'Deja tu Huella en Hours Lived');
-    fp('footprintDesc',             'footprintDesc',             '');
+    fp('proposeIntro',              'proposeIntro',              '');
+    fp('proposeBtn',                'proposeBtn',                '');
     fp('footprintCategoriesTitle',  'footprintCategoriesTitle',  '');
     fp('footprintCategoriesIntro',  'footprintCategoriesIntro',  '');
     fp('footprintCat1Title',        'footprintCat1Title',        '');
@@ -260,20 +253,6 @@ async function applyLanguage(lang) {
     fp('footprintTypeDesc2',        'footprintTypeDesc2',        '');
     fp('footprintTypeBadge3',       'footprintTypeBadge3',       '');
     fp('footprintTypeDesc3',        'footprintTypeDesc3',        '');
-    fp('footprintTemplateTitle',    'footprintTemplateTitle',    '');
-    fp('footprintTemplateIntro',    'footprintTemplateIntro',    '');
-    fp('footprintTplKeyDest',       'footprintTplKeyDest',       '');
-    fp('footprintTplValDest',       'footprintTplValDest',       '');
-    fp('footprintTplKeyType',       'footprintTplKeyType',       '');
-    fp('footprintTplValType',       'footprintTplValType',       '');
-    fp('footprintTplKeyPhrase',     'footprintTplKeyPhrase',     '');
-    fp('footprintTplValPhrase',     'footprintTplValPhrase',     '');
-    fp('footprintTplKeyAuthor',     'footprintTplKeyAuthor',     '');
-    fp('footprintTplValAuthor',     'footprintTplValAuthor',     '');
-    fp('footprintTplKeyWork',       'footprintTplKeyWork',       '');
-    fp('footprintTplValWork',       'footprintTplValWork',       '');
-    fp('footprintTplKeyTool',       'footprintTplKeyTool',       '');
-    fp('footprintTplValTool',       'footprintTplValTool',       '');
     fp('footprintModerationTitle',  'footprintModerationTitle',  '');
     fp('footprintModToneLabel',     'footprintModToneLabel',     '');
     fp('footprintModToneDesc',      'footprintModToneDesc',      '');

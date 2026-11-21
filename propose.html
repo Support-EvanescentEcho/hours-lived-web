@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours Lived — Propose a phrase</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body class="lang-active-en">
+
+    <header>
+        <div class="logo-area">
+            <img src="assets/logo.png" alt="Hours Lived Logo" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">
+                <div class="logo-title">Hours Lived</div>
+                <div class="logo-subtitle" data-i18n="logoSub">Official Support</div>
+            </div>
+        </div>
+
+        <div class="selectors">
+            <div class="select-wrapper">
+                <span data-i18n="themeLbl">Theme:</span>
+                <select id="theme-select" onchange="applyTheme(this.value)">
+                    <option value="light" data-i18n="themeLight">Light</option>
+                    <option value="dark" data-i18n="themeDark">Dark</option>
+                    <option value="system" data-i18n="themeSystem" selected>System</option>
+                </select>
+            </div>
+            <div class="select-wrapper">
+                <span data-i18n="langLbl">Language:</span>
+                <select id="lang-select" onchange="applyLanguage(this.value)">
+                    <option value="en" selected>English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p class="propose-back"><a href="index.html" data-i18n="proposeBack">← Back to Hours Lived</a></p>
+
+        <!-- Intro -->
+        <div class="card">
+            <div class="card-header">
+                <h2 data-i18n="footprintTitle">Leave Your Mark on Hours Lived</h2>
+            </div>
+            <p class="propose-lead" data-i18n="proposeIntro">Anyone can propose a phrase. It's free and always will be: your words can become part of someone else's moment of introspection.</p>
+        </div>
+
+        <!-- Form -->
+        <div class="card" style="margin-top: 2.5rem;">
+            <div class="card-header">
+                <h2 data-i18n="formTitle">Your proposal</h2>
+            </div>
+            <form id="propose-form" class="propose-form" novalidate>
+                <div class="propose-row">
+                    <label class="propose-field">
+                        <span data-i18n="footprintTplKeyDest">Destination</span>
+                        <select id="f-dest" name="dest">
+                            <option value="daily" data-i18n="footprintCat1Title">Daily Reflections</option>
+                            <option value="capsule" data-i18n="footprintCat2Title">Time Capsules</option>
+                            <option value="edit" data-i18n="footprintCat3Title">Edit Guardians</option>
+                            <option value="delete" data-i18n="footprintCat4Title">Deletion Guardians</option>
+                        </select>
+                    </label>
+                    <label class="propose-field">
+                        <span data-i18n="footprintTplKeyType">Type</span>
+                        <select id="f-type" name="type">
+                            <option value="direct" data-i18n="footprintTypeBadge1">Direct Quote</option>
+                            <option value="inspired" data-i18n="footprintTypeBadge2">Inspired Thought</option>
+                            <option value="original" data-i18n="footprintTypeBadge3" selected>Original Reflection</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="propose-field">
+                    <span data-i18n="footprintTplKeyPhrase">Quote</span>
+                    <textarea id="f-phrase" name="phrase" rows="3" maxlength="280" required data-i18n-placeholder="footprintTplValPhrase" placeholder="Write your quote here"></textarea>
+                    <small class="propose-counter"><span id="f-count">0</span> / 280</small>
+                </label>
+
+                <div class="propose-row">
+                    <label class="propose-field">
+                        <span data-i18n="footprintTplKeyAuthor">Author / Character</span>
+                        <input id="f-author" name="author" type="text" maxlength="80" data-i18n-placeholder="footprintTplValAuthor" placeholder="Who said it, or how you want to sign">
+                    </label>
+                    <label class="propose-field" id="f-work-field">
+                        <span data-i18n="footprintTplKeyWork">Original Work</span>
+                        <input id="f-work" name="work" type="text" maxlength="120" data-i18n-placeholder="footprintTplValWork" placeholder="Title of the anime, book, or game">
+                    </label>
+                </div>
+
+                <label class="propose-consent">
+                    <input id="f-consent" type="checkbox" required>
+                    <span data-i18n="formConsent">I agree that this phrase may be published in Hours Lived under the project's license, with the attribution I've indicated.</span>
+                </label>
+
+                <p id="f-error" class="propose-error" role="alert" hidden></p>
+
+                <div class="propose-actions">
+                    <button type="button" class="btn-action" id="f-email" data-i18n="formSendEmail">Send by email</button>
+                    <button type="button" class="btn-action" id="f-github" data-i18n="formSendGithub">Open on GitHub</button>
+                    <button type="button" class="btn-action propose-secondary" id="f-copy" data-i18n="formCopy">Copy text</button>
+                </div>
+                <p class="propose-note" data-i18n="formAfter">Every proposal is read with care. Accepted phrases arrive with upcoming updates, credited as you chose. Not every proposal can be included; if one doesn't quite fit, I may reach out to find an alternative together.</p>
+            </form>
+        </div>
+
+        <!-- Guidelines -->
+        <div class="card" style="margin-top: 2.5rem;">
+            <h3 class="propose-subtitle" data-i18n="footprintCategoriesTitle">Available categories for your message</h3>
+            <p class="propose-text" data-i18n="footprintCategoriesIntro">Choose which part of the project receives your quote:</p>
+            <div class="footprint-categories">
+                <div class="footprint-cat-card">
+                    <div class="footprint-cat-icon">✦</div>
+                    <h4 data-i18n="footprintCat1Title">Daily Reflections</h4>
+                    <p data-i18n="footprintCat1Desc">Quotes rotating across the home screen and desktop widgets.</p>
+                </div>
+                <div class="footprint-cat-card">
+                    <div class="footprint-cat-icon">⏳</div>
+                    <h4 data-i18n="footprintCat2Title">Time Capsules</h4>
+                    <p data-i18n="footprintCat2Desc">Words of patience displayed when someone attempts to unlock a capsule early.</p>
+                </div>
+                <div class="footprint-cat-card">
+                    <div class="footprint-cat-icon">✎</div>
+                    <h4 data-i18n="footprintCat3Title">Edit Guardians</h4>
+                    <p data-i18n="footprintCat3Desc">Thoughtful prompts asking users to reflect before modifying a precious memory.</p>
+                </div>
+                <div class="footprint-cat-card footprint-cat-sensitive">
+                    <div class="footprint-cat-icon">🕯</div>
+                    <h4 data-i18n="footprintCat4Title">Deletion Guardians</h4>
+                    <p data-i18n="footprintCat4Desc">Calming reflections before permanently deleting a memory, carefully curated to prevent distress.</p>
+                </div>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <h3 class="propose-subtitle" data-i18n="footprintTypesTitle">Quote types and attribution</h3>
+            <p class="propose-text" data-i18n="footprintTypesIntro">To maintain transparency and credit original works, suggestions must fit into one of these modalities:</p>
+            <div class="footprint-types">
+                <div class="footprint-type-row">
+                    <span class="footprint-type-badge" data-i18n="footprintTypeBadge1">Direct Quote</span>
+                    <p data-i18n="footprintTypeDesc1">A verbatim quote from a book, movie, game, or anime with precise character/author credit and source title.</p>
+                </div>
+                <div class="footprint-type-row">
+                    <span class="footprint-type-badge secondary" data-i18n="footprintTypeBadge2">Inspired Thought</span>
+                    <p data-i18n="footprintTypeDesc2">A reflection in your own words inspired by the themes of a particular work, attributed to you with reference to the original work.</p>
+                </div>
+                <div class="footprint-type-row">
+                    <span class="footprint-type-badge tertiary" data-i18n="footprintTypeBadge3">Original Reflection</span>
+                    <p data-i18n="footprintTypeDesc3">A 100% original thought born from your own life experiences, credited to your nickname or anonymously.</p>
+                </div>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <h3 class="propose-subtitle" data-i18n="footprintModerationTitle">Moderation guidelines</h3>
+            <ul class="footprint-moderation-list">
+                <li><strong data-i18n="footprintModToneLabel">Tone:</strong> <span data-i18n="footprintModToneDesc">Calm, acceptance, introspection, or comfort.</span></li>
+                <li><strong data-i18n="footprintModPrivLabel">No promotions or personal data:</strong> <span data-i18n="footprintModPrivDesc">No links, social media handles, advertising, or contact information.</span></li>
+                <li><strong data-i18n="footprintModRespLabel">Absolute respect:</strong> <span data-i18n="footprintModRespDesc">Any offensive, discriminatory, violent, or disparaging content will be rejected.</span></li>
+                <li><strong data-i18n="footprintModL10nLabel">Localization adjustments:</strong> <span data-i18n="footprintModL10nDesc">Texts may receive minor adjustments to facilitate translation.</span></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p data-i18n="footerText">© 2026 Evanescent Echo. All rights reserved. Independently developed.</p>
+    </footer>
+
+    <script src="js/propose.js"></script>
+</body>
+</html>
