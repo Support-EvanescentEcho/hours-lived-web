@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "4 de julio de 2026",
-      "title": "Actualización alfa",
+      "title": "Tercer parche alfa",
       "changes": [
-        "Segunda actualización alfa publicada ese día. Sus notas detalladas no se registraron."
+        "Informes de soporte: registros de diagnóstico cifrados para resolver problemas rápido.",
+        "Visor de imágenes: toca la imagen de un recuerdo para verla a pantalla completa en alta calidad.",
+        "Corregidos diseños duplicados y recuperadas las imágenes en la vista de detalle.",
+        "Números de versión automatizados y recursos de la app optimizados.",
+        "Corregidas reglas que podían cerrar la app al iniciarse."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "4 de julio de 2026",
-      "title": "Actualización alfa",
+      "title": "Segunda alfa",
       "changes": [
-        "Actualización alfa publicada en Google Play. Sus notas detalladas no se registraron."
+        "Exportar a PDF: convierte tus recuerdos en un PDF personalizado estilo Light Novel.",
+        "Creador de degradados: crea y guarda degradados con contraste de texto inteligente.",
+        "Búsqueda mejorada con FTS5: ahora ignora las tildes.",
+        "Editor: escribe y previsualiza tus recuerdos con Markdown.",
+        "Optimizaciones de cifrado y seguridad."
       ]
     },
     {

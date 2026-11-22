@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "4 luglio 2026",
-      "title": "Aggiornamento alpha",
+      "title": "Terza patch alpha",
       "changes": [
-        "Secondo aggiornamento alpha pubblicato quel giorno. Le note dettagliate non sono state registrate."
+        "Rapporti di supporto: log diagnostici cifrati per risolvere rapidamente i problemi.",
+        "Visualizzatore di immagini: tocca l'immagine di un ricordo per vederla a schermo intero in alta qualità.",
+        "Corretti layout duplicati e ripristinate le immagini nella vista dettagliata.",
+        "Numeri di versione automatizzati e risorse dell'app ottimizzate.",
+        "Corrette regole che potevano far chiudere l'app all'avvio."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "4 luglio 2026",
-      "title": "Aggiornamento alpha",
+      "title": "Seconda alpha",
       "changes": [
-        "Aggiornamento alpha pubblicato su Google Play. Le note dettagliate non sono state registrate."
+        "Esportazione PDF: trasforma i tuoi ricordi in un PDF personalizzato in stile Light Novel.",
+        "Creatore di sfumature: crea e salva sfumature con contrasto del testo intelligente.",
+        "Ricerca aggiornata a FTS5: ora ignora gli accenti.",
+        "Editor: scrivi e visualizza in anteprima i ricordi con Markdown.",
+        "Ottimizzazioni di crittografia e sicurezza."
       ]
     },
     {

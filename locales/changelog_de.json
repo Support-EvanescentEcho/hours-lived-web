@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "4. Juli 2026",
-      "title": "Alpha-Update",
+      "title": "Dritter Alpha-Patch",
       "changes": [
-        "Zweites an diesem Tag veröffentlichtes Alpha-Update. Ausführliche Notizen wurden dafür nicht festgehalten."
+        "Support-Berichte: verschlüsselte Diagnoseprotokolle, um Probleme schnell zu lösen.",
+        "Bildbetrachter: Tippe auf das Bild einer Erinnerung, um es im Vollbild in hoher Qualität zu sehen.",
+        "Doppelte Layouts behoben und Bilder in der Detailansicht wiederhergestellt.",
+        "Automatische Versionsnummern und optimierte App-Ressourcen.",
+        "Regeln behoben, die die App beim Start abstürzen lassen konnten."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "4. Juli 2026",
-      "title": "Alpha-Update",
+      "title": "Zweite Alpha",
       "changes": [
-        "Bei Google Play veröffentlichtes Alpha-Update. Ausführliche Notizen wurden dafür nicht festgehalten."
+        "PDF-Export: Verwandle deine Erinnerungen in ein eigenes PDF im Light-Novel-Stil.",
+        "Verlaufs-Editor: Erstelle und speichere Farbverläufe mit intelligentem Textkontrast.",
+        "Suche auf FTS5 umgestellt: Akzente werden jetzt ignoriert.",
+        "Editor: Erinnerungen mit Markdown schreiben und in der Vorschau ansehen.",
+        "Optimierungen bei Verschlüsselung und Sicherheit."
       ]
     },
     {

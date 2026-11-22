@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "4 de julho de 2026",
-      "title": "Atualização alfa",
+      "title": "Terceiro patch alfa",
       "changes": [
-        "Segunda atualização alfa publicada nesse dia. As notas detalhadas não foram registadas."
+        "Relatórios de suporte: registos de diagnóstico encriptados para resolver problemas rapidamente.",
+        "Visualizador de imagens: toca na imagem de uma memória para a ver em ecrã inteiro e alta qualidade.",
+        "Corrigidos layouts duplicados e recuperadas as imagens na vista de detalhe.",
+        "Números de versão automatizados e recursos da app otimizados.",
+        "Corrigidas regras que podiam fechar a app ao iniciar."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "4 de julho de 2026",
-      "title": "Atualização alfa",
+      "title": "Segunda alfa",
       "changes": [
-        "Atualização alfa publicada no Google Play. As notas detalhadas não foram registadas."
+        "Exportar para PDF: transforma as tuas memórias num PDF personalizado ao estilo Light Novel.",
+        "Criador de gradientes: cria e guarda gradientes com contraste de texto inteligente.",
+        "Pesquisa melhorada com FTS5: agora ignora os acentos.",
+        "Editor: escreve e pré-visualiza as tuas memórias com Markdown.",
+        "Otimizações de encriptação e segurança."
       ]
     },
     {

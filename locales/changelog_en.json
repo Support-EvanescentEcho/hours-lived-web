@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "July 4, 2026",
-      "title": "Alpha update",
+      "title": "Third alpha patch",
       "changes": [
-        "Second alpha update published that day. Its detailed notes weren't recorded."
+        "Support reports: encrypted diagnostic logs to help solve issues quickly.",
+        "Image viewer: tap a memory's image to see it full screen in high quality.",
+        "Fixed duplicated layouts and restored images in the detail view.",
+        "Automated version numbers and optimized app resources.",
+        "Fixed rules that could make the app crash at startup."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "July 4, 2026",
-      "title": "Alpha update",
+      "title": "Second alpha",
       "changes": [
-        "Alpha update published on Google Play. Its detailed notes weren't recorded."
+        "PDF export: turn your memories into a custom Light Novel–style PDF.",
+        "Gradient creator: create and save gradients with smart text contrast.",
+        "Search upgraded to FTS5: it now ignores accents.",
+        "Editor: write and preview memories with Markdown.",
+        "Encryption and security optimizations."
       ]
     },
     {

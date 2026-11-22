@@ -58,17 +58,25 @@
     {
       "version": "v0.2.1 (26070412)",
       "date": "4 juillet 2026",
-      "title": "Mise à jour alpha",
+      "title": "Troisième correctif alpha",
       "changes": [
-        "Deuxième mise à jour alpha publiée ce jour-là. Ses notes détaillées n'ont pas été conservées."
+        "Rapports d'assistance : journaux de diagnostic chiffrés pour résoudre rapidement les problèmes.",
+        "Visionneuse d'images : touche l'image d'un souvenir pour la voir en plein écran et en haute qualité.",
+        "Mises en page dupliquées corrigées et images rétablies dans la vue détaillée.",
+        "Numéros de version automatisés et ressources de l'application optimisées.",
+        "Correction de règles qui pouvaient faire planter l'application au démarrage."
       ]
     },
     {
       "version": "v0.2.0 (38)",
       "date": "4 juillet 2026",
-      "title": "Mise à jour alpha",
+      "title": "Deuxième alpha",
       "changes": [
-        "Mise à jour alpha publiée sur Google Play. Ses notes détaillées n'ont pas été conservées."
+        "Export PDF : transforme tes souvenirs en un PDF personnalisé façon Light Novel.",
+        "Créateur de dégradés : crée et enregistre des dégradés avec un contraste de texte intelligent.",
+        "Recherche passée à FTS5 : elle ignore désormais les accents.",
+        "Éditeur : écris et prévisualise tes souvenirs en Markdown.",
+        "Optimisations du chiffrement et de la sécurité."
       ]
     },
     {
