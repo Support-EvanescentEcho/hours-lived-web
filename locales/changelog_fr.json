@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "26 septembre 2026",
+      "date": "25 septembre 2026",
       "title": "Base de données chiffrée plus sûre",
       "changes": [
         "Une copie de sécurité est faite avant d'ouvrir la base de données, avec récupération automatique si le fichier manque ou est vide.",
@@ -44,6 +44,31 @@
         "Le Refuge : écriture cathartique, toile zen et exercices de respiration.",
         "Les sauvegardes incluent les images, compressées.",
         "Synchronisation locale par Wi-Fi entre appareils, base de la version de bureau."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "11 août 2026",
+      "title": "Fondations modulaires",
+      "changes": [
+        "Publiée en trois compilations le même jour (26081115, 26081118 et 260811225).",
+        "L'application a été divisée en modules séparés pour son cœur et les widgets d'accueil, afin de faciliter sa maintenance."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "4 juillet 2026",
+      "title": "Mise à jour alpha",
+      "changes": [
+        "Deuxième mise à jour alpha publiée ce jour-là. Ses notes détaillées n'ont pas été conservées."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "4 juillet 2026",
+      "title": "Mise à jour alpha",
+      "changes": [
+        "Mise à jour alpha publiée sur Google Play. Ses notes détaillées n'ont pas été conservées."
       ]
     },
     {

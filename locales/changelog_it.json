@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "26 settembre 2026",
+      "date": "25 settembre 2026",
       "title": "Database cifrato più sicuro",
       "changes": [
         "Prima di aprire il database viene salvata una copia di sicurezza, con ripristino automatico se il file manca o è vuoto.",
@@ -44,6 +44,31 @@
         "Il Rifugio: scrittura catartica, tela zen ed esercizi di respirazione.",
         "I backup includono le immagini, compresse.",
         "Sincronizzazione locale via Wi-Fi tra dispositivi, base per la versione desktop."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "11 agosto 2026",
+      "title": "Fondamenta modulari",
+      "changes": [
+        "Pubblicata in tre build nello stesso giorno (26081115, 26081118 e 260811225).",
+        "L'app è stata suddivisa in moduli separati per il nucleo e i widget della schermata home, per renderla più facile da mantenere."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "4 luglio 2026",
+      "title": "Aggiornamento alpha",
+      "changes": [
+        "Secondo aggiornamento alpha pubblicato quel giorno. Le note dettagliate non sono state registrate."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "4 luglio 2026",
+      "title": "Aggiornamento alpha",
+      "changes": [
+        "Aggiornamento alpha pubblicato su Google Play. Le note dettagliate non sono state registrate."
       ]
     },
     {

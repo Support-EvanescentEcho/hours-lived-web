@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "26. September 2026",
+      "date": "25. September 2026",
       "title": "Sicherere verschlüsselte Datenbank",
       "changes": [
         "Vor dem Öffnen der Datenbank wird eine Sicherheitskopie erstellt, mit automatischer Wiederherstellung, falls die Datei fehlt oder leer ist.",
@@ -44,6 +44,31 @@
         "Die Zuflucht: kathartisches Schreiben, Zen-Leinwand und Atemübungen.",
         "Sicherungen enthalten Bilder, komprimiert.",
         "Lokale WLAN-Synchronisierung zwischen Geräten, Grundlage für die Desktop-Version."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "11. August 2026",
+      "title": "Modulares Fundament",
+      "changes": [
+        "Am selben Tag in drei Builds veröffentlicht (26081115, 26081118 und 260811225).",
+        "Die App wurde in getrennte Module für den Kern und die Startbildschirm-Widgets aufgeteilt, damit sie leichter zu pflegen ist."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "4. Juli 2026",
+      "title": "Alpha-Update",
+      "changes": [
+        "Zweites an diesem Tag veröffentlichtes Alpha-Update. Ausführliche Notizen wurden dafür nicht festgehalten."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "4. Juli 2026",
+      "title": "Alpha-Update",
+      "changes": [
+        "Bei Google Play veröffentlichtes Alpha-Update. Ausführliche Notizen wurden dafür nicht festgehalten."
       ]
     },
     {

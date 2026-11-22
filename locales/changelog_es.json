@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "26 de septiembre de 2026",
+      "date": "25 de septiembre de 2026",
       "title": "Base de datos cifrada más segura",
       "changes": [
         "Se guarda una copia de seguridad antes de abrir la base de datos, con recuperación automática si el archivo falta o queda vacío.",
@@ -44,6 +44,31 @@
         "El Refugio: escritura catártica, lienzo zen y ejercicios de respiración.",
         "Las copias de seguridad incluyen imágenes, comprimidas.",
         "Sincronización local por Wi-Fi entre dispositivos, base para la versión de escritorio."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "11 de agosto de 2026",
+      "title": "Cimientos modulares",
+      "changes": [
+        "Publicada en tres compilaciones el mismo día (26081115, 26081118 y 260811225).",
+        "La app se dividió en módulos separados para su núcleo y los widgets de inicio, para facilitar su mantenimiento."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "4 de julio de 2026",
+      "title": "Actualización alfa",
+      "changes": [
+        "Segunda actualización alfa publicada ese día. Sus notas detalladas no se registraron."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "4 de julio de 2026",
+      "title": "Actualización alfa",
+      "changes": [
+        "Actualización alfa publicada en Google Play. Sus notas detalladas no se registraron."
       ]
     },
     {

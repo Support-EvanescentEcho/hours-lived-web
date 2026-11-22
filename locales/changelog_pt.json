@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "26 de setembro de 2026",
+      "date": "25 de setembro de 2026",
       "title": "Base de dados encriptada mais segura",
       "changes": [
         "É guardada uma cópia de segurança antes de abrir a base de dados, com recuperação automática se o ficheiro faltar ou ficar vazio.",
@@ -44,6 +44,31 @@
         "O Refúgio: escrita catártica, tela zen e exercícios de respiração.",
         "As cópias de segurança incluem imagens, comprimidas.",
         "Sincronização local por Wi-Fi entre dispositivos, base para a versão para computador."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "11 de agosto de 2026",
+      "title": "Alicerces modulares",
+      "changes": [
+        "Publicada em três compilações no mesmo dia (26081115, 26081118 e 260811225).",
+        "A app foi dividida em módulos separados para o núcleo e os widgets do ecrã inicial, para facilitar a manutenção."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "4 de julho de 2026",
+      "title": "Atualização alfa",
+      "changes": [
+        "Segunda atualização alfa publicada nesse dia. As notas detalhadas não foram registadas."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "4 de julho de 2026",
+      "title": "Atualização alfa",
+      "changes": [
+        "Atualização alfa publicada no Google Play. As notas detalhadas não foram registadas."
       ]
     },
     {

@@ -26,7 +26,7 @@
     },
     {
       "version": "v0.4.4 (260811228)",
-      "date": "September 26, 2026",
+      "date": "September 25, 2026",
       "title": "Safer encrypted database",
       "changes": [
         "A safety snapshot is taken before opening the database, with automatic recovery if the file goes missing or empty.",
@@ -44,6 +44,31 @@
         "The Refuge: cathartic writing, Zen canvas and breathing exercises.",
         "Backups include images, with compression.",
         "Local Wi-Fi sync between devices, groundwork for the desktop version."
+      ]
+    },
+    {
+      "version": "v0.3.0 (260811225)",
+      "date": "August 11, 2026",
+      "title": "Modular foundations",
+      "changes": [
+        "Published in three builds on the same day (26081115, 26081118 and 260811225).",
+        "The app was split into separate modules for its core and the home screen widgets, to make it easier to maintain."
+      ]
+    },
+    {
+      "version": "v0.2.1 (26070412)",
+      "date": "July 4, 2026",
+      "title": "Alpha update",
+      "changes": [
+        "Second alpha update published that day. Its detailed notes weren't recorded."
+      ]
+    },
+    {
+      "version": "v0.2.0 (38)",
+      "date": "July 4, 2026",
+      "title": "Alpha update",
+      "changes": [
+        "Alpha update published on Google Play. Its detailed notes weren't recorded."
       ]
     },
     {
