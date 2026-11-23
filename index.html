@@ -12,6 +12,9 @@
     
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Suite accessibility layer (WCAG 2.2 AA base + visitor preferences) -->
+    <link rel="stylesheet" href="/evanescent-web-a11y/a11y.css">
+    <script src="/evanescent-web-a11y/a11y.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -27,11 +30,11 @@
             </div>
         </div>
         
-        <div class="selectors">
+        <div class="selectors" data-a11y-slot>
             <!-- Dynamic Theme Selector -->
             <div class="select-wrapper">
                 <span id="theme-lbl">Theme:</span>
-                <select id="theme-select" onchange="applyTheme(this.value)">
+                <select id="theme-select" aria-labelledby="theme-lbl" onchange="applyTheme(this.value)">
                     <option value="light" id="theme-opt-light">Light</option>
                     <option value="dark" id="theme-opt-dark">Dark</option>
                     <option value="system" id="theme-opt-system" selected>System</option>
@@ -41,7 +44,7 @@
             <!-- Dynamic Language Selector -->
             <div class="select-wrapper">
                 <span id="lang-lbl">Language:</span>
-                <select id="lang-select" onchange="applyLanguage(this.value)">
+                <select id="lang-select" aria-labelledby="lang-lbl" onchange="applyLanguage(this.value)">
                     <option value="en" selected>English</option>
                     <option value="es">Español</option>
                     <option value="de">Deutsch</option>
@@ -275,10 +278,10 @@
 
                 <p id="projectSoundtrackDesc" style="margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-secondary);">
                     The soundtracks and musical compositions from these works were the soundscape accompanying every line of code, design, and reflection. You can listen to the official curation in my selected playlist: 
-                    <a href="https://www.youtube.com/playlist?list=PLSMOooksGAReM" target="_blank" style="color: var(--primary); font-weight: 500; text-decoration: underline; margin-left: 0.25rem;">▶ Playlist on YouTube</a>.
+                    <a href="https://www.youtube.com/playlist?list=PLSMOooksGAReM" target="_blank" style="color: var(--primary); font-weight: 500; text-decoration: none; margin-left: 0.25rem;">▶ Playlist on YouTube</a>.
                 </p>
                 <p id="projectInspirationListTitle" style="margin-bottom: 0.75rem; font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">In addition to "Plastic Memories" (the main inspiration of the whole concept and the project in general), the following magnificent works exploring time, nostalgia, and human existence have deeply inspired the creation of this concept:</p>
-                <ul id="projectInspirationList" style="margin-left: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.6rem 1.5rem; list-style-type: circle;">
+                <ul id="projectInspirationList" style="margin-left: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 0.6rem 1.5rem; list-style-type: circle;">
                     <li><strong>Plastic Memories</strong> — <em>Music: Takeshi Masuda</em></li>
                     <li><strong>Shigatsu wa Kimi no Uso</strong> — <em>Music: Masaru Yokoyama</em></li>
                     <li><strong>Sousou no Frieren</strong> — <em>Music: Evan Call</em></li>
@@ -396,7 +399,7 @@
 
     <footer>
         <p id="footer-text">© 2026 Evanescent Echo. All rights reserved. Independently developed.</p>
-        <p style="font-size: 0.85rem; margin-top: 0.4rem;"><a href="#privacy-policy" id="footerPrivacyLink" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a></p>
+        <p style="font-size: 0.85rem; margin-top: 0.4rem;"><a href="#privacy-policy" id="footerPrivacyLink" style="color: var(--primary); text-decoration: none;">Privacy Policy</a></p>
         <p id="footer-version" style="font-size: 0.8rem; margin-top: 0.6rem; color: var(--text-primary); font-family: 'Inter', sans-serif; font-weight: 500; opacity: 0.6; letter-spacing: 0.5px; text-transform: uppercase;">App v0.4.6-alpha</p>
     </footer>
 

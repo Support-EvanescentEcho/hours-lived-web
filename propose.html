@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Suite accessibility layer (WCAG 2.2 AA base + visitor preferences) -->
+    <link rel="stylesheet" href="/evanescent-web-a11y/a11y.css">
+    <script src="/evanescent-web-a11y/a11y.js"></script>
     <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body class="lang-active-en">
@@ -23,18 +26,18 @@
             </div>
         </div>
 
-        <div class="selectors">
+        <div class="selectors" data-a11y-slot>
             <div class="select-wrapper">
-                <span data-i18n="themeLbl">Theme:</span>
-                <select id="theme-select" onchange="applyTheme(this.value)">
+                <span id="theme-lbl" data-i18n="themeLbl">Theme:</span>
+                <select id="theme-select" aria-labelledby="theme-lbl" onchange="applyTheme(this.value)">
                     <option value="light" data-i18n="themeLight">Light</option>
                     <option value="dark" data-i18n="themeDark">Dark</option>
                     <option value="system" data-i18n="themeSystem" selected>System</option>
                 </select>
             </div>
             <div class="select-wrapper">
-                <span data-i18n="langLbl">Language:</span>
-                <select id="lang-select" onchange="applyLanguage(this.value)">
+                <span id="lang-lbl" data-i18n="langLbl">Language:</span>
+                <select id="lang-select" aria-labelledby="lang-lbl" onchange="applyLanguage(this.value)">
                     <option value="en" selected>English</option>
                     <option value="es">Español</option>
                     <option value="de">Deutsch</option>
@@ -56,7 +59,7 @@
         <!-- Intro -->
         <div class="card">
             <div class="card-header">
-                <h2 data-i18n="footprintTitle">Leave Your Mark on Hours Lived</h2>
+                <h1 class="propose-title" data-i18n="footprintTitle">Leave Your Mark on Hours Lived</h1>
             </div>
             <p class="propose-lead" data-i18n="proposeIntro">Anyone can propose a phrase. It's free and always will be: your words can become part of someone else's moment of introspection.</p>
         </div>

@@ -53,6 +53,7 @@ async function applyLanguage(lang) {
     document.body.className = '';
     document.body.classList.add('lang-active-' + lang);
     localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
     
     const dict = await loadTranslations(lang);
     if (!dict) return;
@@ -305,6 +306,7 @@ function switchTab(evt, tabName) {
     
     document.getElementById('panel-' + tabName).classList.add('active');
     evt.currentTarget.classList.add('active');
+    syncCurrent('.tab-btn');
 }
 
 // Media Query Listener for System Theme updates
@@ -412,6 +414,7 @@ function switchChangelogChannel(channel) {
     if (channel === 'release') document.getElementById('subtab-release-lbl').classList.add('active');
     if (channel === 'beta') document.getElementById('subtab-beta-lbl').classList.add('active');
     if (channel === 'alpha') document.getElementById('subtab-alpha-lbl').classList.add('active');
+    syncCurrent('.subtab-btn');
     
     // Show/hide alpha warning notice
     const noticeBox = document.getElementById('changelog-alpha-notice-box');
@@ -447,3 +450,15 @@ function renderInspirations(musicLabel) {
         `<li><strong>${item.title}</strong> — <em>${label}: ${item.composer}</em></li>`
     ).join('');
 }
+
+// Screen readers announce which tab / changelog channel is showing.
+function syncCurrent(selector) {
+    document.querySelectorAll(selector).forEach(b => {
+        if (b.classList.contains('active')) b.setAttribute('aria-current', 'true');
+        else b.removeAttribute('aria-current');
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    syncCurrent('.tab-btn');
+    syncCurrent('.subtab-btn');
+});

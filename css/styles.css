@@ -1,13 +1,13 @@
 /* CSS Custom Properties for Clannad Palettes */
 :root {
     /* Light Theme values */
-    --light-primary: #B58461;
-    --light-secondary: #81A25B;
-    --light-tertiary: #D9909F;
+    --light-primary: #845B3E;
+    --light-secondary: #5A713F;
+    --light-tertiary: #BB4059;
     --light-background: #FAF8F3;
     --light-surface: #FAF8F3;
     --light-text-primary: #1E1A17;
-    --light-text-secondary: #7A6E65;
+    --light-text-secondary: #6D635B;
     --light-border: rgba(181, 132, 97, 0.18);
     --light-paper-grid: rgba(181, 132, 97, 0.035);
 
@@ -295,7 +295,8 @@ main {
     padding-bottom: 0.75rem;
 }
 
-.card-header h2 {
+.card-header h2,
+.card-header h1.propose-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.8rem;
     font-weight: 500;
@@ -535,7 +536,7 @@ code {
    ========================================== */
 .features-minimal-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -566,7 +567,7 @@ code {
    ========================================== */
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: 1.5rem;
 }
 
@@ -749,7 +750,7 @@ code {
    ========================================== */
 .roadmap-columns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -814,7 +815,7 @@ code {
 
 /* Completed items get a strikethrough treatment */
 .roadmap-item.completed {
-    opacity: 0.6;
+    opacity: 0.7;
     text-decoration: line-through;
     text-decoration-color: var(--secondary);
 }
@@ -837,7 +838,7 @@ code {
 /* Destination category cards */
 .footprint-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
     margin-top: 0.5rem;
 }
@@ -1094,7 +1095,7 @@ code {
 
 .propose-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
     gap: 1.25rem;
 }
 
@@ -1141,8 +1142,9 @@ code {
     border-color: var(--primary);
 }
 
-.propose-muted {
-    opacity: 0.6;
+/* Muted without opacity: the field stays usable, so its label keeps AA contrast. */
+.propose-muted > span {
+    color: var(--text-secondary);
 }
 
 .propose-counter {
@@ -1193,9 +1195,39 @@ code {
     color: var(--text-secondary);
 }
 
+/* Same specificity as .btn-action:hover but declared later: restate the hover ink
+   so the label stays readable on the filled background. */
+.propose-actions .propose-secondary:hover {
+    border-color: var(--primary);
+    color: var(--background);
+}
+
 .propose-note {
     font-size: 0.85rem;
     color: var(--text-secondary);
     line-height: 1.6;
     font-style: italic;
+}
+
+/* Links without their own styling (e.g. inside translated paragraphs) use the
+   theme colour instead of the browser's default blue, which fails contrast in dark mode. */
+:where(a) {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Large text (accessibility panel or browser text size, WCAG 1.4.4/1.4.10):
+   header controls wrap instead of overflowing the screen. */
+.selectors,
+.select-wrapper {
+    flex-wrap: wrap;
+}
+.select-wrapper select {
+    max-width: 100%;
+}
+
+/* Narrow screens / large text: the e-mail address may break anywhere. */
+#support-email {
+    overflow-wrap: anywhere;
+    min-width: 0;
 }
