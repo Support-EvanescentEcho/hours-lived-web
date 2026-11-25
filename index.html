@@ -25,7 +25,7 @@
         <div class="logo-area">
             <img src="assets/logo.png" alt="Hours Lived Logo" class="logo-img" onerror="this.style.display='none'">
             <div class="logo-text">
-                <div class="logo-title">Hours Lived</div>
+                <div class="logo-title" translate="no">Hours Lived</div>
                 <div class="logo-subtitle" id="logo-sub">Official Support</div>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <!-- Dynamic Language Selector -->
             <div class="select-wrapper">
                 <span id="lang-lbl">Language:</span>
-                <select id="lang-select" aria-labelledby="lang-lbl" onchange="applyLanguage(this.value)">
+                <select id="lang-select" translate="no" aria-labelledby="lang-lbl" onchange="applyLanguage(this.value)">
                     <option value="en" selected>English</option>
                     <option value="es">Español</option>
                     <option value="de">Deutsch</option>
@@ -62,12 +62,13 @@
 
     <main>
         <div class="hero">
-            <h1 id="hero-title">Hours Lived</h1>
+            <h1 id="hero-title" translate="no">Hours Lived</h1>
             <div class="hero-download-buttons" style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
                 <a href="https://play.google.com/store/apps/details?id=dev.evanescentecho.hourslived" target="_blank" class="btn-action" id="downloadPlayStore" style="width: auto; min-width: 180px;">Download on Play Store</a>
                 <a href="https://github.com/Support-EvanescentEcho/hours-lived-web/releases/latest/download/HoursLived-Setup.msi" class="btn-action" id="downloadWindows" style="width: auto; min-width: 180px;">Download Windows (Alpha · .msi)</a>
                 <a href="https://github.com/Support-EvanescentEcho/hours-lived-web/releases/latest/download/HoursLived.deb" class="btn-action" id="downloadLinux" style="width: auto; min-width: 180px;">Download Linux (Alpha · .deb)</a>
             </div>
+            <p class="download-note"><span id="downloadUnsignedNote">Windows and Linux installers are not signed, so Windows may show a security warning.</span> <a id="downloadUnsignedLink" href="https://support-evanescentecho.github.io/install.html">Why, and how to check the file →</a></p>
         </div>
 
         <div class="tabs">
@@ -166,7 +167,7 @@
                 <div class="contact-info">
                     <label id="contact-lbl">Technical Support</label>
                     <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                        <a href="mailto:support.evanescentecho@gmail.com" id="support-email">support.evanescentecho@gmail.com</a>
+                        <a translate="no" href="mailto:support.evanescentecho@gmail.com" id="support-email">support.evanescentecho@gmail.com</a>
                         <button id="copy-email-btn" onclick="copySupportEmail()" style="background: transparent; border: 1px solid var(--border); color: var(--text-secondary); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: all var(--transition-speed);">[Copy]</button>
                     </div>
                 </div>
@@ -362,7 +363,7 @@
 
                 <div class="doc-section">
                     <h3 id="priv-sec4-title">4. Technical Support</h3>
-                    <p id="priv-sec4-body">If you have questions regarding privacy and local memory protection, write to me at: <a href="mailto:support.evanescentecho@gmail.com">support.evanescentecho@gmail.com</a>.</p>
+                    <p id="priv-sec4-body">If you have questions regarding privacy and local memory protection, write to me at: <a translate="no" href="mailto:support.evanescentecho@gmail.com">support.evanescentecho@gmail.com</a>.</p>
                 </div>
             </div>
 

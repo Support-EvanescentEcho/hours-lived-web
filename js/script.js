@@ -54,7 +54,10 @@ async function applyLanguage(lang) {
     document.body.classList.add('lang-active-' + lang);
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
-    
+    // El selector siempre refleja el idioma aplicado, lo cambie quien lo cambie
+    const langSelect = document.getElementById('lang-select');
+    if (langSelect && langSelect.value !== lang) langSelect.value = lang;
+
     const dict = await loadTranslations(lang);
     if (!dict) return;
     
@@ -77,6 +80,14 @@ async function applyLanguage(lang) {
     if (winBtn) winBtn.innerText = dict.downloadWindows || "Descargar Windows (.msi)";
     const linuxBtn = document.getElementById('downloadLinux');
     if (linuxBtn) linuxBtn.innerText = dict.downloadLinux || "Descargar Linux (.deb)";
+    const unsignedNote = document.getElementById('downloadUnsignedNote');
+    if (unsignedNote) unsignedNote.innerText = dict.downloadUnsignedNote || unsignedNote.innerText;
+    const unsignedLink = document.getElementById('downloadUnsignedLink');
+    if (unsignedLink) {
+        unsignedLink.innerText = dict.downloadUnsignedLink || unsignedLink.innerText;
+        // La página común está en la web principal; se abre en el idioma elegido aquí
+        unsignedLink.href = 'https://support-evanescentecho.github.io/install.html?lang=' + encodeURIComponent(lang);
+    }
     const apkBtn = document.getElementById('downloadApk');
     if (apkBtn) apkBtn.innerText = dict.downloadApk || "Descargar APK";
     
@@ -264,6 +275,8 @@ async function applyLanguage(lang) {
     fp('footprintModL10nLabel',     'footprintModL10nLabel',     '');
     fp('footprintModL10nDesc',      'footprintModL10nDesc',      '');
 
+    protectFromTranslation();
+
     // Load and Render Changelogs
     if (dict.changelogEmpty) changelogEmptyText = dict.changelogEmpty;
     await loadChangelogData(lang);
@@ -288,9 +301,22 @@ function copySupportEmail() {
     });
 }
 
+// El traductor del navegador no debe tocar código, nombres de archivo ni el correo: copiados traducidos dejan de servir.
+// Se repite tras cada cambio de idioma porque esos textos llegan con innerHTML desde los locales.
+function protectFromTranslation() {
+    document.querySelectorAll('code, pre, kbd, a[href^="mailto:"]').forEach(el => el.setAttribute('translate', 'no'));
+}
+
 // Initialize Language
 function initLanguage() {
-    const savedLang = localStorage.getItem('lang') || 'en'; // default to English
+    // ?lang=xx, luego el idioma guardado y, en la primera visita, el del navegador (así Chrome no ofrece traducir)
+    const supported = ['en', 'es', 'de', 'fr', 'it', 'ja', 'ko', 'pt', 'ru', 'zh'];
+    const fromUrl = new URLSearchParams(window.location.search).get('lang');
+    const stored = localStorage.getItem('lang');
+    const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    const savedLang = supported.includes(fromUrl) ? fromUrl
+        : supported.includes(stored) ? stored
+        : supported.includes(browserLang) ? browserLang : 'en';
     const selectElement = document.getElementById('lang-select');
     applyLanguage(savedLang);
     if (selectElement) selectElement.value = savedLang;

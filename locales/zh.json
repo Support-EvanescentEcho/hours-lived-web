@@ -11,6 +11,8 @@
   "downloadWindows": "下载 Windows 版 (Alpha · .msi)",
   "downloadLinux": "下载 Linux 版 (Alpha · .deb)",
   "downloadApk": "下载 APK",
+  "downloadUnsignedNote": "Windows 和 Linux 安装程序没有签名，因此 Windows 可能会显示安全警告。",
+  "downloadUnsignedLink": "原因及如何校验文件 →",
   "tabHome": "首页",
   "tabChangelog": "更新日志",
   "tabRoadmap": "开发路线图",

@@ -11,6 +11,8 @@
   "downloadWindows": "Скачать для Windows (Alpha · .msi)",
   "downloadLinux": "Скачать для Linux (Alpha · .deb)",
   "downloadApk": "Скачать APK",
+  "downloadUnsignedNote": "Установщики для Windows и Linux не подписаны, поэтому Windows может показать предупреждение безопасности.",
+  "downloadUnsignedLink": "Почему и как проверить файл →",
   "tabHome": "Главная",
   "tabChangelog": "История",
   "tabRoadmap": "План разработки",

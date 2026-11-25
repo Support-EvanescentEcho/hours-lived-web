@@ -210,6 +210,16 @@ main {
     font-family: 'Inter', sans-serif;
 }
 
+/* Aviso de instaladores sin firma, bajo los botones de descarga */
+.hero p.download-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.hero p.download-note a {
+    color: var(--primary);
+}
+
 /* Editorial Index Navigation */
 .tabs {
     display: flex;

@@ -11,6 +11,8 @@
   "downloadWindows": "Descargar Windows (Alpha · .msi)",
   "downloadLinux": "Descargar Linux (Alpha · .deb)",
   "downloadApk": "Descargar APK",
+  "downloadUnsignedNote": "Los instaladores de Windows y Linux no están firmados, así que Windows puede mostrar un aviso de seguridad.",
+  "downloadUnsignedLink": "Por qué y cómo comprobar el archivo →",
   "tabHome": "Inicio",
   "tabChangelog": "Historial",
   "tabRoadmap": "Ruta",

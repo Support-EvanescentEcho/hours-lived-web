@@ -56,6 +56,9 @@ async function applyLanguage(lang) {
     try { localStorage.setItem('lang', lang); } catch (_) { /* per-visit only */ }
     document.documentElement.lang = lang;
     document.body.className = 'lang-active-' + lang;
+    // El selector siempre refleja el idioma aplicado, lo cambie quien lo cambie
+    const langSelect = $('lang-select');
+    if (langSelect && langSelect.value !== lang) langSelect.value = lang;
 
     const loaded = await loadTranslations(lang);
     if (!loaded) return;

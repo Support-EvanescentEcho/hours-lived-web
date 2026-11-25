@@ -11,6 +11,8 @@
   "downloadWindows": "Windows herunterladen (Alpha · .msi)",
   "downloadLinux": "Linux herunterladen (Alpha · .deb)",
   "downloadApk": "APK herunterladen",
+  "downloadUnsignedNote": "Die Installationsprogramme für Windows und Linux sind nicht signiert, daher kann Windows eine Sicherheitswarnung anzeigen.",
+  "downloadUnsignedLink": "Warum, und wie du die Datei prüfst →",
   "tabHome": "Startseite",
   "tabChangelog": "Changelog",
   "tabRoadmap": "Roadmap",
