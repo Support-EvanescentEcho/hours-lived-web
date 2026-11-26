@@ -9,7 +9,7 @@
   "heroDesc": "完全なセキュリティの中で、あなたの人生の旅路を振り返りましょう。",
   "downloadPlayStore": "Play ストアでダウンロード",
   "downloadWindows": "Windows版をダウンロード (Alpha · .exe)",
-  "downloadLinux": "Linux版をダウンロード (Alpha · .deb)",
+  "downloadLinux": "Linux版（開発中）",
   "downloadApk": "APKをダウンロード",
   "downloadUnsignedNote": "Windows 版と Linux 版のインストーラーには署名がないため、Windows がセキュリティ警告を表示することがあります。",
   "downloadUnsignedLink": "理由とファイルの確認方法 →",

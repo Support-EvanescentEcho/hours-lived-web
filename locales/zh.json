@@ -9,7 +9,7 @@
   "heroDesc": "在绝对安全的本地环境中，回顾与记录您的生命旅程。",
   "downloadPlayStore": "在 Play 商店下载",
   "downloadWindows": "下载 Windows 版 (Alpha · .exe)",
-  "downloadLinux": "下载 Linux 版 (Alpha · .deb)",
+  "downloadLinux": "Linux 版（开发中）",
   "downloadApk": "下载 APK",
   "downloadUnsignedNote": "Windows 和 Linux 安装程序没有签名，因此 Windows 可能会显示安全警告。",
   "downloadUnsignedLink": "原因及如何校验文件 →",

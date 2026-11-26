@@ -365,6 +365,15 @@ main {
     color: var(--background);
 }
 
+/* Descarga aún no publicada (como en las demás webs de la suite): visible, pero no clicable */
+.btn-action.disabled,
+.btn-action.disabled:hover {
+    background: transparent;
+    color: var(--primary);
+    opacity: 0.6;
+    cursor: default;
+}
+
 .btn-kofi {
     border-color: var(--tertiary);
     color: var(--tertiary);
