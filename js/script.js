@@ -77,7 +77,7 @@ async function applyLanguage(lang) {
     document.getElementById('hero-desc') && (document.getElementById('hero-desc').innerText = dict.heroDesc || '');
     document.getElementById('downloadPlayStore').innerText = dict.downloadPlayStore || "Play Store";
     const winBtn = document.getElementById('downloadWindows');
-    if (winBtn) winBtn.innerText = dict.downloadWindows || "Descargar Windows (.msi)";
+    if (winBtn) winBtn.innerText = dict.downloadWindows || "Descargar Windows (.exe)";
     const linuxBtn = document.getElementById('downloadLinux');
     if (linuxBtn) linuxBtn.innerText = dict.downloadLinux || "Descargar Linux (.deb)";
     const unsignedNote = document.getElementById('downloadUnsignedNote');
