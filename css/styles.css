@@ -179,6 +179,61 @@ select:hover {
     border-color: var(--primary);
 }
 
+/* Lista desplegable con los colores de la app en vez del azul del sistema */
+select option {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+select option:checked {
+    background: var(--primary);
+    color: var(--background);
+}
+
+/* Donde el navegador deja dibujar la lista entera (Chrome/Edge recientes), también el resaltado al pasar */
+@supports (appearance: base-select) {
+    select,
+    select::picker(select) {
+        appearance: base-select;
+    }
+
+    select::picker-icon {
+        display: none; /* ya hay flecha propia en el fondo */
+    }
+
+    select::picker(select) {
+        background: var(--surface);
+        color: var(--text-primary);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 4px;
+        margin-top: 4px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    select option {
+        padding: 6px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    select option::checkmark {
+        display: none;
+    }
+
+    select option:hover,
+    select option:focus-visible {
+        background: color-mix(in srgb, var(--primary) 22%, var(--surface));
+        color: var(--text-primary);
+        outline: none;
+    }
+
+    select option:checked {
+        background: var(--primary);
+        color: var(--background);
+    }
+}
+
 main {
     flex: 1;
     max-width: 1000px;
@@ -363,6 +418,15 @@ main {
 .btn-action:hover {
     background: var(--primary);
     color: var(--background);
+}
+
+/* Descarga aún no publicada (como en las demás webs de la suite): visible, pero no clicable */
+.btn-action.disabled,
+.btn-action.disabled:hover {
+    background: transparent;
+    color: var(--primary);
+    opacity: 0.6;
+    cursor: default;
 }
 
 .btn-kofi {
@@ -659,6 +723,38 @@ code {
 .subtab-btn.active {
     background: var(--primary);
     border-color: var(--primary);
+    color: var(--background);
+}
+
+/* Plataforma (Android / Escritorio): por encima de los canales y con más peso que ellos */
+.changelog-platforms {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+}
+
+.platform-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.platform-btn + .platform-btn {
+    border-left: 1px solid var(--border);
+}
+
+.platform-btn:hover {
+    color: var(--primary);
+}
+
+.platform-btn.active {
+    background: var(--primary);
     color: var(--background);
 }
 

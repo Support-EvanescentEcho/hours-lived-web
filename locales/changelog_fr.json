@@ -1,95 +1,117 @@
 {
-  "release": [],
-  "beta": [],
-  "alpha": [
-    {
-      "version": "v0.4.6 (260811230)",
-      "date": "7 octobre 2026",
-      "title": "Éditeur, statistiques et Refuge peaufinés",
-      "changes": [
-        "Éditeur de texte enrichi, aperçu Markdown et enregistrement des notes vocales plus fluides.",
-        "Statistiques avec un graphique du spectre émotionnel et de nouvelles cartes.",
-        "Rituels du Refuge affinés : Lettres d'écho, Kintsugi et respiration.",
-        "Chiffrement des sauvegardes plus stable.",
-        "Traductions mises à jour dans les 10 langues."
-      ]
-    },
-    {
-      "version": "v0.4.5 (260811229)",
-      "date": "1er octobre 2026",
-      "title": "Nouvelles fondations",
-      "changes": [
-        "L'intérieur de l'application a été reconstruit pour partager sa logique avec la future version de bureau.",
-        "Base de données mise à jour en version 18, avec prise en charge des balises et des rites.",
-        "Notifications, lecteur audio et sauvegardes réorganisés."
-      ]
-    },
-    {
-      "version": "v0.4.4 (260811228)",
-      "date": "25 septembre 2026",
-      "title": "Base de données chiffrée plus sûre",
-      "changes": [
-        "Une copie de sécurité est faite avant d'ouvrir la base de données, avec récupération automatique si le fichier manque ou est vide.",
-        "L'application ne supprime plus la base de données après une erreur d'ouverture ou de clé.",
-        "Les anciennes clés de chiffrement sont détectées et migrées automatiquement."
-      ]
-    },
-    {
-      "version": "v0.4.3 (260811227)",
-      "date": "24 septembre 2026",
-      "title": "Dix langues, widgets et le Refuge",
-      "changes": [
-        "L'application est disponible en 10 langues, widgets compris.",
-        "Widgets d'accueil renouvelés pour l'humeur et la phrase du jour.",
-        "Le Refuge : écriture cathartique, toile zen et exercices de respiration.",
-        "Les sauvegardes incluent les images, compressées.",
-        "Synchronisation locale par Wi-Fi entre appareils, base de la version de bureau."
-      ]
-    },
-    {
-      "version": "v0.3.0 (260811225)",
-      "date": "11 août 2026",
-      "title": "Fondations modulaires",
-      "changes": [
-        "Publiée en trois compilations le même jour (26081115, 26081118 et 260811225).",
-        "L'application a été divisée en modules séparés pour son cœur et les widgets d'accueil, afin de faciliter sa maintenance."
-      ]
-    },
-    {
-      "version": "v0.2.1 (26070412)",
-      "date": "4 juillet 2026",
-      "title": "Troisième correctif alpha",
-      "changes": [
-        "Rapports d'assistance : journaux de diagnostic chiffrés pour résoudre rapidement les problèmes.",
-        "Visionneuse d'images : touche l'image d'un souvenir pour la voir en plein écran et en haute qualité.",
-        "Mises en page dupliquées corrigées et images rétablies dans la vue détaillée.",
-        "Numéros de version automatisés et ressources de l'application optimisées.",
-        "Correction de règles qui pouvaient faire planter l'application au démarrage."
-      ]
-    },
-    {
-      "version": "v0.2.0 (38)",
-      "date": "4 juillet 2026",
-      "title": "Deuxième alpha",
-      "changes": [
-        "Export PDF : transforme tes souvenirs en un PDF personnalisé façon Light Novel.",
-        "Créateur de dégradés : crée et enregistre des dégradés avec un contraste de texte intelligent.",
-        "Recherche passée à FTS5 : elle ignore désormais les accents.",
-        "Éditeur : écris et prévisualise tes souvenirs en Markdown.",
-        "Optimisations du chiffrement et de la sécurité."
-      ]
-    },
-    {
-      "version": "v0.1.6 (37)",
-      "date": "28 juin 2026",
-      "title": "Première alpha sur Google Play",
-      "changes": [
-        "Première version publiée sur Google Play, en alpha fermée.",
-        "Les souvenirs peuvent contenir une photo, compressée et stockée uniquement sur ton appareil.",
-        "Nouveaux champs pour noter l'humeur, les émotions et les ancres de chaque souvenir.",
-        "Les sauvegardes incluent désormais les photos et les nouvelles informations de chaque souvenir.",
-        "Une maintenance en arrière-plan garde la base de données locale compacte."
-      ]
-    }
-  ]
+  "android": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.4.6",
+        "date": "7 octobre 2026",
+        "title": "Éditeur, statistiques et Refuge peaufinés",
+        "changes": [
+          "Éditeur de texte enrichi, aperçu Markdown et enregistrement des notes vocales plus fluides.",
+          "Statistiques avec un graphique du spectre émotionnel et de nouvelles cartes.",
+          "Rituels du Refuge affinés : Lettres d'écho, Kintsugi et respiration.",
+          "Chiffrement des sauvegardes plus stable.",
+          "Traductions mises à jour dans les 10 langues."
+        ]
+      },
+      {
+        "version": "v0.4.5",
+        "date": "1er octobre 2026",
+        "title": "Nouvelles fondations",
+        "changes": [
+          "L'intérieur de l'application a été reconstruit pour partager sa logique avec la future version de bureau.",
+          "Base de données mise à jour en version 18, avec prise en charge des balises et des rites.",
+          "Notifications, lecteur audio et sauvegardes réorganisés."
+        ]
+      },
+      {
+        "version": "v0.4.4",
+        "date": "25 septembre 2026",
+        "title": "Base de données chiffrée plus sûre",
+        "changes": [
+          "Une copie de sécurité est faite avant d'ouvrir la base de données, avec récupération automatique si le fichier manque ou est vide.",
+          "L'application ne supprime plus la base de données après une erreur d'ouverture ou de clé.",
+          "Les anciennes clés de chiffrement sont détectées et migrées automatiquement."
+        ]
+      },
+      {
+        "version": "v0.4.3",
+        "date": "24 septembre 2026",
+        "title": "Dix langues, widgets et le Refuge",
+        "changes": [
+          "L'application est disponible en 10 langues, widgets compris.",
+          "Widgets d'accueil renouvelés pour l'humeur et la phrase du jour.",
+          "Le Refuge : écriture cathartique, toile zen et exercices de respiration.",
+          "Les sauvegardes incluent les images, compressées.",
+          "Synchronisation locale par Wi-Fi entre appareils, base de la version de bureau."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "11 août 2026",
+        "title": "Fondations modulaires",
+        "changes": [
+          "Publiée en trois compilations le même jour (26081115, 26081118 et 260811225).",
+          "L'application a été divisée en modules séparés pour son cœur et les widgets d'accueil, afin de faciliter sa maintenance."
+        ]
+      },
+      {
+        "version": "v0.2.1",
+        "date": "4 juillet 2026",
+        "title": "Troisième correctif alpha",
+        "changes": [
+          "Rapports d'assistance : journaux de diagnostic chiffrés pour résoudre rapidement les problèmes.",
+          "Visionneuse d'images : touche l'image d'un souvenir pour la voir en plein écran et en haute qualité.",
+          "Mises en page dupliquées corrigées et images rétablies dans la vue détaillée.",
+          "Numéros de version automatisés et ressources de l'application optimisées.",
+          "Correction de règles qui pouvaient faire planter l'application au démarrage."
+        ]
+      },
+      {
+        "version": "v0.2.0",
+        "date": "4 juillet 2026",
+        "title": "Deuxième alpha",
+        "changes": [
+          "Export PDF : transforme tes souvenirs en un PDF personnalisé façon Light Novel.",
+          "Créateur de dégradés : crée et enregistre des dégradés avec un contraste de texte intelligent.",
+          "Recherche passée à FTS5 : elle ignore désormais les accents.",
+          "Éditeur : écris et prévisualise tes souvenirs en Markdown.",
+          "Optimisations du chiffrement et de la sécurité."
+        ]
+      },
+      {
+        "version": "v0.1.6",
+        "date": "28 juin 2026",
+        "title": "Première alpha sur Google Play",
+        "changes": [
+          "Première version publiée sur Google Play, en alpha fermée.",
+          "Les souvenirs peuvent contenir une photo, compressée et stockée uniquement sur ton appareil.",
+          "Nouveaux champs pour noter l'humeur, les émotions et les ancres de chaque souvenir.",
+          "Les sauvegardes incluent désormais les photos et les nouvelles informations de chaque souvenir.",
+          "Une maintenance en arrière-plan garde la base de données locale compacte."
+        ]
+      }
+    ]
+  },
+  "desktop": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.0.1",
+        "date": "26 novembre 2026",
+        "title": "Hours Lived arrive sur Windows",
+        "changes": [
+          "Votre journal sur l’ordinateur : le même refuge que sur votre téléphone, avec des menus, des raccourcis clavier et une fenêtre qui se souvient de sa taille.",
+          "Tout reste chiffré sur votre ordinateur. Vous pouvez le verrouiller avec un mot de passe principal et créer une clé de récupération au cas où vous l’oublieriez.",
+          "Des sauvegardes chiffrées qui s’ouvrent sur le téléphone et inversement, et des sauvegardes automatiques tous les 3 jours.",
+          "Synchronisation avec le téléphone via le Wi‑Fi de la maison, sans internet ni cloud.",
+          "L’app peut rester dans la zone de notification pour vos rappels, et ralentit quand votre ordinateur a besoin de puissance : sur batterie, sous forte charge ou quand une autre app est en plein écran.",
+          "Programme d’installation pour Windows 10 et 11 : mettre à jour ou désinstaller conserve vos souvenirs, sauf si vous choisissez de les supprimer.",
+          "Disponible en 10 langues. La version Linux est encore en développement."
+        ]
+      }
+    ]
+  }
 }
