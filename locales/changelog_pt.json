@@ -100,6 +100,18 @@
     "alpha": [
       {
         "version": "v0.0.1",
+        "date": "27 de novembro de 2026",
+        "title": "Hours Lived chega ao Linux",
+        "changes": [
+          "Baixe o .deb para Ubuntu 22.04 ou mais recente e as distribuições baseadas nele (Linux Mint, Pop!_OS…), testado em um desktop GNOME real.",
+          "Seu diário abre sem digitar nada: a chave fica no chaveiro do seu desktop. A senha mestra continua opcional.",
+          "Os lembretes usam as notificações do seu desktop, e para escolher pastas abre a janela do próprio desktop.",
+          "Também no Windows: os textos em francês e italiano não mostram mais barras soltas, e os erros da tela de bloqueio aparecem no seu idioma.",
+          "Importar um backup feito com outra data de nascimento não muda mais a sua, e viajar para o oeste não desloca mais suas datas em um dia."
+        ]
+      },
+      {
+        "version": "v0.0.1",
         "date": "26 de novembro de 2026",
         "title": "Hours Lived chega ao Windows",
         "changes": [

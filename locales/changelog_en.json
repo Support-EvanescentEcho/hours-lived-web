@@ -100,6 +100,18 @@
     "alpha": [
       {
         "version": "v0.0.1",
+        "date": "November 27, 2026",
+        "title": "Hours Lived arrives on Linux",
+        "changes": [
+          "Download the .deb for Ubuntu 22.04 or newer and distributions based on it (Linux Mint, Pop!_OS…), tested on a real GNOME desktop.",
+          "Your diary opens without typing anything: its key is kept in your desktop keyring. A master password is still optional.",
+          "Reminders use your desktop notifications, and choosing folders uses your desktop’s own window.",
+          "Also on Windows: texts in French and Italian no longer show stray backslashes, and lock screen errors appear in your language.",
+          "Importing a backup made with another birth date no longer changes yours, and travelling west no longer moves your dates by a day."
+        ]
+      },
+      {
+        "version": "v0.0.1",
         "date": "November 26, 2026",
         "title": "Hours Lived arrives on Windows",
         "changes": [
