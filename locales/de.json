@@ -13,6 +13,7 @@
   "downloadApk": "APK herunterladen",
   "downloadUnsignedNote": "Die Installationsprogramme für Windows und Linux sind nicht signiert, daher kann Windows eine Sicherheitswarnung anzeigen.",
   "downloadUnsignedLink": "Warum, und wie du die Datei prüfst →",
+  "downloadLinuxOther": "Weitere Linux-Formate: AppImage (jede Distribution) und Flatpak →",
   "tabHome": "Startseite",
   "tabChangelog": "Changelog",
   "tabRoadmap": "Roadmap",

@@ -13,6 +13,7 @@
   "downloadApk": "Скачать APK",
   "downloadUnsignedNote": "Установщики для Windows и Linux не подписаны, поэтому Windows может показать предупреждение безопасности.",
   "downloadUnsignedLink": "Почему и как проверить файл →",
+  "downloadLinuxOther": "Другие форматы для Linux: AppImage (любой дистрибутив) и Flatpak →",
   "tabHome": "Главная",
   "tabChangelog": "История",
   "tabRoadmap": "План разработки",

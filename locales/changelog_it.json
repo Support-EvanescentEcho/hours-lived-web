@@ -103,7 +103,7 @@
         "date": "27 novembre 2026",
         "title": "Hours Lived arriva su Linux",
         "changes": [
-          "Scarica il .deb per Ubuntu 22.04 o successivo e le distribuzioni basate su di esso (Linux Mint, Pop!_OS…), provato su un vero desktop GNOME.",
+          "Scaricalo come .deb (Ubuntu, Debian, Linux Mint, Pop!_OS…), come AppImage per qualsiasi distribuzione recente o come Flatpak. Provato su un vero desktop GNOME.",
           "Il tuo diario si apre senza digitare nulla: la chiave è custodita nel portachiavi del tuo desktop. La password principale resta facoltativa.",
           "I promemoria usano le notifiche del tuo desktop, e per scegliere le cartelle si apre la finestra del tuo desktop.",
           "Anche su Windows: i testi in francese e italiano non mostrano più barre inutili, e gli errori della schermata di blocco sono nella tua lingua.",
