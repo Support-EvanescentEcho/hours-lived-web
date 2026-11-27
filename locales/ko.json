@@ -13,6 +13,7 @@
   "downloadApk": "APK 다운로드",
   "downloadUnsignedNote": "Windows 및 Linux 설치 프로그램에는 서명이 없어 Windows가 보안 경고를 표시할 수 있습니다.",
   "downloadUnsignedLink": "이유와 파일 확인 방법 →",
+  "downloadLinuxOther": "다른 Linux 형식: AppImage(모든 배포판)와 Flatpak →",
   "tabHome": "홈",
   "tabChangelog": "변경 이력",
   "tabRoadmap": "로드맵",

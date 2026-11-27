@@ -103,7 +103,7 @@
         "date": "27. November 2026",
         "title": "Hours Lived kommt auf Linux",
         "changes": [
-          "Lade das .deb für Ubuntu 22.04 oder neuer und darauf basierende Distributionen (Linux Mint, Pop!_OS…) herunter, getestet auf einem echten GNOME-Desktop.",
+          "Lade es als .deb (Ubuntu, Debian, Linux Mint, Pop!_OS…), als AppImage für jede aktuelle Distribution oder als Flatpak herunter. Getestet auf einem echten GNOME-Desktop.",
           "Dein Tagebuch öffnet sich, ohne dass du etwas eingibst: Der Schlüssel liegt im Schlüsselbund deines Desktops. Ein Master-Passwort bleibt optional.",
           "Erinnerungen nutzen die Benachrichtigungen deines Desktops, und Ordner wählst du im Fenster deines eigenen Desktops.",
           "Auch unter Windows: Texte auf Französisch und Italienisch zeigen keine überflüssigen Backslashes mehr, und Fehler auf dem Sperrbildschirm erscheinen in deiner Sprache.",

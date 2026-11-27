@@ -88,6 +88,8 @@ async function applyLanguage(lang) {
         // La página común está en la web principal; se abre en el idioma elegido aquí
         unsignedLink.href = 'https://support-evanescentecho.github.io/install.html?lang=' + encodeURIComponent(lang);
     }
+    const linuxOther = document.getElementById('downloadLinuxOther');
+    if (linuxOther) linuxOther.innerText = dict.downloadLinuxOther || linuxOther.innerText;
     const apkBtn = document.getElementById('downloadApk');
     if (apkBtn) apkBtn.innerText = dict.downloadApk || "Descargar APK";
     

@@ -13,6 +13,7 @@
   "downloadApk": "APKをダウンロード",
   "downloadUnsignedNote": "Windows 版と Linux 版のインストーラーには署名がないため、Windows がセキュリティ警告を表示することがあります。",
   "downloadUnsignedLink": "理由とファイルの確認方法 →",
+  "downloadLinuxOther": "Linux のその他の形式：AppImage（どのディストリビューションでも）と Flatpak →",
   "tabHome": "ホーム",
   "tabChangelog": "変更履歴",
   "tabRoadmap": "ロードマップ",

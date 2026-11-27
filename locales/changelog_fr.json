@@ -103,7 +103,7 @@
         "date": "27 novembre 2026",
         "title": "Hours Lived arrive sur Linux",
         "changes": [
-          "Téléchargez le .deb pour Ubuntu 22.04 ou plus récent et les distributions qui en dérivent (Linux Mint, Pop!_OS…), testé sur un vrai bureau GNOME.",
+          "Téléchargez-le en .deb (Ubuntu, Debian, Linux Mint, Pop!_OS…), en AppImage pour toute distribution récente ou en Flatpak. Testé sur un vrai bureau GNOME.",
           "Votre journal s’ouvre sans rien taper : sa clé est gardée dans le trousseau de votre bureau. Le mot de passe maître reste facultatif.",
           "Les rappels utilisent les notifications de votre bureau, et le choix des dossiers passe par la fenêtre de votre propre bureau.",
           "Aussi sous Windows : les textes en français et en italien n’affichent plus de barres obliques parasites, et les erreurs de l’écran de verrouillage sont dans votre langue.",

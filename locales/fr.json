@@ -13,6 +13,7 @@
   "downloadApk": "Télécharger APK",
   "downloadUnsignedNote": "Les programmes d’installation Windows et Linux ne sont pas signés : Windows peut afficher un avertissement de sécurité.",
   "downloadUnsignedLink": "Pourquoi, et comment vérifier le fichier →",
+  "downloadLinuxOther": "Autres formats Linux : AppImage (toutes distributions) et Flatpak →",
   "tabHome": "Accueil",
   "tabChangelog": "Notes",
   "tabRoadmap": "Feuille de route",
