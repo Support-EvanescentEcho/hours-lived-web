@@ -1,95 +1,117 @@
 {
-  "release": [],
-  "beta": [],
-  "alpha": [
-    {
-      "version": "v0.4.6 (260811230)",
-      "date": "October 7, 2026",
-      "title": "Editor, statistics and Refuge polish",
-      "changes": [
-        "Smoother rich text editor, Markdown preview and voice note recording.",
-        "Statistics with an emotional spectrum chart and new cards.",
-        "Refined Refuge rituals: Echo Letters, Kintsugi and breathing.",
-        "More stable backup encryption.",
-        "Translations updated in all 10 languages."
-      ]
-    },
-    {
-      "version": "v0.4.5 (260811229)",
-      "date": "October 1, 2026",
-      "title": "New foundations",
-      "changes": [
-        "The app's internals were rebuilt to share logic with the upcoming desktop version.",
-        "Database updated to version 18, with support for beacons and rites.",
-        "Notifications, audio player and backups reorganized."
-      ]
-    },
-    {
-      "version": "v0.4.4 (260811228)",
-      "date": "September 25, 2026",
-      "title": "Safer encrypted database",
-      "changes": [
-        "A safety snapshot is taken before opening the database, with automatic recovery if the file goes missing or empty.",
-        "The app no longer deletes the database after an opening or key error.",
-        "Older encryption keys are detected and migrated automatically."
-      ]
-    },
-    {
-      "version": "v0.4.3 (260811227)",
-      "date": "September 24, 2026",
-      "title": "Ten languages, widgets and the Refuge",
-      "changes": [
-        "The app is available in 10 languages, widgets included.",
-        "Refreshed home screen widgets for mood and daily phrase.",
-        "The Refuge: cathartic writing, Zen canvas and breathing exercises.",
-        "Backups include images, with compression.",
-        "Local Wi-Fi sync between devices, groundwork for the desktop version."
-      ]
-    },
-    {
-      "version": "v0.3.0 (260811225)",
-      "date": "August 11, 2026",
-      "title": "Modular foundations",
-      "changes": [
-        "Published in three builds on the same day (26081115, 26081118 and 260811225).",
-        "The app was split into separate modules for its core and the home screen widgets, to make it easier to maintain."
-      ]
-    },
-    {
-      "version": "v0.2.1 (26070412)",
-      "date": "July 4, 2026",
-      "title": "Third alpha patch",
-      "changes": [
-        "Support reports: encrypted diagnostic logs to help solve issues quickly.",
-        "Image viewer: tap a memory's image to see it full screen in high quality.",
-        "Fixed duplicated layouts and restored images in the detail view.",
-        "Automated version numbers and optimized app resources.",
-        "Fixed rules that could make the app crash at startup."
-      ]
-    },
-    {
-      "version": "v0.2.0 (38)",
-      "date": "July 4, 2026",
-      "title": "Second alpha",
-      "changes": [
-        "PDF export: turn your memories into a custom Light Novel–style PDF.",
-        "Gradient creator: create and save gradients with smart text contrast.",
-        "Search upgraded to FTS5: it now ignores accents.",
-        "Editor: write and preview memories with Markdown.",
-        "Encryption and security optimizations."
-      ]
-    },
-    {
-      "version": "v0.1.6 (37)",
-      "date": "June 28, 2026",
-      "title": "First alpha on Google Play",
-      "changes": [
-        "First version published on Google Play, as a closed alpha.",
-        "Memories can hold a photo, compressed and stored only on your device.",
-        "New fields to record the mood, emotions and anchors of each memory.",
-        "Backups now include photos and the new memory details.",
-        "Background maintenance keeps the local database compact."
-      ]
-    }
-  ]
+  "android": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.4.6",
+        "date": "October 7, 2026",
+        "title": "Editor, statistics and Refuge polish",
+        "changes": [
+          "Smoother rich text editor, Markdown preview and voice note recording.",
+          "Statistics with an emotional spectrum chart and new cards.",
+          "Refined Refuge rituals: Echo Letters, Kintsugi and breathing.",
+          "More stable backup encryption.",
+          "Translations updated in all 10 languages."
+        ]
+      },
+      {
+        "version": "v0.4.5",
+        "date": "October 1, 2026",
+        "title": "New foundations",
+        "changes": [
+          "The app's internals were rebuilt to share logic with the upcoming desktop version.",
+          "Database updated to version 18, with support for beacons and rites.",
+          "Notifications, audio player and backups reorganized."
+        ]
+      },
+      {
+        "version": "v0.4.4",
+        "date": "September 25, 2026",
+        "title": "Safer encrypted database",
+        "changes": [
+          "A safety snapshot is taken before opening the database, with automatic recovery if the file goes missing or empty.",
+          "The app no longer deletes the database after an opening or key error.",
+          "Older encryption keys are detected and migrated automatically."
+        ]
+      },
+      {
+        "version": "v0.4.3",
+        "date": "September 24, 2026",
+        "title": "Ten languages, widgets and the Refuge",
+        "changes": [
+          "The app is available in 10 languages, widgets included.",
+          "Refreshed home screen widgets for mood and daily phrase.",
+          "The Refuge: cathartic writing, Zen canvas and breathing exercises.",
+          "Backups include images, with compression.",
+          "Local Wi-Fi sync between devices, groundwork for the desktop version."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "August 11, 2026",
+        "title": "Modular foundations",
+        "changes": [
+          "Published in three builds on the same day (26081115, 26081118 and 260811225).",
+          "The app was split into separate modules for its core and the home screen widgets, to make it easier to maintain."
+        ]
+      },
+      {
+        "version": "v0.2.1",
+        "date": "July 4, 2026",
+        "title": "Third alpha patch",
+        "changes": [
+          "Support reports: encrypted diagnostic logs to help solve issues quickly.",
+          "Image viewer: tap a memory's image to see it full screen in high quality.",
+          "Fixed duplicated layouts and restored images in the detail view.",
+          "Automated version numbers and optimized app resources.",
+          "Fixed rules that could make the app crash at startup."
+        ]
+      },
+      {
+        "version": "v0.2.0",
+        "date": "July 4, 2026",
+        "title": "Second alpha",
+        "changes": [
+          "PDF export: turn your memories into a custom Light Novel–style PDF.",
+          "Gradient creator: create and save gradients with smart text contrast.",
+          "Search upgraded to FTS5: it now ignores accents.",
+          "Editor: write and preview memories with Markdown.",
+          "Encryption and security optimizations."
+        ]
+      },
+      {
+        "version": "v0.1.6",
+        "date": "June 28, 2026",
+        "title": "First alpha on Google Play",
+        "changes": [
+          "First version published on Google Play, as a closed alpha.",
+          "Memories can hold a photo, compressed and stored only on your device.",
+          "New fields to record the mood, emotions and anchors of each memory.",
+          "Backups now include photos and the new memory details.",
+          "Background maintenance keeps the local database compact."
+        ]
+      }
+    ]
+  },
+  "desktop": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.0.1",
+        "date": "November 26, 2026",
+        "title": "Hours Lived arrives on Windows",
+        "changes": [
+          "Your diary on the computer: the same refuge as on your phone, with menus, keyboard shortcuts and a window that remembers its size.",
+          "Everything stays on your computer, encrypted. You can lock it with a master password and create a recovery key in case you forget it.",
+          "Encrypted backups that open on your phone and vice versa, plus automatic backups every 3 days.",
+          "Sync with your phone over your home Wi‑Fi, with no internet and no cloud.",
+          "It can stay in the system tray for your reminders, and it slows down when your computer needs the power: on battery, under heavy load or while another app is full screen.",
+          "Installer for Windows 10 and 11: updating or uninstalling keeps your memories unless you choose to delete them.",
+          "Available in 10 languages. The Linux version is still in development."
+        ]
+      }
+    ]
+  }
 }

@@ -1,95 +1,117 @@
 {
-  "release": [],
-  "beta": [],
-  "alpha": [
-    {
-      "version": "v0.4.6 (260811230)",
-      "date": "7 de octubre de 2026",
-      "title": "Editor, estadísticas y Refugio pulidos",
-      "changes": [
-        "Editor de texto enriquecido, vista previa Markdown y grabación de notas de voz más fluidos.",
-        "Estadísticas con gráfico del espectro emocional y nuevas tarjetas.",
-        "Rituales del Refugio refinados: Cartas Eco, Kintsugi y respiración.",
-        "Cifrado de las copias de seguridad más estable.",
-        "Traducciones actualizadas en los 10 idiomas."
-      ]
-    },
-    {
-      "version": "v0.4.5 (260811229)",
-      "date": "1 de octubre de 2026",
-      "title": "Nuevos cimientos",
-      "changes": [
-        "El interior de la app se reconstruyó para compartir lógica con la futura versión de escritorio.",
-        "Base de datos actualizada a la versión 18, con soporte para balizas y ritos.",
-        "Notificaciones, reproductor de audio y copias de seguridad reorganizados."
-      ]
-    },
-    {
-      "version": "v0.4.4 (260811228)",
-      "date": "25 de septiembre de 2026",
-      "title": "Base de datos cifrada más segura",
-      "changes": [
-        "Se guarda una copia de seguridad antes de abrir la base de datos, con recuperación automática si el archivo falta o queda vacío.",
-        "La app ya no borra la base de datos tras un error al abrirla o con la clave.",
-        "Las claves de cifrado antiguas se detectan y se migran automáticamente."
-      ]
-    },
-    {
-      "version": "v0.4.3 (260811227)",
-      "date": "24 de septiembre de 2026",
-      "title": "Diez idiomas, widgets y el Refugio",
-      "changes": [
-        "La app está disponible en 10 idiomas, widgets incluidos.",
-        "Widgets de inicio renovados para el ánimo y la frase del día.",
-        "El Refugio: escritura catártica, lienzo zen y ejercicios de respiración.",
-        "Las copias de seguridad incluyen imágenes, comprimidas.",
-        "Sincronización local por Wi-Fi entre dispositivos, base para la versión de escritorio."
-      ]
-    },
-    {
-      "version": "v0.3.0 (260811225)",
-      "date": "11 de agosto de 2026",
-      "title": "Cimientos modulares",
-      "changes": [
-        "Publicada en tres compilaciones el mismo día (26081115, 26081118 y 260811225).",
-        "La app se dividió en módulos separados para su núcleo y los widgets de inicio, para facilitar su mantenimiento."
-      ]
-    },
-    {
-      "version": "v0.2.1 (26070412)",
-      "date": "4 de julio de 2026",
-      "title": "Tercer parche alfa",
-      "changes": [
-        "Informes de soporte: registros de diagnóstico cifrados para resolver problemas rápido.",
-        "Visor de imágenes: toca la imagen de un recuerdo para verla a pantalla completa en alta calidad.",
-        "Corregidos diseños duplicados y recuperadas las imágenes en la vista de detalle.",
-        "Números de versión automatizados y recursos de la app optimizados.",
-        "Corregidas reglas que podían cerrar la app al iniciarse."
-      ]
-    },
-    {
-      "version": "v0.2.0 (38)",
-      "date": "4 de julio de 2026",
-      "title": "Segunda alfa",
-      "changes": [
-        "Exportar a PDF: convierte tus recuerdos en un PDF personalizado estilo Light Novel.",
-        "Creador de degradados: crea y guarda degradados con contraste de texto inteligente.",
-        "Búsqueda mejorada con FTS5: ahora ignora las tildes.",
-        "Editor: escribe y previsualiza tus recuerdos con Markdown.",
-        "Optimizaciones de cifrado y seguridad."
-      ]
-    },
-    {
-      "version": "v0.1.6 (37)",
-      "date": "28 de junio de 2026",
-      "title": "Primera alfa en Google Play",
-      "changes": [
-        "Primera versión publicada en Google Play, como alfa cerrada.",
-        "Los recuerdos pueden llevar una foto, comprimida y guardada solo en tu dispositivo.",
-        "Nuevos campos para registrar el ánimo, las emociones y las anclas de cada recuerdo.",
-        "Las copias de seguridad incluyen ahora las fotos y los nuevos datos de cada recuerdo.",
-        "Un mantenimiento en segundo plano mantiene compacta la base de datos local."
-      ]
-    }
-  ]
+  "android": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.4.6",
+        "date": "7 de octubre de 2026",
+        "title": "Editor, estadísticas y Refugio pulidos",
+        "changes": [
+          "Editor de texto enriquecido, vista previa Markdown y grabación de notas de voz más fluidos.",
+          "Estadísticas con gráfico del espectro emocional y nuevas tarjetas.",
+          "Rituales del Refugio refinados: Cartas Eco, Kintsugi y respiración.",
+          "Cifrado de las copias de seguridad más estable.",
+          "Traducciones actualizadas en los 10 idiomas."
+        ]
+      },
+      {
+        "version": "v0.4.5",
+        "date": "1 de octubre de 2026",
+        "title": "Nuevos cimientos",
+        "changes": [
+          "El interior de la app se reconstruyó para compartir lógica con la futura versión de escritorio.",
+          "Base de datos actualizada a la versión 18, con soporte para balizas y ritos.",
+          "Notificaciones, reproductor de audio y copias de seguridad reorganizados."
+        ]
+      },
+      {
+        "version": "v0.4.4",
+        "date": "25 de septiembre de 2026",
+        "title": "Base de datos cifrada más segura",
+        "changes": [
+          "Se guarda una copia de seguridad antes de abrir la base de datos, con recuperación automática si el archivo falta o queda vacío.",
+          "La app ya no borra la base de datos tras un error al abrirla o con la clave.",
+          "Las claves de cifrado antiguas se detectan y se migran automáticamente."
+        ]
+      },
+      {
+        "version": "v0.4.3",
+        "date": "24 de septiembre de 2026",
+        "title": "Diez idiomas, widgets y el Refugio",
+        "changes": [
+          "La app está disponible en 10 idiomas, widgets incluidos.",
+          "Widgets de inicio renovados para el ánimo y la frase del día.",
+          "El Refugio: escritura catártica, lienzo zen y ejercicios de respiración.",
+          "Las copias de seguridad incluyen imágenes, comprimidas.",
+          "Sincronización local por Wi-Fi entre dispositivos, base para la versión de escritorio."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "11 de agosto de 2026",
+        "title": "Cimientos modulares",
+        "changes": [
+          "Publicada en tres compilaciones el mismo día (26081115, 26081118 y 260811225).",
+          "La app se dividió en módulos separados para su núcleo y los widgets de inicio, para facilitar su mantenimiento."
+        ]
+      },
+      {
+        "version": "v0.2.1",
+        "date": "4 de julio de 2026",
+        "title": "Tercer parche alfa",
+        "changes": [
+          "Informes de soporte: registros de diagnóstico cifrados para resolver problemas rápido.",
+          "Visor de imágenes: toca la imagen de un recuerdo para verla a pantalla completa en alta calidad.",
+          "Corregidos diseños duplicados y recuperadas las imágenes en la vista de detalle.",
+          "Números de versión automatizados y recursos de la app optimizados.",
+          "Corregidas reglas que podían cerrar la app al iniciarse."
+        ]
+      },
+      {
+        "version": "v0.2.0",
+        "date": "4 de julio de 2026",
+        "title": "Segunda alfa",
+        "changes": [
+          "Exportar a PDF: convierte tus recuerdos en un PDF personalizado estilo Light Novel.",
+          "Creador de degradados: crea y guarda degradados con contraste de texto inteligente.",
+          "Búsqueda mejorada con FTS5: ahora ignora las tildes.",
+          "Editor: escribe y previsualiza tus recuerdos con Markdown.",
+          "Optimizaciones de cifrado y seguridad."
+        ]
+      },
+      {
+        "version": "v0.1.6",
+        "date": "28 de junio de 2026",
+        "title": "Primera alfa en Google Play",
+        "changes": [
+          "Primera versión publicada en Google Play, como alfa cerrada.",
+          "Los recuerdos pueden llevar una foto, comprimida y guardada solo en tu dispositivo.",
+          "Nuevos campos para registrar el ánimo, las emociones y las anclas de cada recuerdo.",
+          "Las copias de seguridad incluyen ahora las fotos y los nuevos datos de cada recuerdo.",
+          "Un mantenimiento en segundo plano mantiene compacta la base de datos local."
+        ]
+      }
+    ]
+  },
+  "desktop": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.0.1",
+        "date": "26 de noviembre de 2026",
+        "title": "Hours Lived llega a Windows",
+        "changes": [
+          "Tu diario en el ordenador: el mismo refugio que en el móvil, con menús, atajos de teclado y una ventana que recuerda su tamaño.",
+          "Todo se queda en tu equipo, cifrado. Puedes bloquearlo con una contraseña maestra y crear una clave de recuperación por si la olvidas.",
+          "Copias de seguridad cifradas que se abren en el móvil y al revés, y copias automáticas cada 3 días.",
+          "Sincronización con el móvil por el Wi‑Fi de casa, sin internet y sin nube.",
+          "Puede quedarse en la bandeja del sistema para tus recordatorios, y baja el ritmo cuando tu equipo necesita la potencia: con batería, con mucha carga o mientras otra app está a pantalla completa.",
+          "Instalador para Windows 10 y 11: al actualizar o desinstalar se conservan tus recuerdos, salvo que elijas borrarlos.",
+          "Disponible en 10 idiomas. La versión de Linux sigue en desarrollo."
+        ]
+      }
+    ]
+  }
 }

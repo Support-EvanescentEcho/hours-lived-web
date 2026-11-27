@@ -1,95 +1,117 @@
 {
-  "release": [],
-  "beta": [],
-  "alpha": [
-    {
-      "version": "v0.4.6 (260811230)",
-      "date": "7. Oktober 2026",
-      "title": "Editor, Statistiken und Zuflucht verfeinert",
-      "changes": [
-        "Flüssigerer Rich-Text-Editor, Markdown-Vorschau und Sprachnotiz-Aufnahme.",
-        "Statistiken mit einem Diagramm des Gefühlsspektrums und neuen Karten.",
-        "Verfeinerte Rituale der Zuflucht: Echo-Briefe, Kintsugi und Atmung.",
-        "Stabilere Verschlüsselung der Sicherungen.",
-        "Übersetzungen in allen 10 Sprachen aktualisiert."
-      ]
-    },
-    {
-      "version": "v0.4.5 (260811229)",
-      "date": "1. Oktober 2026",
-      "title": "Neues Fundament",
-      "changes": [
-        "Das Innere der App wurde neu aufgebaut, um Logik mit der kommenden Desktop-Version zu teilen.",
-        "Datenbank auf Version 18 aktualisiert, mit Unterstützung für Leuchtfeuer und Riten.",
-        "Benachrichtigungen, Audioplayer und Sicherungen neu geordnet."
-      ]
-    },
-    {
-      "version": "v0.4.4 (260811228)",
-      "date": "25. September 2026",
-      "title": "Sicherere verschlüsselte Datenbank",
-      "changes": [
-        "Vor dem Öffnen der Datenbank wird eine Sicherheitskopie erstellt, mit automatischer Wiederherstellung, falls die Datei fehlt oder leer ist.",
-        "Die App löscht die Datenbank nach einem Öffnungs- oder Schlüsselfehler nicht mehr.",
-        "Ältere Schlüssel werden erkannt und automatisch migriert."
-      ]
-    },
-    {
-      "version": "v0.4.3 (260811227)",
-      "date": "24. September 2026",
-      "title": "Zehn Sprachen, Widgets und die Zuflucht",
-      "changes": [
-        "Die App ist in 10 Sprachen verfügbar, einschließlich der Widgets.",
-        "Erneuerte Startbildschirm-Widgets für Stimmung und Tagesspruch.",
-        "Die Zuflucht: kathartisches Schreiben, Zen-Leinwand und Atemübungen.",
-        "Sicherungen enthalten Bilder, komprimiert.",
-        "Lokale WLAN-Synchronisierung zwischen Geräten, Grundlage für die Desktop-Version."
-      ]
-    },
-    {
-      "version": "v0.3.0 (260811225)",
-      "date": "11. August 2026",
-      "title": "Modulares Fundament",
-      "changes": [
-        "Am selben Tag in drei Builds veröffentlicht (26081115, 26081118 und 260811225).",
-        "Die App wurde in getrennte Module für den Kern und die Startbildschirm-Widgets aufgeteilt, damit sie leichter zu pflegen ist."
-      ]
-    },
-    {
-      "version": "v0.2.1 (26070412)",
-      "date": "4. Juli 2026",
-      "title": "Dritter Alpha-Patch",
-      "changes": [
-        "Support-Berichte: verschlüsselte Diagnoseprotokolle, um Probleme schnell zu lösen.",
-        "Bildbetrachter: Tippe auf das Bild einer Erinnerung, um es im Vollbild in hoher Qualität zu sehen.",
-        "Doppelte Layouts behoben und Bilder in der Detailansicht wiederhergestellt.",
-        "Automatische Versionsnummern und optimierte App-Ressourcen.",
-        "Regeln behoben, die die App beim Start abstürzen lassen konnten."
-      ]
-    },
-    {
-      "version": "v0.2.0 (38)",
-      "date": "4. Juli 2026",
-      "title": "Zweite Alpha",
-      "changes": [
-        "PDF-Export: Verwandle deine Erinnerungen in ein eigenes PDF im Light-Novel-Stil.",
-        "Verlaufs-Editor: Erstelle und speichere Farbverläufe mit intelligentem Textkontrast.",
-        "Suche auf FTS5 umgestellt: Akzente werden jetzt ignoriert.",
-        "Editor: Erinnerungen mit Markdown schreiben und in der Vorschau ansehen.",
-        "Optimierungen bei Verschlüsselung und Sicherheit."
-      ]
-    },
-    {
-      "version": "v0.1.6 (37)",
-      "date": "28. Juni 2026",
-      "title": "Erste Alpha bei Google Play",
-      "changes": [
-        "Erste bei Google Play veröffentlichte Version, als geschlossene Alpha.",
-        "Erinnerungen können ein Foto enthalten, komprimiert und nur auf deinem Gerät gespeichert.",
-        "Neue Felder für Stimmung, Gefühle und Anker jeder Erinnerung.",
-        "Sicherungen enthalten jetzt die Fotos und die neuen Angaben jeder Erinnerung.",
-        "Eine Wartung im Hintergrund hält die lokale Datenbank kompakt."
-      ]
-    }
-  ]
+  "android": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.4.6",
+        "date": "7. Oktober 2026",
+        "title": "Editor, Statistiken und Zuflucht verfeinert",
+        "changes": [
+          "Flüssigerer Rich-Text-Editor, Markdown-Vorschau und Sprachnotiz-Aufnahme.",
+          "Statistiken mit einem Diagramm des Gefühlsspektrums und neuen Karten.",
+          "Verfeinerte Rituale der Zuflucht: Echo-Briefe, Kintsugi und Atmung.",
+          "Stabilere Verschlüsselung der Sicherungen.",
+          "Übersetzungen in allen 10 Sprachen aktualisiert."
+        ]
+      },
+      {
+        "version": "v0.4.5",
+        "date": "1. Oktober 2026",
+        "title": "Neues Fundament",
+        "changes": [
+          "Das Innere der App wurde neu aufgebaut, um Logik mit der kommenden Desktop-Version zu teilen.",
+          "Datenbank auf Version 18 aktualisiert, mit Unterstützung für Leuchtfeuer und Riten.",
+          "Benachrichtigungen, Audioplayer und Sicherungen neu geordnet."
+        ]
+      },
+      {
+        "version": "v0.4.4",
+        "date": "25. September 2026",
+        "title": "Sicherere verschlüsselte Datenbank",
+        "changes": [
+          "Vor dem Öffnen der Datenbank wird eine Sicherheitskopie erstellt, mit automatischer Wiederherstellung, falls die Datei fehlt oder leer ist.",
+          "Die App löscht die Datenbank nach einem Öffnungs- oder Schlüsselfehler nicht mehr.",
+          "Ältere Schlüssel werden erkannt und automatisch migriert."
+        ]
+      },
+      {
+        "version": "v0.4.3",
+        "date": "24. September 2026",
+        "title": "Zehn Sprachen, Widgets und die Zuflucht",
+        "changes": [
+          "Die App ist in 10 Sprachen verfügbar, einschließlich der Widgets.",
+          "Erneuerte Startbildschirm-Widgets für Stimmung und Tagesspruch.",
+          "Die Zuflucht: kathartisches Schreiben, Zen-Leinwand und Atemübungen.",
+          "Sicherungen enthalten Bilder, komprimiert.",
+          "Lokale WLAN-Synchronisierung zwischen Geräten, Grundlage für die Desktop-Version."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "11. August 2026",
+        "title": "Modulares Fundament",
+        "changes": [
+          "Am selben Tag in drei Builds veröffentlicht (26081115, 26081118 und 260811225).",
+          "Die App wurde in getrennte Module für den Kern und die Startbildschirm-Widgets aufgeteilt, damit sie leichter zu pflegen ist."
+        ]
+      },
+      {
+        "version": "v0.2.1",
+        "date": "4. Juli 2026",
+        "title": "Dritter Alpha-Patch",
+        "changes": [
+          "Support-Berichte: verschlüsselte Diagnoseprotokolle, um Probleme schnell zu lösen.",
+          "Bildbetrachter: Tippe auf das Bild einer Erinnerung, um es im Vollbild in hoher Qualität zu sehen.",
+          "Doppelte Layouts behoben und Bilder in der Detailansicht wiederhergestellt.",
+          "Automatische Versionsnummern und optimierte App-Ressourcen.",
+          "Regeln behoben, die die App beim Start abstürzen lassen konnten."
+        ]
+      },
+      {
+        "version": "v0.2.0",
+        "date": "4. Juli 2026",
+        "title": "Zweite Alpha",
+        "changes": [
+          "PDF-Export: Verwandle deine Erinnerungen in ein eigenes PDF im Light-Novel-Stil.",
+          "Verlaufs-Editor: Erstelle und speichere Farbverläufe mit intelligentem Textkontrast.",
+          "Suche auf FTS5 umgestellt: Akzente werden jetzt ignoriert.",
+          "Editor: Erinnerungen mit Markdown schreiben und in der Vorschau ansehen.",
+          "Optimierungen bei Verschlüsselung und Sicherheit."
+        ]
+      },
+      {
+        "version": "v0.1.6",
+        "date": "28. Juni 2026",
+        "title": "Erste Alpha bei Google Play",
+        "changes": [
+          "Erste bei Google Play veröffentlichte Version, als geschlossene Alpha.",
+          "Erinnerungen können ein Foto enthalten, komprimiert und nur auf deinem Gerät gespeichert.",
+          "Neue Felder für Stimmung, Gefühle und Anker jeder Erinnerung.",
+          "Sicherungen enthalten jetzt die Fotos und die neuen Angaben jeder Erinnerung.",
+          "Eine Wartung im Hintergrund hält die lokale Datenbank kompakt."
+        ]
+      }
+    ]
+  },
+  "desktop": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.0.1",
+        "date": "26. November 2026",
+        "title": "Hours Lived kommt auf Windows",
+        "changes": [
+          "Dein Tagebuch auf dem Computer: dieselbe Zuflucht wie auf dem Handy, mit Menüs, Tastenkürzeln und einem Fenster, das sich seine Größe merkt.",
+          "Alles bleibt verschlüsselt auf deinem Computer. Du kannst es mit einem Master-Passwort sperren und einen Wiederherstellungsschlüssel erstellen, falls du es vergisst.",
+          "Verschlüsselte Sicherungen, die sich auf dem Handy öffnen lassen und umgekehrt, dazu automatische Sicherungen alle 3 Tage.",
+          "Synchronisierung mit dem Handy über dein WLAN zu Hause, ohne Internet und ohne Cloud.",
+          "Die App kann im Infobereich bleiben, um dich zu erinnern, und schaltet einen Gang zurück, wenn dein Computer die Leistung braucht: im Akkubetrieb, unter hoher Last oder wenn eine andere App im Vollbild läuft.",
+          "Installationsprogramm für Windows 10 und 11: Beim Aktualisieren oder Deinstallieren bleiben deine Erinnerungen erhalten, außer du entscheidest dich, sie zu löschen.",
+          "In 10 Sprachen verfügbar. Die Linux-Version ist noch in Entwicklung."
+        ]
+      }
+    ]
+  }
 }

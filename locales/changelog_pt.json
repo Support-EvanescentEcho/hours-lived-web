@@ -1,95 +1,117 @@
 {
-  "release": [],
-  "beta": [],
-  "alpha": [
-    {
-      "version": "v0.4.6 (260811230)",
-      "date": "7 de outubro de 2026",
-      "title": "Editor, estatísticas e Refúgio afinados",
-      "changes": [
-        "Editor de texto formatado, pré-visualização Markdown e gravação de notas de voz mais fluidos.",
-        "Estatísticas com gráfico do espectro emocional e novos cartões.",
-        "Rituais do Refúgio afinados: Cartas Eco, Kintsugi e respiração.",
-        "Encriptação das cópias de segurança mais estável.",
-        "Traduções atualizadas nos 10 idiomas."
-      ]
-    },
-    {
-      "version": "v0.4.5 (260811229)",
-      "date": "1 de outubro de 2026",
-      "title": "Novos alicerces",
-      "changes": [
-        "O interior da app foi reconstruído para partilhar lógica com a futura versão para computador.",
-        "Base de dados atualizada para a versão 18, com suporte para faróis e ritos.",
-        "Notificações, leitor de áudio e cópias de segurança reorganizados."
-      ]
-    },
-    {
-      "version": "v0.4.4 (260811228)",
-      "date": "25 de setembro de 2026",
-      "title": "Base de dados encriptada mais segura",
-      "changes": [
-        "É guardada uma cópia de segurança antes de abrir a base de dados, com recuperação automática se o ficheiro faltar ou ficar vazio.",
-        "A app já não apaga a base de dados após um erro ao abri-la ou com a chave.",
-        "As chaves de encriptação antigas são detetadas e migradas automaticamente."
-      ]
-    },
-    {
-      "version": "v0.4.3 (260811227)",
-      "date": "24 de setembro de 2026",
-      "title": "Dez idiomas, widgets e o Refúgio",
-      "changes": [
-        "A app está disponível em 10 idiomas, widgets incluídos.",
-        "Widgets do ecrã inicial renovados para o humor e a frase do dia.",
-        "O Refúgio: escrita catártica, tela zen e exercícios de respiração.",
-        "As cópias de segurança incluem imagens, comprimidas.",
-        "Sincronização local por Wi-Fi entre dispositivos, base para a versão para computador."
-      ]
-    },
-    {
-      "version": "v0.3.0 (260811225)",
-      "date": "11 de agosto de 2026",
-      "title": "Alicerces modulares",
-      "changes": [
-        "Publicada em três compilações no mesmo dia (26081115, 26081118 e 260811225).",
-        "A app foi dividida em módulos separados para o núcleo e os widgets do ecrã inicial, para facilitar a manutenção."
-      ]
-    },
-    {
-      "version": "v0.2.1 (26070412)",
-      "date": "4 de julho de 2026",
-      "title": "Terceiro patch alfa",
-      "changes": [
-        "Relatórios de suporte: registos de diagnóstico encriptados para resolver problemas rapidamente.",
-        "Visualizador de imagens: toca na imagem de uma memória para a ver em ecrã inteiro e alta qualidade.",
-        "Corrigidos layouts duplicados e recuperadas as imagens na vista de detalhe.",
-        "Números de versão automatizados e recursos da app otimizados.",
-        "Corrigidas regras que podiam fechar a app ao iniciar."
-      ]
-    },
-    {
-      "version": "v0.2.0 (38)",
-      "date": "4 de julho de 2026",
-      "title": "Segunda alfa",
-      "changes": [
-        "Exportar para PDF: transforma as tuas memórias num PDF personalizado ao estilo Light Novel.",
-        "Criador de gradientes: cria e guarda gradientes com contraste de texto inteligente.",
-        "Pesquisa melhorada com FTS5: agora ignora os acentos.",
-        "Editor: escreve e pré-visualiza as tuas memórias com Markdown.",
-        "Otimizações de encriptação e segurança."
-      ]
-    },
-    {
-      "version": "v0.1.6 (37)",
-      "date": "28 de junho de 2026",
-      "title": "Primeira alfa no Google Play",
-      "changes": [
-        "Primeira versão publicada no Google Play, como alfa fechada.",
-        "As memórias podem ter uma foto, comprimida e guardada apenas no teu dispositivo.",
-        "Novos campos para registar o humor, as emoções e as âncoras de cada memória.",
-        "As cópias de segurança incluem agora as fotos e os novos dados de cada memória.",
-        "Uma manutenção em segundo plano mantém compacta a base de dados local."
-      ]
-    }
-  ]
+  "android": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.4.6",
+        "date": "7 de outubro de 2026",
+        "title": "Editor, estatísticas e Refúgio afinados",
+        "changes": [
+          "Editor de texto formatado, pré-visualização Markdown e gravação de notas de voz mais fluidos.",
+          "Estatísticas com gráfico do espectro emocional e novos cartões.",
+          "Rituais do Refúgio afinados: Cartas Eco, Kintsugi e respiração.",
+          "Encriptação das cópias de segurança mais estável.",
+          "Traduções atualizadas nos 10 idiomas."
+        ]
+      },
+      {
+        "version": "v0.4.5",
+        "date": "1 de outubro de 2026",
+        "title": "Novos alicerces",
+        "changes": [
+          "O interior da app foi reconstruído para partilhar lógica com a futura versão para computador.",
+          "Base de dados atualizada para a versão 18, com suporte para faróis e ritos.",
+          "Notificações, leitor de áudio e cópias de segurança reorganizados."
+        ]
+      },
+      {
+        "version": "v0.4.4",
+        "date": "25 de setembro de 2026",
+        "title": "Base de dados encriptada mais segura",
+        "changes": [
+          "É guardada uma cópia de segurança antes de abrir a base de dados, com recuperação automática se o ficheiro faltar ou ficar vazio.",
+          "A app já não apaga a base de dados após um erro ao abri-la ou com a chave.",
+          "As chaves de encriptação antigas são detetadas e migradas automaticamente."
+        ]
+      },
+      {
+        "version": "v0.4.3",
+        "date": "24 de setembro de 2026",
+        "title": "Dez idiomas, widgets e o Refúgio",
+        "changes": [
+          "A app está disponível em 10 idiomas, widgets incluídos.",
+          "Widgets do ecrã inicial renovados para o humor e a frase do dia.",
+          "O Refúgio: escrita catártica, tela zen e exercícios de respiração.",
+          "As cópias de segurança incluem imagens, comprimidas.",
+          "Sincronização local por Wi-Fi entre dispositivos, base para a versão para computador."
+        ]
+      },
+      {
+        "version": "v0.3.0",
+        "date": "11 de agosto de 2026",
+        "title": "Alicerces modulares",
+        "changes": [
+          "Publicada em três compilações no mesmo dia (26081115, 26081118 e 260811225).",
+          "A app foi dividida em módulos separados para o núcleo e os widgets do ecrã inicial, para facilitar a manutenção."
+        ]
+      },
+      {
+        "version": "v0.2.1",
+        "date": "4 de julho de 2026",
+        "title": "Terceiro patch alfa",
+        "changes": [
+          "Relatórios de suporte: registos de diagnóstico encriptados para resolver problemas rapidamente.",
+          "Visualizador de imagens: toca na imagem de uma memória para a ver em ecrã inteiro e alta qualidade.",
+          "Corrigidos layouts duplicados e recuperadas as imagens na vista de detalhe.",
+          "Números de versão automatizados e recursos da app otimizados.",
+          "Corrigidas regras que podiam fechar a app ao iniciar."
+        ]
+      },
+      {
+        "version": "v0.2.0",
+        "date": "4 de julho de 2026",
+        "title": "Segunda alfa",
+        "changes": [
+          "Exportar para PDF: transforma as tuas memórias num PDF personalizado ao estilo Light Novel.",
+          "Criador de gradientes: cria e guarda gradientes com contraste de texto inteligente.",
+          "Pesquisa melhorada com FTS5: agora ignora os acentos.",
+          "Editor: escreve e pré-visualiza as tuas memórias com Markdown.",
+          "Otimizações de encriptação e segurança."
+        ]
+      },
+      {
+        "version": "v0.1.6",
+        "date": "28 de junho de 2026",
+        "title": "Primeira alfa no Google Play",
+        "changes": [
+          "Primeira versão publicada no Google Play, como alfa fechada.",
+          "As memórias podem ter uma foto, comprimida e guardada apenas no teu dispositivo.",
+          "Novos campos para registar o humor, as emoções e as âncoras de cada memória.",
+          "As cópias de segurança incluem agora as fotos e os novos dados de cada memória.",
+          "Uma manutenção em segundo plano mantém compacta a base de dados local."
+        ]
+      }
+    ]
+  },
+  "desktop": {
+    "release": [],
+    "beta": [],
+    "alpha": [
+      {
+        "version": "v0.0.1",
+        "date": "26 de novembro de 2026",
+        "title": "Hours Lived chega ao Windows",
+        "changes": [
+          "Seu diário no computador: o mesmo refúgio do celular, com menus, atalhos de teclado e uma janela que lembra o próprio tamanho.",
+          "Tudo fica criptografado no seu computador. Você pode bloqueá-lo com uma senha mestra e criar uma chave de recuperação caso a esqueça.",
+          "Backups criptografados que abrem no celular e vice-versa, além de backups automáticos a cada 3 dias.",
+          "Sincronização com o celular pelo Wi‑Fi de casa, sem internet e sem nuvem.",
+          "Pode ficar na bandeja do sistema para seus lembretes e desacelera quando o computador precisa de desempenho: na bateria, com carga pesada ou enquanto outro app está em tela cheia.",
+          "Instalador para Windows 10 e 11: ao atualizar ou desinstalar, suas memórias são mantidas, a menos que você escolha apagá-las.",
+          "Disponível em 10 idiomas. A versão para Linux ainda está em desenvolvimento."
+        ]
+      }
+    ]
+  }
 }

@@ -149,7 +149,14 @@ async function applyLanguage(lang) {
     document.getElementById('subtab-release-lbl').innerText = dict.changelogRelease || "Release";
     document.getElementById('subtab-beta-lbl').innerText = dict.changelogBeta || "Beta Logs";
     document.getElementById('subtab-alpha-lbl').innerText = dict.changelogAlpha || "Alpha Logs";
-    document.getElementById('changelogAlphaNotice').innerText = dict.changelogAlphaNotice || "";
+    changelogAlphaNotices = {
+        android: dict.changelogAlphaNotice || "",
+        desktop: dict.changelogAlphaNoticeDesktop || dict.changelogAlphaNotice || ""
+    };
+    document.getElementById('changelogAlphaNotice').innerText = changelogAlphaNotices[currentChangelogPlatform];
+    document.getElementById('changelog-platforms').setAttribute('aria-label', dict.changelogPlatformLabel || "Platform");
+    document.getElementById('platform-android-lbl').innerText = dict.changelogPlatformAndroid || "Android";
+    document.getElementById('platform-desktop-lbl').innerText = dict.changelogPlatformDesktop || "Desktop";
 
     // Roadmap Card
     document.getElementById('roadmapMainTitle').innerText = dict.roadmapMainTitle || "Roadmap";
@@ -160,10 +167,12 @@ async function applyLanguage(lang) {
     
     document.getElementById('roadmapItemCloudSync').innerText = dict.roadmapItemCloudSync || "";
     document.getElementById('roadmapItemTributeThemes').innerText = dict.roadmapItemTributeThemes || "";
-    document.getElementById('roadmapItemWidgets').innerText = dict.roadmapItemWidgets || "";
+    document.getElementById('roadmapItemLinux').innerText = dict.roadmapItemLinux || "";
+    document.getElementById('roadmapItemPlayTesting').innerText = dict.roadmapItemPlayTesting || "";
+    document.getElementById('roadmapItemDesktopWindows').innerText = dict.roadmapItemDesktopWindows || "";
+    document.getElementById('roadmapItemLocalSync').innerText = dict.roadmapItemLocalSync || "";
     document.getElementById('roadmapItemMultiLang').innerText = dict.roadmapItemMultiLang || "";
     document.getElementById('roadmapItemRecovery').innerText = dict.roadmapItemRecovery || "";
-    document.getElementById('roadmapItemLightNovel').innerText = dict.roadmapItemLightNovel || "";
 
     // Project Card
     document.getElementById('projectTitle').innerText = dict.projectTitle || "About the Project";
@@ -351,6 +360,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Dynamic Changelog State and Logic
 let currentChangelogChannel = 'alpha';
+let currentChangelogPlatform = 'android';
+let changelogAlphaNotices = { android: '', desktop: '' };
 let changelogData = null;
 let changelogEmptyText = 'No versions published in this channel yet.';
 
@@ -382,7 +393,10 @@ function renderChangelog() {
         return;
     }
     
-    const logs = changelogData[currentChangelogChannel] || [];
+    // Cada plataforma tiene sus canales; un archivo antiguo sin plataformas cuenta como Android
+    const platformData = changelogData[currentChangelogPlatform]
+        || (currentChangelogPlatform === 'android' && !changelogData.android ? changelogData : {});
+    const logs = platformData[currentChangelogChannel] || [];
     
     if (logs.length === 0) {
         const emptyMsg = document.createElement('p');
@@ -447,7 +461,17 @@ function switchChangelogChannel(channel) {
     if (noticeBox) {
         noticeBox.style.display = channel === 'alpha' ? 'block' : 'none';
     }
-    
+
+    renderChangelog();
+}
+
+function switchChangelogPlatform(platform) {
+    currentChangelogPlatform = platform;
+    document.querySelectorAll('.platform-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('platform-' + platform + '-lbl').classList.add('active');
+    syncCurrent('.platform-btn');
+    // El aviso de las alfas cambia: en Android son de la prueba cerrada de Play; en escritorio, descargas públicas
+    document.getElementById('changelogAlphaNotice').innerText = changelogAlphaNotices[platform] || '';
     renderChangelog();
 }
 
@@ -487,4 +511,5 @@ function syncCurrent(selector) {
 document.addEventListener('DOMContentLoaded', () => {
     syncCurrent('.tab-btn');
     syncCurrent('.subtab-btn');
+    syncCurrent('.platform-btn');
 });
